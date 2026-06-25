@@ -80,7 +80,7 @@
           "enabled": true,
           "sort": "hot",
           "time_filter": "day",
-          "fetch_limit": 15,
+          "fetch_limit": 10,
           "min_score": 60
         },
         {
@@ -88,7 +88,7 @@
           "enabled": true,
           "sort": "hot",
           "time_filter": "day",
-          "fetch_limit": 15,
+          "fetch_limit": 10,
           "min_score": 60
         }
       ],
