@@ -56,3 +56,4 @@
           "content": "#{message_title}\n#{summary}"
         }
       }
+    }
