@@ -48,9 +48,11 @@
         "url_env": "HORIZON_WEBHOOK_URL",
         "delivery": "summary_and_items",
         "overview_position": "last",
-        "platform": "discord",
-        "layout": "collapsible",
+        "platform": "generic",
+        "layout": "markdown",
         "fallback_layout": "markdown",
-        "languages": ["zh"]
+        "languages": ["zh"],
+        "request_body": {
+          "content": "#{message_title}\n#{summary}"
+        }
       }
-    }
