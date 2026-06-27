@@ -55,4 +55,4 @@
         "request_body": {
           "content": "#{message_title}\n#{summary}"
         }
-      }
+      }.
