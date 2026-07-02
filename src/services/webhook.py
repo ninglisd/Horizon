@@ -1,5 +1,6 @@
 """Webhook notification service for Horizon."""
 
+import asyncio
 import json
 import logging
 import os
@@ -747,7 +748,9 @@ class WebhookNotifier:
             return
 
         self.console.print(f"🔔 Sending {lang.upper()} webhook notification...")
-        for message in messages:
+        for i, message in enumerate(messages):
+            if i > 0:
+                await asyncio.sleep(0.6)  # Discord 限流 5条/秒，留余量
             await self.notify(message)
 
     async def send_failure(
