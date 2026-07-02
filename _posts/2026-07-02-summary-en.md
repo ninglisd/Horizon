@@ -5,274 +5,305 @@ date: 2026-07-02
 lang: en
 ---
 
-> From 79 items, 13 important content pieces were selected
+> From 76 items, 15 important content pieces were selected
 
 ---
 
-1. [First Synthetic Cell Built from Scratch Grows and Divides](#item-1) ⭐️ 10.0/10
-2. [Learning Graphics Programming: Advice and Realities](#item-2) ⭐️ 8.0/10
-3. [FFmpeg 9.1 Introduces Improved Native AAC Encoder](#item-3) ⭐️ 8.0/10
-4. [Interactive Deep Dive into Internal Combustion Engines](#item-4) ⭐️ 8.0/10
-5. [Cloudflare Unveils Monetization Gateway with HTTP 402](#item-5) ⭐️ 8.0/10
-6. [MOTHRAG: Graph-Free Multi-Hop Retrieval Outperforms Graph-Based Systems](#item-6) ⭐️ 8.0/10
-7. [Autonomous Model Engineer Improves Safety Classifiers Under Label Scarcity](#item-7) ⭐️ 8.0/10
-8. [NVIDIA Cuts DeepSeek V4 Token Cost to One-Fifth on Blackwell](#item-8) ⭐️ 8.0/10
-9. [Over 140 Firms Including Visa, Mastercard Launch Open Standard Stablecoin Network](#item-9) ⭐️ 8.0/10
-10. [Yageo to Hike Capacitor Prices ~50% from July 1, Broadest Increase in Years](#item-10) ⭐️ 8.0/10
-11. [PlayStation to Stop Physical Game Discs from January 2028](#item-11) ⭐️ 8.0/10
-12. [Cloudflare to Default-Block Hybrid AI Crawlers from September 15](#item-12) ⭐️ 8.0/10
-13. [OpenAI Proposes 5% US Government Stake](#item-13) ⭐️ 8.0/10
+1. [Kuaishou's Keling AI Secures $3B Funding, Setting Record](#item-1) ⭐️ 9.0/10
+2. [美团 7 月起全国骑手职伤险全覆盖：每单必保、每人必保](#item-2) ⭐️ 9.0/10
+3. [F-Droid Blasts Android Developer Verification as Malware](#item-3) ⭐️ 8.0/10
+4. [Japan's Top Court: AI Cannot Be Listed as Inventor](#item-4) ⭐️ 8.0/10
+5. [The Egg Bandits Made a Thousand Times the Fine They Just Paid for Price Fixing](#item-5) ⭐️ 8.0/10
+6. [The fall of the theorem economy](#item-6) ⭐️ 8.0/10
+7. [ECTC 2026 Roundup: Advanced Packaging Updates](#item-7) ⭐️ 8.0/10
+8. [Chinese Neutral Atom Quantum Startup Nankai Quantum Secures Million-Dollar Funding](#item-8) ⭐️ 8.0/10
+9. [Hamiltonian Neural Networks via Differential Geometry](#item-9) ⭐️ 8.0/10
+10. [Apple Helps FBI Unmask Anonymous iCloud Email Sender](#item-10) ⭐️ 8.0/10
+11. [Meta Plans to Sell Surplus AI Compute, Entering Cloud Market](#item-11) ⭐️ 8.0/10
+12. [Cloudflare to Block Mixed-Use AI Crawlers from September 2026](#item-12) ⭐️ 8.0/10
+13. [OpenAI Proposes US Government 5% Stake in AI Giants](#item-13) ⭐️ 8.0/10
+14. [Companies restrict AI use as costs spiral, Citigroup bans GPT-5.5](#item-14) ⭐️ 8.0/10
+15. [PS3 Store Shutdown in 2027 Sparks Urgent Archiving Efforts](#item-15) ⭐️ 8.0/10
 
 ---
 
 <a id="item-1"></a>
-## [First Synthetic Cell Built from Scratch Grows and Divides](https://www.quantamagazine.org/for-the-first-time-a-cell-built-from-scratch-grows-and-divides-20260701/) ⭐️ 10.0/10
+## [Kuaishou's Keling AI Secures $3B Funding, Setting Record](https://36kr.com/newsflashes/3878648324845831?f=rss) ⭐️ 9.0/10
 
-Researchers led by synthetic biologist Kate Adamala at the University of Minnesota announced the creation of SpudCell, a synthetic cell built entirely from nonliving chemical components, that can grow, replicate its DNA, and divide. This marks the first time a synthetic cell has demonstrated a complete cell cycle, bringing scientists closer to understanding the origins of life and enabling potential applications in biotechnology, such as programmable cells for medical or environmental tasks. SpudCell lacks a cytoskeleton and instead uses a novel division mechanism involving droplet fusion. The cell is described as a 'limited and fragile prototype' that most closely resembles a simple bacterium.
+Kuaishou's video generation model Keling AI completed a nearly $3 billion funding round on July 2, 2024, reaching a post-investment valuation of approximately $18 billion. This record-breaking funding for a video generation AI company signals strong market validation and accelerates commercialization of AI video models, intensifying competition with players like OpenAI's Sora. The funding round was led by CPE Yuanfeng, Guofang Venture Capital, BlueFive, Tencent, Zhongguancun Science City Fund, and CITIC Securities, with participation from Alibaba Cloud, Baidu, and media firms like Huace Film and TV.
 
-hackernews · defrost · Jul 1, 14:20 · [Discussion](https://news.ycombinator.com/item?id=48747304)
+rss · 36氪 · Jul 2, 15:25
 
-**Background**: Synthetic biology aims to build artificial cells from scratch to understand life's fundamental principles. Previous attempts had achieved feeding, growing, and DNA replication, but cell division remained a major hurdle. SpudCell overcomes this by discarding the traditional cytoskeleton-based division.
+**Background**: Keling AI (also known as Kling) is a commercial long-video generation model launched by Kuaishou, supporting text-to-video and image-to-video generation. It entered the market as a rival to OpenAI's Sora, with capabilities for producing high-resolution 4K videos.
 
 <details><summary>References</summary>
 <ul>
-<li><a href="https://www.quantamagazine.org/for-the-first-time-a-cell-built-from-scratch-grows-and-divides-20260701/">For the First Time, a Cell Built From Scratch Grows and Divides | Quanta Magazine</a></li>
-<li><a href="https://www.science.org/content/article/lab-created-spudcell-marks-major-step-toward-building-life-scratch">Lab-created ‘SpudCell’ marks ‘stunning’ step toward building life from scratch | Science | AAAS</a></li>
-<li><a href="https://www.nytimes.com/2026/07/01/science/spud-cell-what-to-know.html">SpudCell: Scientists Made a Cell With Most of the Hallmarks of Life. Here’s What to Know. - The New York Times</a></li>
+<li><a href="https://clawbot.ai/wiki/ai-processing/kling-ai-video-generation.html">Kling (Keling AI/Kuaiying) - AI Video Generation - Wiki | clawbot</a></li>
+<li><a href="https://kling.ai/">Kling AI: Next-Generation AI Creative Studio</a></li>
 
 </ul>
 </details>
 
-**Discussion**: Community comments highlight excitement about the breakthrough but also note controversy: some peers criticized Adamala for bypassing typical peer review by sending the manuscript to journalists under embargo before preprint. Others discussed the implications for the future of biomachines and human reproduction, with one comment imagining a future polity called Biotic that dominates using biomachines.
-
-**Tags**: `#synthetic biology`, `#synthetic cell`, `#origins of life`, `#biotechnology`
+**Tags**: `#AI`, `#video generation`, `#funding`, `#Kuaishou`, `#commercialization`
 
 ---
 
 <a id="item-2"></a>
-## [Learning Graphics Programming: Advice and Realities](https://blog.demofox.org/2026/07/01/what-to-learn-to-be-a-graphics-programmer/) ⭐️ 8.0/10
+## [美团 7 月起全国骑手职伤险全覆盖：每单必保、每人必保](https://news.cnjiwang.com/gn/202607/4060503.html) ⭐️ 9.0/10
 
-A blog post titled 'What to learn to be a graphics programmer' sparked a Hacker News discussion where experienced practitioners shared career advice, learning resources, and industry insights. This discussion provides valuable, candid perspectives for anyone considering a career in graphics programming, highlighting both the rewards and challenges including the field's rapid evolution and competitive job market. Commenters emphasized that learning linear algebra and understanding hardware are crucial, but also warned that the field evolves extremely fast, making it a risky career choice if solely motivated by money.
+Meituan will fully cover occupational injury insurance for all its nationwide riders starting July 2026, with over 30 billion yuan already contributed.
 
-hackernews · atan2 · Jul 1, 17:53 · [Discussion](https://news.ycombinator.com/item?id=48750710)
+telegram · zaihuapd · Jul 2, 10:44
 
-**Background**: Graphics programming involves writing code to render images on screens, used in games, simulations, and visual effects. It requires knowledge of math (linear algebra), graphics APIs (OpenGL, Vulkan, DirectX), and often low-level system programming. The field has seen rapid advancement with technologies like real-time ray tracing and AI upscaling.
-
-**Discussion**: The community sentiment was mixed; some commenters enthusiastically recommended learning graphics programming for intellectual growth, while others cautioned about the high pace of change and limited job opportunities compared to other software fields. Several commenters shared personal resource lists and emphasized using existing game engines for game development rather than building custom renderers.
-
-**Tags**: `#graphics programming`, `#game development`, `#career advice`, `#community discussion`
+**Tags**: `#gig economy`, `#labor rights`, `#Meituan`, `#platform regulation`, `#China tech`
 
 ---
 
 <a id="item-3"></a>
-## [FFmpeg 9.1 Introduces Improved Native AAC Encoder](https://hydrogenaudio.org/index.php/topic,129691.0.html) ⭐️ 8.0/10
+## [F-Droid Blasts Android Developer Verification as Malware](https://f-droid.org/2026/07/01/adv-malware.html) ⭐️ 8.0/10
 
-FFmpeg 9.1 includes a new native AAC encoder developed by Rostislav Pehlivanov and Claudio Freire, delivering significantly improved audio quality compared to the previous encoder. This matters because FFmpeg's previous AAC encoder had poor quality and artifacts, forcing users to rely on third-party encoders like Apple Core Audio. The new encoder provides a competitive built-in alternative, simplifying workflows for video recording and transcoding. The new encoder currently only supports constant bitrate (CBR) mode and is primarily optimized for 48 kHz sampling; performance at 44.1 kHz or other rates may be suboptimal. It also works around a bug in FFmpeg's AAC decoder related to stereo Perceptual Noise Substitution (PNS).
+F-Droid, a popular open-source Android app store, published a blog post on July 1, 2026, accusing Google's new Android Developer Verification system of being a trojan horse that undermines user freedom and threatens open-source apps. This criticism highlights growing tensions between Google's security measures and the open-source community, as the verification requirement could restrict the installation of apps from third-party stores like F-Droid on certified Android devices. Starting in September 2026, apps in select regions must be registered by a verified developer to be installed on certified Android devices; however, developers can still use ADB to sideload unverified apps.
 
-hackernews · ledoge · Jul 1, 14:10 · [Discussion](https://news.ycombinator.com/item?id=48747116)
+hackernews · drewfax · Jul 2, 03:00 · [Discussion](https://news.ycombinator.com/item?id=48755965)
 
-**Background**: AAC (Advanced Audio Coding) is a widely used lossy audio compression format. FFmpeg is a popular multimedia framework, and its built-in AAC encoder (libavcodec) historically suffered from quality issues and artifacts, leading users to prefer external encoders like Apple CoreAudio or Fraunhofer FDK. The new encoder aims to provide a high-quality native alternative, reducing dependency on external codecs.
+**Background**: Android Developer Verification is a new layer of security introduced by Google that requires developers to verify their identity and register their package names before their apps can be installed on certified Android devices. F-Droid is a free and open-source (FOSS) app repository that focuses on user freedom and privacy, often used by those who avoid Google services. The F-Droid project argues that this verification gives Google undue control over what apps can be installed, effectively acting as a malware vendor by disguising lockdown as protection.
 
 <details><summary>References</summary>
 <ul>
-<li><a href="https://hydrogenaudio.org/index.php/topic,129691.0.html">FFmpeg 9 . 1 's new AAC encoder</a></li>
+<li><a href="https://developer.android.com/developer-verification">Android developer verification | Android Developers</a></li>
+<li><a href="https://en.wikipedia.org/wiki/F-Droid">F-Droid - Wikipedia</a></li>
+<li><a href="https://www.howtogeek.com/790674/what-is-f-droid-and-how-is-it-different-from-the-play-store/">What Is F-Droid and How Is It Different From the Play Store? About | F-Droid - Free and Open Source Android App Repository What is F-Droid? Is it safe? - Comparitech What Is F-Droid? - Computer Hope F-Droid. What is it, why use it? : r/androidapps - Reddit</a></li>
 
 </ul>
 </details>
 
-**Discussion**: Community comments are generally positive but highlight limitations. User cogman10 notes that Opus outperforms all AAC encoders at low bitrates, emphasizing format differences. User ndiddy looks forward to real-world tests, recalling chirping artifacts from the old encoder. User pseudosavant criticizes the CBR-only mode and 48 kHz optimization, calling them major gaps.
+**Discussion**: Community comments are largely critical of Google, with some users seeing the verification as an attack on apps like NewPipe and ad blockers. Others advocate switching to alternative mobile operating systems like SailfishOS or GrapheneOS, while a few argue F-Droid's strong language could hurt its credibility with mainstream audiences.
 
-**Tags**: `#FFmpeg`, `#AAC`, `#encoder`, `#audio`, `#codec`
+**Tags**: `#Android`, `#F-Droid`, `#Google`, `#developer verification`, `#open-source`
 
 ---
 
 <a id="item-4"></a>
-## [Interactive Deep Dive into Internal Combustion Engines](https://ciechanow.ski/internal-combustion-engine/) ⭐️ 8.0/10
+## [Japan's Top Court: AI Cannot Be Listed as Inventor](https://japannews.yomiuri.co.jp/science-nature/technology/20260306-314930/) ⭐️ 8.0/10
 
-An interactive article published in 2021 visually and mechanically explains the workings of an internal combustion engine, featuring animated diagrams and detailed descriptions of components like the crankshaft, valves, and lubrication system. This high-quality technical content engages a broad audience of mechanical engineering and automotive enthusiasts, fostering deeper understanding and discussion about engine design and evolution. The article depicts a circa 1990s Dual Overhead Cam engine but omits modern emissions control hardware; it highlights critical insights such as the role of hydrodynamic lubrication where the crankshaft floats on a thin oil film.
+Japan's Supreme Court ruled that artificial intelligence systems cannot be listed as inventors on patent applications, affirming that only natural persons qualify as inventors under Japanese patent law. This decision sets a clear legal precedent in Japan, aligning with similar rulings in the US and EU, and clarifies that AI-generated inventions must have a human inventor to receive patent protection, impacting how companies file patents for AI-assisted innovations. The case involved a petitioner who sought to list an AI system as the sole inventor on a patent application. The court upheld the Japan Patent Office's rejection, emphasizing that current law requires inventors to be human.
 
-hackernews · StefanBatory · Jul 1, 13:04 · [Discussion](https://news.ycombinator.com/item?id=48746076)
+hackernews · mushstory · Jul 2, 13:43 · [Discussion](https://news.ycombinator.com/item?id=48761536)
 
-**Background**: An internal combustion engine burns fuel inside cylinders to produce motion, typically using a four-stroke cycle: intake, compression, power, and exhaust. Key components include pistons, connecting rods, crankshaft, and valve trains. Over decades, engines have evolved from carbureted to electronically fuel-injected systems with advanced emissions controls.
+**Background**: Patent law traditionally defines an inventor as a natural person who conceives the invention. With the rise of generative AI, questions have arisen about whether AI can be considered an inventor. Japan's ruling follows similar decisions in the United States and Europe, rejecting AI inventorship.
 
-**Discussion**: Commenters note that while the basic engine design hasn't changed much in 50 years, control systems have evolved significantly. Some express nostalgia for the mechanical elegance of pushrod V8s, while others point out the absence of emissions hardware in the article, highlighting a trade-off between simplicity and efficiency.
+**Discussion**: Commenters largely supported the ruling, noting that AI lacks accountability and comparing it to a calculator. Some referenced economic studies questioning the effectiveness of patents as innovation incentives, while others asked whether re-filing with a human inventor would be possible.
 
-**Tags**: `#internal combustion engine`, `#mechanical engineering`, `#automotive`, `#interactive article`
+**Tags**: `#AI`, `#patent law`, `#intellectual property`, `#Japan`, `#legal precedent`
 
 ---
 
 <a id="item-5"></a>
-## [Cloudflare Unveils Monetization Gateway with HTTP 402](https://blog.cloudflare.com/monetization-gateway/) ⭐️ 8.0/10
+## [The Egg Bandits Made a Thousand Times the Fine They Just Paid for Price Fixing](https://www.thebignewsletter.com/p/crime-pays-the-egg-bandits-made-a) ⭐️ 8.0/10
 
-Cloudflare has announced a Monetization Gateway that uses the HTTP 402 status code to charge for any resource behind its network, integrating with the x402 protocol for microtransactions. This introduces a native monetization layer for web resources, potentially transforming how content and APIs are accessed, especially for AI agents and bots, while also raising concerns about abuse and spam. The gateway leverages the x402 protocol developed by the Coinbase Development Platform team, allowing operators to set per-resource payment requirements and settle payments via cryptocurrencies.
+An article revealing that egg price fixing fines are minuscule compared to illegal profits, generating broad discussion on Hacker News about corporate crime and market concentration.
 
-hackernews · soheilpro · Jul 1, 13:59 · [Discussion](https://news.ycombinator.com/item?id=48746914)
+hackernews · toomuchtodo · Jul 2, 13:25 · [Discussion](https://news.ycombinator.com/item?id=48761229)
 
-**Background**: HTTP 402 "Payment Required" is a standard status code defined by the IETF but reserved for future use, never widely adopted. The x402 protocol builds on this to create a payment framework for web resources, enabling pay-per-access models without traditional payment rails.
-
-<details><summary>References</summary>
-<ul>
-<li><a href="https://www.x402.org/">x402 - Payment Required | Internet-Native Payments Standard</a></li>
-<li><a href="https://solana.com/x402/what-is-x402">What is x402? | Payment Protocol for AI Agents on Solana</a></li>
-<li><a href="https://developer.mozilla.org/en-US/docs/Web/HTTP/Reference/Status/402">402 Payment Required - HTTP | MDN - MDN Web Docs</a></li>
-
-</ul>
-</details>
-
-**Discussion**: Commenters express mixed reactions: some see potential for microtransactions and agent-to-agent payments, while others worry about spam, bot fraud, and legal complexities around invoicing and taxation per request.
-
-**Tags**: `#cloudflare`, `#monetization`, `#http402`, `#webmonetization`, `#microtransactions`
+**Tags**: `#price fixing`, `#corporate crime`, `#antitrust`, `#economics`, `#regulation`
 
 ---
 
 <a id="item-6"></a>
-## [MOTHRAG: Graph-Free Multi-Hop Retrieval Outperforms Graph-Based Systems](https://www.reddit.com/r/MachineLearning/comments/1ukotww/p_mothretrieval_graphfree_multihop_retrieval_via/) ⭐️ 8.0/10
+## [The fall of the theorem economy](https://davidbessis.substack.com/p/the-fall-of-the-theorem-economy) ⭐️ 8.0/10
 
-Researchers open-sourced MOTHRAG, a multi-hop RAG framework that replaces offline knowledge graphs with a graph-free dense index and query-time orchestration, achieving higher accuracy on HotpotQA (78.1% vs. 68.6%) and 2WikiMultiHopQA (76.3% vs. 58.6%) compared to GraphRAG, while costing only ~$0.03 per query without requiring GPUs. This approach eliminates the costly re-indexing required by graph-based multi-hop RAG systems whenever data changes, making it practical for production environments with frequently updating corpora. It demonstrates that a well-designed query-time orchestration can match or beat graph-based accuracy without the maintenance overhead. MOTHRAG uses a dense vector index and orchestrates multi-hop retrieval at query time through commodity APIs, avoiding any GPU dependency. It lags on the MuSiQue benchmark (50.5% vs. 52.6%), where recall bottlenecks remain unsolved, and is available under Apache-2.0 license.
+The article argues that proof assistants and formalization are making traditional theorem-proving less central, shifting mathematics toward intuition and visualization, akin to the role of testing in software development. This shift could transform how mathematics is taught and practiced, emphasizing exploration and empirical confidence over definitive proof, and raising new questions about trust and verification in mathematical knowledge. The author draws a direct parallel between formal mathematics and software testing, suggesting that as proof assistants automate more details, mathematics becomes more like an empirical science. The discussion also references Greg Egan's novel 'Diaspora' and concerns about restricted access to AI resources.
 
-reddit · r/MachineLearning · /u/Annual-Commercial563 · Jul 1, 15:26
+hackernews · varjag · Jul 2, 08:01 · [Discussion](https://news.ycombinator.com/item?id=48758048)
 
-**Background**: Multi-hop retrieval-augmented generation (RAG) requires reasoning across multiple documents to answer complex queries. Traditional approaches like GraphRAG and HippoRAG build offline knowledge graphs to capture relationships, but these graphs are expensive to rebuild when the underlying data changes — a process that involves re-running large language models for indexing. MOTHRAG instead uses a dense vector index that can be updated incrementally with new embeddings, combined with a query-time orchestration strategy that plans retrieval steps on the fly.
+**Background**: Proof assistants, such as Coq and Isabelle, are interactive software tools that help humans construct formal proofs by collaborating on step-by-step logical deductions. Formal verification uses these tools to ensure mathematical theorems or software are correct, though it traditionally requires significant human effort. The article challenges the historical centrality of theorem-proving in mathematics, suggesting it may be an accident of history.
 
 <details><summary>References</summary>
 <ul>
-<li><a href="https://en.wikipedia.org/wiki/Graph_database">Graph database - Wikipedia</a></li>
-<li><a href="https://kestra.io/resources/ai/rag-pipeline">RAG Pipeline Orchestration: Production Guide | Kestra | Kestra</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Proof_assistant">Proof assistant</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Formal_verification">Formal verification - Wikipedia</a></li>
 
 </ul>
 </details>
 
-**Tags**: `#RAG`, `#Multi-hop retrieval`, `#Knowledge graphs`, `#Retrieval-augmented generation`, `#Open-source`
+**Discussion**: Commenters largely agree with the article's thesis, with one drawing on Greg Egan's 'truth mining' concept and another comparing the evolution to software testing. There is also concern that restricted access to AI resources could limit open science in the future.
+
+**Tags**: `#mathematics`, `#proof assistants`, `#formalization`, `#software testing`, `#AI`
 
 ---
 
 <a id="item-7"></a>
-## [Autonomous Model Engineer Improves Safety Classifiers Under Label Scarcity](https://www.reddit.com/r/MachineLearning/comments/1ul3ohk/making_optimization_work_when_labels_are_scarce_r/) ⭐️ 8.0/10
+## [ECTC 2026 Roundup: Advanced Packaging Updates](https://newsletter.semianalysis.com/p/ectc2026) ⭐️ 8.0/10
 
-Gnosys, an autonomous model engineer, improved safety classifiers on the ToxicChat benchmark under label scarcity, outperforming both the starting classifier and the GEPA prompt optimizer in two separate runs. This approach addresses a critical bottleneck in deploying AI for content moderation and other high-stakes tasks where labeled data is scarce, potentially enabling more robust and trustworthy classifiers. Gnosys fuses a small set of verified labels with a large unlabeled pool to create a calibrated estimate of quality, avoiding overfitting to noise. In the headline run, it achieved 0.777 harm caught at 5% false positive rate, compared to 0.731 for the starting classifier and 0.702 for GEPA.
+At ECTC 2026, Intel, TSMC, SK Hynix, and others presented updates on EMIB-T, custom HBM, HBM4 packaging challenges, microfluidic cooling, and photonic interconnects. These advances are critical for AI hardware scaling, as they address power delivery, thermal management, and bandwidth bottlenecks in high-performance computing. Intel's EMIB-T adds through-silicon vias for vertical power delivery, supporting sub-45μm pitches and paving the way for HBM4. Microsoft demonstrated microfluidic cooling with AI-directed coolant flow.
 
-reddit · r/MachineLearning · /u/Kody--- · Jul 2, 00:59
+rss · Semianalysis · Jul 2, 17:25
 
-**Background**: In many real-world AI systems, obtaining ground truth labels is expensive and slow, especially for rare events like harmful content. Standard optimization methods like GEPA (Genetic-Pareto) optimize prompts based on a given evaluation signal, but with very few labels they can overfit to noise. Gnosys acts as an autonomous model engineer: it evaluates the trustworthiness of the available signal, engineers a better objective from sparse labels, and then optimizes prompts against that objective, automating the entire engineering cycle.
+**Background**: Advanced packaging technologies like EMIB (Embedded Multi-die Interconnect Bridge) enable heterogeneous integration by connecting multiple chips via tiny silicon bridges. Microfluidic cooling circulates coolant through microscopic channels in chips to remove heat more efficiently than traditional methods. Photonic interconnects use light instead of electrical signals to achieve higher bandwidth and lower power consumption.
 
 <details><summary>References</summary>
 <ul>
-<li><a href="https://arxiv.org/abs/2507.19457">[2507.19457] GEPA: Reflective Prompt Evolution Can Outperform Reinforcement Learning</a></li>
+<li><a href="https://www.intel.com/content/dam/www/central-libraries/us/en/documents/2025-07/emib-product-brief.pdf">Intel Foundry EMIB Technology Brief</a></li>
+<li><a href="https://www.tomshardware.com/pc-components/cpus/intel-details-new-advanced-packaging-breakthroughs-emib-t-paves-the-way-for-hbm4-and-increased-ucie-bandwidth">Intel details new advanced packaging breakthroughs — EMIB-T ...</a></li>
+<li><a href="https://news.microsoft.com/source/features/innovation/microfluidics-liquid-cooling-ai-chips/">AI chips are getting hotter. A microfluidics breakthrough ...</a></li>
 
 </ul>
 </details>
 
-**Tags**: `#machine learning`, `#optimization`, `#label scarcity`, `#safety classifier`, `#autonomous model engineering`
+**Tags**: `#semiconductor packaging`, `#HBM4`, `#photonic interconnects`, `#advanced cooling`, `#ECTC`
 
 ---
 
 <a id="item-8"></a>
-## [NVIDIA Cuts DeepSeek V4 Token Cost to One-Fifth on Blackwell](https://blogs.nvidia.com/blog/inference-software-lowest-token-cost/) ⭐️ 8.0/10
+## [Chinese Neutral Atom Quantum Startup Nankai Quantum Secures Million-Dollar Funding](https://36kr.com/p/3877814169530630?f=rss) ⭐️ 8.0/10
 
-NVIDIA's inference optimizations on the Blackwell platform have boosted DeepSeek V4 throughput by 5x, reducing per-token cost to one-fifth of previous levels within a month. This dramatic cost reduction makes large-scale deployment of DeepSeek V4 more economically viable, potentially accelerating adoption in production AI applications and lowering barriers for developers. The SGLang engine on GB300 discrete deployment achieved throughput improvements from ~2,200 to ~11,200 tokens/sec/GPU between April and June 2025. Further advanced optimizations like disaggregated serving and multi-token prediction could push system throughput up to 20x.
+Nankai Quantum, a Chinese startup focused on neutral atom quantum computing, completed its first round of tens of millions of yuan in funding led by Hillhouse Capital, with participation from InnoAngel, Changshi Capital, and Feitu Capital. The funds will be used for R&D of next-generation neutral atom quantum computers and commercialization of ultracold atom quantum simulators. This investment signals growing investor confidence in neutral atom quantum computing, a promising route for scalable quantum hardware, and highlights China's progress in the field. Nankai Quantum claims to be the only domestic team capable of engineering ultracold atoms below 10 nanokelvin, a key advantage for quantum performance. Founded in April 2026, Nankai Quantum's core team comes from Peking University's CAP group. The company has a dual-drive business model: delivering specialized quantum simulators for revenue while advancing universal quantum computers. It has already secured multi-million-yuan orders and expects 2026 revenue to reach tens of millions.
 
-telegram · zaihuapd · Jul 1, 10:36
+rss · 36氪 · Jul 2, 01:16
 
-**Background**: DeepSeek V4 is a large language model that requires significant computational resources for inference. The NVIDIA Blackwell platform, including the GB300 GPU, is designed for generative AI workloads. SGLang is an open-source inference engine optimized for LLM serving. These optimizations leverage techniques such as kernel fusion, memory compression, and improved quantization.
+**Background**: Neutral atom quantum computing uses individually trapped neutral atoms (e.g., rubidium, cesium) manipulated by lasers to form qubits. Cooling atoms to nanokelvin temperatures (billionths of a degree above absolute zero) minimizes thermal motion, enhancing quantum coherence and fidelity. Ultracold atom quantum simulators are specialized devices that simulate quantum systems, providing near-term applications in materials science and drug discovery.
 
 <details><summary>References</summary>
 <ul>
-<li><a href="https://en.wikipedia.org/wiki/Blackwell_(microarchitecture)">Blackwell (microarchitecture) - Wikipedia</a></li>
-<li><a href="https://en.wikipedia.org/wiki/SGLang">SGLang - Wikipedia</a></li>
-<li><a href="https://www.nvidia.com/en-us/data-center/gb300-nvl72/">Designed for AI Reasoning Performance & Efficiency | NVIDIA GB300 NVL72</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Neutral_atom_quantum_computer">Neutral atom quantum computer - Wikipedia</a></li>
+<li><a href="https://spectrum.ieee.org/neutral-atom-quantum-computing">Neutral Atom Quantum Computing: 2026's Big Leap - IEEE Spectrum</a></li>
+<li><a href="https://www.nature.com/articles/s41586-025-09848-5">A fault-tolerant neutral-atom architecture for universal ...</a></li>
 
 </ul>
 </details>
 
-**Tags**: `#NVIDIA`, `#DeepSeek V4`, `#inference optimization`, `#large language models`, `#GPU`
+**Tags**: `#quantum computing`, `#neutral atom`, `#startup`, `#funding`, `#China`
 
 ---
 
 <a id="item-9"></a>
-## [Over 140 Firms Including Visa, Mastercard Launch Open Standard Stablecoin Network](https://www.reuters.com/business/consortium-including-visa-mastercard-jointly-launch-new-global-stablecoin-2026-06-30/) ⭐️ 8.0/10
+## [Hamiltonian Neural Networks via Differential Geometry](https://www.reddit.com/r/MachineLearning/comments/1ukzdnj/hamiltonian_neural_networks_from_a_differential/) ⭐️ 8.0/10
 
-On June 30, 2026, a consortium of over 140 companies including Visa, Mastercard, and Coinbase announced the launch of Open Standard, a new stablecoin network that will issue Open USD (OUSD) later this year. This initiative aims to solve enterprise adoption barriers for stablecoins, providing a free, high-throughput infrastructure for global payments, and could accelerate mainstream use of stablecoins beyond crypto trading. The Open USD stablecoin allows free, unlimited minting and redemption, with reserve income shared among partners after fees. The network is governed collectively and positions itself as neutral infrastructure.
+A blog post explains Hamiltonian Neural Networks (HNNs) from a differential geometry perspective, linking them to Noether's theorem and conservation laws. This perspective helps machine learning practitioners understand why HNNs generalize well, as Noether's theorem connects symmetries to conserved quantities, providing a principled way to build physics-informed models. The post includes interactive visuals and is math-heavy but accessible, emphasizing that Noether's theorem is underappreciated in physics-informed ML. It complements the original HNN paper (Greydanus et al., 2019) by offering a geometric lens.
 
-telegram · zaihuapd · Jul 1, 11:06
+reddit · r/MachineLearning · /u/FlameOfIgnis · Jul 1, 21:55
 
-**Background**: Stablecoins are digital tokens pegged to a stable asset like the US dollar, but most are used primarily in crypto trading. The GENIUS Act in the US, signed in 2025, established the first federal regulatory framework for stablecoins, enabling such enterprise initiatives.
+**Background**: Hamiltonian Neural Networks are neural networks that learn to model physical systems by respecting Hamiltonian mechanics, which conserve energy. Noether's theorem states that every symmetry of a physical system corresponds to a conservation law. Differential geometry provides the mathematical language to describe these symmetries and conservation laws in a coordinate-free way.
 
 <details><summary>References</summary>
 <ul>
-<li><a href="https://www.forbes.com/sites/christiancatalini/2026/06/30/why-an-open-standard-will-win-the-stablecoin-race/">Why An Open Standard Will Win The Stablecoin Race</a></li>
-<li><a href="https://www.theblock.co/post/406736/visa-stripe-coinbase-join-open-usd-stablecoin-shares-reserve-revenue">Visa, Stripe, Coinbase and more join Open USD stablecoin that shares reserve revenue | The Block</a></li>
-<li><a href="https://www.thestreet.com/crypto/markets/aptos-visa-and-blackrock-among-140-firms-launching-new-stablecoin">Aptos, Visa and BlackRock among 140 firms launching new stablecoin - TheStreet Crypto: Bitcoin and cryptocurrency news, advice, analysis and more</a></li>
+<li><a href="https://arxiv.org/abs/1906.01563">[1906.01563] Hamiltonian Neural Networks - arXiv.org</a></li>
+<li><a href="https://papers.nips.cc/paper/2019/hash/26cd8ecadce0d4efd6cc8a8725cbd1f8-Abstract.html">Hamiltonian Neural Networks - NIPS</a></li>
 
 </ul>
 </details>
 
-**Tags**: `#stablecoin`, `#blockchain`, `#payments`, `#fintech`, `#regulation`
+**Tags**: `#Hamiltonian Neural Networks`, `#Differential Geometry`, `#Physics-Informed Machine Learning`, `#Noether's Theorem`, `#Neural ODEs`
 
 ---
 
 <a id="item-10"></a>
-## [Yageo to Hike Capacitor Prices ~50% from July 1, Broadest Increase in Years](https://www.trendforce.com/news/2026/07/01/news-passive-component-prices-rise-as-yageo-reportedly-begins-broadest-capacitor-hike-in-years-on-july-1/) ⭐️ 8.0/10
+## [Apple Helps FBI Unmask Anonymous iCloud Email Sender](https://t.me/zaihuapd/42302) ⭐️ 8.0/10
 
-Yageo, the leading passive component manufacturer, announced a broad price increase of approximately 50% across its entire capacitor product line, including MLCCs, aluminum electrolytic capacitors, and tantalum capacitors, effective July 1. This marks the company's most extensive price hike in recent years. This price hike reflects rising raw material and energy costs driven by geopolitical tensions, along with surging demand from AI servers and electric vehicles, which have increased the share of passive components in server BOM costs. The move could significantly boost Yageo's revenue and profit, while pressuring downstream electronics manufacturers already facing tight supply chains. The official quoted price increase is about 50%, but spot market prices have surged even more, with high-end capacitors seeing nearly tenfold increases in the past month. This is the first time Yageo has raised prices for direct customers, who account for over half of its sales, and the price hike covers its full capacitor portfolio, which generates roughly half of the company's revenue.
+In a threat investigation, Apple provided the FBI with the real iCloud account details linked to anonymous emails created using the "Hide My Email" feature, revealing that the service is not fully anonymous. This incident demonstrates that Apple's privacy-focused features can be bypassed in law enforcement investigations, raising significant concerns about the limits of anonymity in Apple's ecosystem. The suspect allegedly generated 134 anonymous email addresses and sent a threatening message to FBI Director Kash Patel's girlfriend. The affidavit states the user admitted to the crime.
 
-telegram · zaihuapd · Jul 1, 14:34
+telegram · zaihuapd · Jul 2, 01:03
 
-**Background**: MLCCs (Multi-Layer Ceramic Capacitors) are essential passive components used in virtually all electronic devices to regulate voltage and filter noise. Tantalum capacitors offer high capacitance per volume and are used in reliability-critical applications such as medical and aerospace equipment. Yageo Corporation is the world's leading passive components manufacturer based in Taiwan, competing with Japanese and Korean suppliers. The passive components industry has been under cost pressure from rising energy and raw material prices, while demand from AI servers and electric vehicles has accelerated.
+**Background**: Apple's "Hide My Email" feature creates unique, random email addresses that forward messages to a user's real iCloud inbox. While designed to protect privacy by concealing the user's actual email address, Apple retains the mapping between the alias and the real account, which can be provided to law enforcement under legal process.
 
 <details><summary>References</summary>
 <ul>
-<li><a href="https://en.wikipedia.org/wiki/Tantalum_capacitor">Tantalum capacitor</a></li>
-<li><a href="https://grokipedia.com/page/Passive_components_industry_in_Taiwan">Passive components industry in Taiwan</a></li>
+<li><a href="https://support.apple.com/en-us/105078">How to use Hide My Email with Sign in with Apple - Apple Support</a></li>
+<li><a href="https://www.simplymac.com/ios/apples-hide-my-email-feature">Apple 's Hide My Email Feature - SimplyMac</a></li>
 
 </ul>
 </details>
 
-**Tags**: `#capacitor`, `#price hike`, `#MLCC`, `#AI servers`, `#supply chain`
+**Tags**: `#Apple`, `#privacy`, `#iCloud`, `#law enforcement`, `#security`
 
 ---
 
 <a id="item-11"></a>
-## [PlayStation to Stop Physical Game Discs from January 2028](https://blog.playstation.com/2026/07/01/physical-disc-production-ending-in-january-2028-for-new-games-releasing-on-playstation-consoles/) ⭐️ 8.0/10
+## [Meta Plans to Sell Surplus AI Compute, Entering Cloud Market](https://www.bloomberg.com/news/articles/2026-07-02/south-korean-stocks-tumble-6-as-ai-jitters-hurt-chipmakers) ⭐️ 8.0/10
 
-Sony Interactive Entertainment announced that starting January 2028, all new games released on PlayStation consoles will be distributed only as digital downloads, ending production of physical discs. This marks a major shift in the gaming industry, potentially accelerating the transition to all-digital game distribution and affecting consumer ownership, retail, and the second-hand market. Only new games released after January 2028 are affected; existing physical games and those released before the cut-off remain unaffected. The announcement was made by Sid Shuman, Senior Director of Content Communications.
+Meta is planning to sell its surplus AI computing power and model services to external customers, signaling a move into the cloud computing market. This news, combined with Apple's talks to buy memory chips from Chinese suppliers, triggered a sharp sell-off in South Korean chip stocks on July 2, 2026. This development raises concerns that big tech companies like Meta may slow down AI investments, potentially leading to an oversupply of AI infrastructure. The resulting market jitters in South Korea highlight the global semiconductor industry's sensitivity to AI spending shifts. The Kospi index fell up to 7% intraday, with Samsung Electronics and SK Hynix dropping at least 8%, prompting a temporary halt in programmatic selling of Kospi futures. Meta's move involves offering both compute capacity and model services, directly competing with established cloud providers.
 
-telegram · zaihuapd · Jul 1, 15:04
+telegram · zaihuapd · Jul 2, 02:29
 
-**Background**: Physical game discs have been the traditional medium for console gaming, allowing consumers to own, resell, and trade games. The industry has been gradually shifting toward digital downloads, with services like PlayStation Store offering convenience and instant access. Sony's decision reflects growing consumer preference for digital media and aligns with broader trends in entertainment.
+**Background**: Meta has heavily invested in AI infrastructure to support its large language models and recommendation systems, amassing significant compute capacity. By selling excess capacity, Meta aims to monetize its investment while potentially disrupting the cloud computing market. The semiconductor industry is closely tied to AI demand, as chips are essential for training and inference.
 
-**Tags**: `#PlayStation`, `#数字发行`, `#游戏行业`, `#实体光盘`
+**Tags**: `#Meta`, `#cloud computing`, `#AI`, `#semiconductor`, `#market`
 
 ---
 
 <a id="item-12"></a>
-## [Cloudflare to Default-Block Hybrid AI Crawlers from September 15](https://techcrunch.com/2026/07/01/cloudflares-new-policy-pushes-ai-companies-to-pay-for-publishers-content/) ⭐️ 8.0/10
+## [Cloudflare to Block Mixed-Use AI Crawlers from September 2026](https://techcrunch.com/2026/07/01/cloudflares-new-policy-pushes-ai-companies-to-pay-for-publishers-content/) ⭐️ 8.0/10
 
-Cloudflare announced that starting September 15, it will by default block 'hybrid-purpose' crawlers that are used for both search indexing and AI training or question answering. The company explicitly criticized Google for exploiting search crawler permissions to train its AI models without clear publisher consent. This policy shift directly impacts AI data collection practices, forcing companies like Google to either separate their search and AI crawlers or negotiate payment with publishers. It could reshape the economic relationship between content creators and AI firms, moving toward a usage-based payment model. The new rule applies to pages that display ads, and Cloudflare will block crawlers that combine search and AI functions starting September 15. The company noted that publishers currently find it difficult to allow search indexing while blocking content for AI use, highlighting a loophole exploited by Google.
+Cloudflare announced it will block mixed-use AI crawlers by default on ad-supported pages starting September 15, 2026, specifically targeting crawlers that combine search indexing with AI training and agent tasks without separate controls. The company also singled out Google for exploiting a loophole where websites block AI crawlers but allow search crawlers, which Google then uses to train its AI models. This policy forces AI companies, particularly Google, to either negotiate content usage terms with publishers or face blocked access, potentially reshaping the economics of web content for AI training. It addresses a long-standing grievance from publishers who argue their content is used without compensation. The policy initially applies to new Cloudflare customers and free-tier users by default, with existing customers given a grace period. Cloudflare is also launching a 'Pay Per Use' model for AI content monetization, with Ceramic.ai and You.com as initial partners.
 
 telegram · zaihuapd · Jul 2, 05:37
 
-**Background**: Web crawlers are automated programs that browse websites to index content for search engines or collect data for AI training. Traditionally, sites use robots.txt files to control crawler access, but some crawlers like Google's have both search and AI purposes, making it hard to block only AI training via existing rules. Cloudflare, as a major content delivery network, can enforce such policies at the network level.
+**Background**: Many websites use robots.txt to block AI crawlers from companies like OpenAI, but often allow search engine crawlers like Googlebot to maintain search visibility. Google has been accused of using its search crawler data to train its AI models, even when publishers explicitly opt out of AI training via standard protocols, as revealed in court filings. This loophole means that blocking AI crawlers alone does not prevent Google from using the content for AI, as long as search indexing is allowed.
 
 <details><summary>References</summary>
 <ul>
-<li><a href="https://www.yingzheng.com/article/cloudflare-ai-crawler-separation-policy">Cloudflare新规： AI 训练 爬 虫 须 与 搜 索 爬 虫 分离，否则封禁 | 赢政天下 AI</a></li>
+<li><a href="https://best-ai.org/ai-news/cloudflare-to-block-ai-crawlers-and-introduce-pay-per-use-content-model-by-september-2026-5jl9lv">Cloudflare to Block AI Crawlers and Introduce "Pay Per Use ...</a></li>
+<li><a href="https://www.newsbytesapp.com/news/science/google-reveals-ai-training-loophole-in-court-testimony/story">Google can train AI using web content despite publisher opt-out</a></li>
 
 </ul>
 </details>
 
-**Tags**: `#Cloudflare`, `#AI crawlers`, `#web scraping`, `#Google`, `#content policy`
+**Tags**: `#Cloudflare`, `#AI crawlers`, `#web scraping`, `#Google`, `#policy`
 
 ---
 
 <a id="item-13"></a>
-## [OpenAI Proposes 5% US Government Stake](https://www.bloomberg.com/news/articles/2026-07-02/openai-proposes-giving-the-us-government-a-5-stake-ft-says) ⭐️ 8.0/10
+## [OpenAI Proposes US Government 5% Stake in AI Giants](https://www.bloomberg.com/news/articles/2026-07-02/openai-proposes-giving-the-us-government-a-5-stake-ft-says) ⭐️ 8.0/10
 
-OpenAI has proposed that the US government take a 5% stake in itself and potentially other major AI companies like Google and Meta, aiming to share the benefits of the AI boom with the public. This proposal could significantly reshape AI industry governance by involving the public sector directly in ownership and profit-sharing, but also raises concerns about regulatory conflicts and corporate control. The proposal, discussed by CEO Sam Altman and other executives, suggests a government entity hold shares in multiple AI firms including Anthropic, Google, and Meta. The plan remains speculative and other companies' acceptance is unclear.
+OpenAI has proposed that the US government take a 5% stake in itself and other major AI companies including Google and Meta, according to a Bloomberg report. This proposal could reshape AI governance by giving the public direct benefit from AI growth, but raises concerns about government control and conflicts of interest. The proposal involves a single government vehicle holding the shares, and it is unclear whether other companies like Google and Meta will accept the arrangement.
 
 telegram · zaihuapd · Jul 2, 06:02
 
-**Background**: OpenAI was originally founded as a nonprofit but transitioned to a capped-profit model. This proposal reflects ongoing debates about how to ensure public benefits from advanced AI while balancing private innovation and control. Government ownership could provide a mechanism for sharing economic gains, but also introduces potential conflicts of interest.
+**Background**: OpenAI is a leading AI research organization that developed ChatGPT. The proposal comes amid global debates on AI regulation and how to ensure AI benefits are widely shared. Government ownership in private tech companies is rare in the US.
 
-**Tags**: `#OpenAI`, `#AI regulation`, `#government stake`, `#technology policy`
+**Tags**: `#OpenAI`, `#AI regulation`, `#government investment`, `#tech policy`, `#artificial intelligence`
+
+---
+
+<a id="item-14"></a>
+## [Companies restrict AI use as costs spiral, Citigroup bans GPT-5.5](https://www.404media.co/companies-are-throttling-employees-ai-use-because-its-too-expensive/) ⭐️ 8.0/10
+
+Citigroup has banned GPT-5.5 and Claude Opus 4.6/4.7 since June 24, 2026, while Atlassian's AI monthly spend surged from $5M to $15M, prompting cost controls. This trend signals that enterprise AI adoption faces a cost crisis, potentially slowing deployment of frontier models and forcing companies to reevaluate their AI strategies. Atlassian's internal dashboard showed AI costs rose from $5M in August 2025 to over $15M in May 2026; Adobe ended its unlimited Claude contract on June 30; Amazon discovered unknown token usage caps after removing its AI leaderboard.
+
+telegram · zaihuapd · Jul 2, 13:59
+
+**Background**: Many enterprise AI tools use a credit-based billing model where different models consume credits at different rates. Frontier models like GPT-5.5 and Claude Opus are more expensive per query, leading to unexpectedly high costs when usage scales. Companies are now implementing dashboards and caps to manage spending.
+
+<details><summary>References</summary>
+<ul>
+<li><a href="https://en.wikipedia.org/wiki/GPT-5.5">GPT-5.5</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Claude_Opus">Claude Opus</a></li>
+<li><a href="https://www.agensi.io/learn/github-copilot-ai-credits-billing-explained">GitHub Copilot AI Credits Billing: How It Works in 2026</a></li>
+
+</ul>
+</details>
+
+**Tags**: `#AI costs`, `#enterprise AI`, `#LLM deployment`, `#cost management`, `#AI adoption challenges`
+
+---
+
+<a id="item-15"></a>
+## [PS3 Store Shutdown in 2027 Sparks Urgent Archiving Efforts](http://no-intro.org/) ⭐️ 8.0/10
+
+Sony announced the permanent closure of the PS3 and PS Vita PlayStation Store in July 2027, prompting digital archivists and the RPCS3 emulator team to urgently back up game data before it becomes inaccessible. This event underscores the fragility of digital-only game libraries, as many titles without physical releases could be lost forever, affecting gamers, historians, and the preservation of gaming culture. The RPCS3 team recommends using the no-intro.org database, which catalogs cryptographic hashes, file sizes, and serial numbers to track which games have been preserved and which still need saving.
+
+telegram · zaihuapd · Jul 2, 15:04
+
+**Background**: The PS3 and PS Vita stores are digital marketplaces where players purchase and download games. With Sony's decision to close them, digital-only games that never received physical versions become unavailable. Emulators like RPCS3 allow games to run on PC, but they require legal copies of game files. Preservation efforts rely on community collaboration and databases like no-intro.org to verify integrity and completeness.
+
+<details><summary>References</summary>
+<ul>
+<li><a href="https://www.tomshardware.com/video-games/playstation/digital-archivists-rush-to-save-ps3-game-data-before-sony-shuts-down-the-store-forever-in-2027-rpcs3-emulator-urges-users-to-preserve-all-content">Digital archivists rush to save PS3 game data before... | Tom's Hardware</a></li>
+<li><a href="https://no-intro.org/">No - Intro . org</a></li>
+
+</ul>
+</details>
+
+**Tags**: `#digital preservation`, `#gaming`, `#PS3`, `#emulation`, `#Sony`
 
 ---

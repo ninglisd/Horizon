@@ -5,274 +5,305 @@ date: 2026-07-02
 lang: zh
 ---
 
-> 从 79 条内容中筛选出 13 条重要资讯。
+> 从 76 条内容中筛选出 15 条重要资讯。
 
 ---
 
-1. [首个从头构建的合成细胞能够生长和分裂](#item-1) ⭐️ 10.0/10
-2. [学习图形编程：建议与现实](#item-2) ⭐️ 8.0/10
-3. [FFmpeg 9.1 引入改进的原生 AAC 编码器](#item-3) ⭐️ 8.0/10
-4. [内燃机互动深度解析](#item-4) ⭐️ 8.0/10
-5. [Cloudflare 推出基于 HTTP 402 的变现网关](#item-5) ⭐️ 8.0/10
-6. [MOTHRAG：无图多跳检索性能超越基于图的系统](#item-6) ⭐️ 8.0/10
-7. [自主模型工程师在标签稀缺下改进安全分类器](#item-7) ⭐️ 8.0/10
-8. [英伟达将 DeepSeek V4 Token 成本降至五分之一](#item-8) ⭐️ 8.0/10
-9. [Visa、Mastercard 等超 140 家企业推出 Open Standard 稳定币网络](#item-9) ⭐️ 8.0/10
-10. [国巨 7 月 1 日起电容价格全面上涨约五成，近年最大范围涨价](#item-10) ⭐️ 8.0/10
-11. [PlayStation 宣布 2028 年 1 月起停发实体游戏光盘](#item-11) ⭐️ 8.0/10
-12. [Cloudflare 9 月 15 日起默认拦截混合 AI 爬虫](#item-12) ⭐️ 8.0/10
-13. [OpenAI 提议美国政府持股 5%](#item-13) ⭐️ 8.0/10
+1. [快手可灵 AI 获近 30 亿美元融资，创行业纪录](#item-1) ⭐️ 9.0/10
+2. [美团 7 月起全国骑手职伤险全覆盖：每单必保、每人必保](#item-2) ⭐️ 9.0/10
+3. [F-Droid 抨击 Android 开发者验证是恶意软件](#item-3) ⭐️ 8.0/10
+4. [日本最高法院：AI 不能列为发明人](#item-4) ⭐️ 8.0/10
+5. [鸡蛋价格操纵者获利是罚款的千倍](#item-5) ⭐️ 8.0/10
+6. [定理经济的衰落](#item-6) ⭐️ 8.0/10
+7. [ECTC 2026 先进封装技术综述](#item-7) ⭐️ 8.0/10
+8. [国内中性原子量子初创公司纳开量子获数千万元融资](#item-8) ⭐️ 8.0/10
+9. [从微分几何看哈密顿神经网络](#item-9) ⭐️ 8.0/10
+10. [Apple 协助 FBI 揭露 iCloud 匿名邮箱发件人](#item-10) ⭐️ 8.0/10
+11. [Meta 拟出售富余 AI 算力，进军云计算市场](#item-11) ⭐️ 8.0/10
+12. [Cloudflare 将从 2026 年 9 月起默认拦截混合用途 AI 爬虫](#item-12) ⭐️ 8.0/10
+13. [OpenAI 提议美国政府持股 AI 巨头 5%](#item-13) ⭐️ 8.0/10
+14. [企业因 AI 成本飙升限制使用，花旗禁用 GPT-5.5](#item-14) ⭐️ 8.0/10
+15. [PS3 商店 2027 年关闭引发紧急存档行动](#item-15) ⭐️ 8.0/10
 
 ---
 
 <a id="item-1"></a>
-## [首个从头构建的合成细胞能够生长和分裂](https://www.quantamagazine.org/for-the-first-time-a-cell-built-from-scratch-grows-and-divides-20260701/) ⭐️ 10.0/10
+## [快手可灵 AI 获近 30 亿美元融资，创行业纪录](https://36kr.com/newsflashes/3878648324845831?f=rss) ⭐️ 9.0/10
 
-由明尼苏达大学合成生物学家 Kate Adamala 领导的研究人员宣布，他们创造了 SpudCell，一种完全由非生命化学组分构建的合成细胞，能够生长、复制 DNA 并分裂。 这标志着合成细胞首次展现出完整的细胞周期，使科学家更接近理解生命起源，并为生物技术领域的潜在应用开辟道路，例如可编程细胞用于医疗或环境任务。 SpudCell 缺少细胞骨架，而是利用一种涉及液滴融合的新型分裂机制。该细胞被描述为‘有限且脆弱的原型’，最类似于简单的细菌。
+2024 年 7 月 2 日，快手旗下视频生成大模型可灵 AI 完成近 30 亿美元融资，投后估值约 180 亿美元。 这笔创纪录的融资标志着市场对视频生成 AI 实力的高度认可，加速了商业化进程，并加剧了与 OpenAI Sora 等对手的竞争。 本轮融资由 CPE 源峰、国方创投、BlueFive、腾讯、中关村科学城基金和中信证券联合领投，阿里云、百度以及华策影视等文娱产业方参与。
 
-hackernews · defrost · 7月1日 14:20 · [社区讨论](https://news.ycombinator.com/item?id=48747304)
+rss · 36氪 · 7月2日 15:25
 
-**背景**: 合成生物学旨在从头构建人工细胞，以理解生命的基本原理。此前的尝试已实现了喂养、生长和 DNA 复制，但细胞分裂一直是一个主要障碍。SpudCell 通过放弃传统的基于细胞骨架的分裂方式克服了这一难题。
+**背景**: 可灵 AI（又称 Kling）是快手推出的商用长视频生成模型，支持文字转视频和图片转视频，是 OpenAI Sora 的竞品，可生成 4K 高分辨视频。
 
 <details><summary>参考链接</summary>
 <ul>
-<li><a href="https://www.quantamagazine.org/for-the-first-time-a-cell-built-from-scratch-grows-and-divides-20260701/">For the First Time, a Cell Built From Scratch Grows and Divides | Quanta Magazine</a></li>
-<li><a href="https://www.science.org/content/article/lab-created-spudcell-marks-major-step-toward-building-life-scratch">Lab-created ‘SpudCell’ marks ‘stunning’ step toward building life from scratch | Science | AAAS</a></li>
-<li><a href="https://www.nytimes.com/2026/07/01/science/spud-cell-what-to-know.html">SpudCell: Scientists Made a Cell With Most of the Hallmarks of Life. Here’s What to Know. - The New York Times</a></li>
+<li><a href="https://clawbot.ai/wiki/ai-processing/kling-ai-video-generation.html">Kling (Keling AI/Kuaiying) - AI Video Generation - Wiki | clawbot</a></li>
+<li><a href="https://kling.ai/">Kling AI: Next-Generation AI Creative Studio</a></li>
 
 </ul>
 </details>
 
-**社区讨论**: 社区评论对这项突破感到兴奋，但也指出争议：一些同行批评 Adamala 绕过常规同行评审，在预印本之前就将手稿通过保密协议发给记者。其他人讨论了生物机器和人类繁殖的未来影响，有一条评论想象了一个名为 Biotic 的政体，利用生物机器统治未来。
-
-**标签**: `#synthetic biology`, `#synthetic cell`, `#origins of life`, `#biotechnology`
+**标签**: `#AI`, `#video generation`, `#funding`, `#Kuaishou`, `#commercialization`
 
 ---
 
 <a id="item-2"></a>
-## [学习图形编程：建议与现实](https://blog.demofox.org/2026/07/01/what-to-learn-to-be-a-graphics-programmer/) ⭐️ 8.0/10
+## [美团 7 月起全国骑手职伤险全覆盖：每单必保、每人必保](https://news.cnjiwang.com/gn/202607/4060503.html) ⭐️ 9.0/10
 
-一篇题为《图形程序员应该学什么》的博客文章在 Hacker News 上引发了讨论，有经验的专业人士分享了职业建议、学习资源和行业见解。 这场讨论为考虑从事图形编程的人提供了宝贵的、坦诚的观点，既强调了回报，也指出了挑战，包括该领域的快速发展和竞争激烈的就业市场。 评论者强调学习线性代数和理解硬件至关重要，但也警告该领域发展极快，如果仅仅以赚钱为目的，这是一个有风险的职业选择。
+美团将从 2026 年 7 月起为全国骑手全面覆盖职业伤害保险，已累计投入超过 300 亿元。
 
-hackernews · atan2 · 7月1日 17:53 · [社区讨论](https://news.ycombinator.com/item?id=48750710)
+telegram · zaihuapd · 7月2日 10:44
 
-**背景**: 图形编程涉及编写代码在屏幕上渲染图像，用于游戏、模拟和视觉效果。它需要数学（线性代数）、图形 API（OpenGL、Vulkan、DirectX）的知识，通常还需要底层系统编程。随着实时光线追踪和 AI 超分辨率等技术的发展，该领域取得了飞速进步。
-
-**社区讨论**: 社区情绪不一；一些评论者热情推荐学习图形编程以促进智力成长，而另一些则警告该领域变化速度快，就业机会相比其他软件领域有限。几位评论者分享了个人的资源列表，并强调在游戏开发中使用现有引擎，而不是构建自定义渲染器。
-
-**标签**: `#graphics programming`, `#game development`, `#career advice`, `#community discussion`
+**标签**: `#gig economy`, `#labor rights`, `#Meituan`, `#platform regulation`, `#China tech`
 
 ---
 
 <a id="item-3"></a>
-## [FFmpeg 9.1 引入改进的原生 AAC 编码器](https://hydrogenaudio.org/index.php/topic,129691.0.html) ⭐️ 8.0/10
+## [F-Droid 抨击 Android 开发者验证是恶意软件](https://f-droid.org/2026/07/01/adv-malware.html) ⭐️ 8.0/10
 
-FFmpeg 9.1 包含了一个由 Rostislav Pehlivanov 和 Claudio Freire 开发的新原生 AAC 编码器，与之前的编码器相比，音频质量显著提升。 这很重要，因为 FFmpeg 之前的 AAC 编码器质量差且存在伪影，用户不得不依赖 Apple Core Audio 等第三方编码器。新编码器提供了有竞争力的内置替代方案，简化了视频录制和转码的工作流程。 新编码器目前仅支持恒定比特率（CBR）模式，且主要针对 48 kHz 采样率优化；在 44.1 kHz 或其他采样率下性能可能不佳。此外，它修复了 FFmpeg AAC 解码器中与立体声感知噪声替代（PNS）相关的 bug。
+2026 年 7 月 1 日，流行的开源 Android 应用商店 F-Droid 发表博文，指责 Google 的新 Android 开发者验证系统是特洛伊木马，损害用户自由并威胁开源应用。 这一批评凸显了 Google 的安全措施与开源社区之间日益紧张的关系，因为验证要求可能限制在认证 Android 设备上安装来自 F-Droid 等第三方商店的应用。 自 2026 年 9 月起，在部分区域，应用必须由经过验证的开发者注册才能在认证的 Android 设备上安装；但开发者仍可使用 ADB 侧载未经验证的应用。
 
-hackernews · ledoge · 7月1日 14:10 · [社区讨论](https://news.ycombinator.com/item?id=48747116)
+hackernews · drewfax · 7月2日 03:00 · [社区讨论](https://news.ycombinator.com/item?id=48755965)
 
-**背景**: AAC（高级音频编码）是一种广泛使用的有损音频压缩格式。FFmpeg 是一个流行的多媒体框架，其内置 AAC 编码器（libavcodec）历史上存在质量问题和伪影，导致用户倾向于使用 Apple CoreAudio 或 Fraunhofer FDK 等外部编码器。新编码器旨在提供高质量的原生替代方案，减少对外部编解码器的依赖。
+**背景**: Android 开发者验证是 Google 引入的一项新安全层，要求开发者在应用安装到认证 Android 设备前验证身份并注册包名。F-Droid 是一个自由开源（FOSS）应用仓库，注重用户自由和隐私，常被避开 Google 服务的用户使用。F-Droid 项目认为，此验证赋予 Google 对可安装应用的过度控制，本质上是将封锁伪装成保护，如同恶意软件厂商所为。
 
 <details><summary>参考链接</summary>
 <ul>
-<li><a href="https://hydrogenaudio.org/index.php/topic,129691.0.html">FFmpeg 9 . 1 's new AAC encoder</a></li>
+<li><a href="https://developer.android.com/developer-verification">Android developer verification | Android Developers</a></li>
+<li><a href="https://en.wikipedia.org/wiki/F-Droid">F-Droid - Wikipedia</a></li>
+<li><a href="https://www.howtogeek.com/790674/what-is-f-droid-and-how-is-it-different-from-the-play-store/">What Is F-Droid and How Is It Different From the Play Store? About | F-Droid - Free and Open Source Android App Repository What is F-Droid? Is it safe? - Comparitech What Is F-Droid? - Computer Hope F-Droid. What is it, why use it? : r/androidapps - Reddit</a></li>
 
 </ul>
 </details>
 
-**社区讨论**: 社区评论普遍积极，但也指出了局限性。用户 cogman10 指出 Opus 在低码率下优于所有 AAC 编码器，凸显了格式差异。用户 ndiddy 期待实际测试，并提到旧编码器的啁啾伪影。用户 pseudosavant 批评仅支持 CBR 和 48kHz 优化，认为这是重大缺陷。
+**社区讨论**: 社区评论普遍批评 Google，一些用户认为该验证是针对 NewPipe 和广告拦截器之类的应用。其他人主张改用 SailfishOS 或 GrapheneOS 等替代移动操作系统，少数人则认为 F-Droid 的激烈言辞可能损害其在主流受众中的可信度。
 
-**标签**: `#FFmpeg`, `#AAC`, `#encoder`, `#audio`, `#codec`
+**标签**: `#Android`, `#F-Droid`, `#Google`, `#developer verification`, `#open-source`
 
 ---
 
 <a id="item-4"></a>
-## [内燃机互动深度解析](https://ciechanow.ski/internal-combustion-engine/) ⭐️ 8.0/10
+## [日本最高法院：AI 不能列为发明人](https://japannews.yomiuri.co.jp/science-nature/technology/20260306-314930/) ⭐️ 8.0/10
 
-一篇 2021 年发布的互动文章，通过动画图和详细描述，直观地解释内燃机的工作原理，包括曲轴、气门和润滑系统等部件。 这篇高质量的技术内容吸引了机械工程和汽车爱好者的广泛参与，加深了对发动机设计和演变的理解与讨论。 文章描绘了大约 1990 年代的双顶置凸轮轴发动机，但省略了现代排放控制硬件；它强调了关键见解，例如曲轴在薄油膜上浮动的流体动压润滑作用。
+日本最高法院裁定，人工智能系统不能列为专利申请的发明人，确认根据日本专利法，只有自然人才有资格作为发明人。 这一裁决在日本确立了明确的法律先例，与美国和欧盟的类似裁决保持一致，并明确 AI 生成的发明必须有自然人发明人才能获得专利保护，影响了企业如何为 AI 辅助创新申请专利。 该案件涉及一名申请人试图将 AI 系统列为专利申请的唯一发明人。法院维持了日本专利局的驳回决定，强调现行法律要求发明人必须是人类。
 
-hackernews · StefanBatory · 7月1日 13:04 · [社区讨论](https://news.ycombinator.com/item?id=48746076)
+hackernews · mushstory · 7月2日 13:43 · [社区讨论](https://news.ycombinator.com/item?id=48761536)
 
-**背景**: 内燃机在气缸内燃烧燃料产生运动，通常采用四冲程循环：进气、压缩、做功和排气。关键部件包括活塞、连杆、曲轴和气门机构。几十年来，发动机从化油器式演变为电子燃油喷射系统，并配备先进的排放控制。
+**背景**: 专利法传统上将发明人定义为构思发明的自然人。随着生成式 AI 的兴起，关于 AI 是否可以被视为发明人的问题出现了。日本的裁决效仿了美国和欧洲类似的判决，驳回了 AI 作为发明人的主张。
 
-**社区讨论**: 评论者指出，虽然基本发动机设计在 50 年内变化不大，但控制系统已显著进化。一些人对推杆 V8 的机械优雅表示怀旧，而另一些人则指出文章缺少排放硬件，突显了简洁性与效率之间的权衡。
+**社区讨论**: 评论者普遍支持这一裁决，指出 AI 缺乏责任感，并将其与计算器相提并论。一些人引用了质疑专利作为创新激励有效性的经济研究，而其他人则询问是否可以用自然人发明人重新提交申请。
 
-**标签**: `#internal combustion engine`, `#mechanical engineering`, `#automotive`, `#interactive article`
+**标签**: `#AI`, `#patent law`, `#intellectual property`, `#Japan`, `#legal precedent`
 
 ---
 
 <a id="item-5"></a>
-## [Cloudflare 推出基于 HTTP 402 的变现网关](https://blog.cloudflare.com/monetization-gateway/) ⭐️ 8.0/10
+## [鸡蛋价格操纵者获利是罚款的千倍](https://www.thebignewsletter.com/p/crime-pays-the-egg-bandits-made-a) ⭐️ 8.0/10
 
-Cloudflare 宣布推出“变现网关”，利用 HTTP 402 状态码对其网络后的任何资源收费，并集成 x402 协议以实现微交易。 这为网络资源引入了原生的变现层，可能改变内容和 API 的访问方式，尤其对 AI 代理和机器人意义重大，但也引发了关于滥用和垃圾信息的担忧。 该网关利用由 Coinbase 开发平台团队开发的 x402 协议，允许运营者按资源设置支付要求，并通过加密货币结算。
+一篇文章揭露鸡蛋价格操纵罚款相比非法利润微不足道，引发 Hacker News 上关于企业犯罪和市场集中的广泛讨论。
 
-hackernews · soheilpro · 7月1日 13:59 · [社区讨论](https://news.ycombinator.com/item?id=48746914)
+hackernews · toomuchtodo · 7月2日 13:25 · [社区讨论](https://news.ycombinator.com/item?id=48761229)
 
-**背景**: HTTP 402“需要付款”是由 IETF 定义的标准状态码，但仅供将来使用，从未被广泛采用。x402 协议在此基础上构建了针对网络资源的支付框架，无需传统支付通道即可实现按次访问付费模式。
-
-<details><summary>参考链接</summary>
-<ul>
-<li><a href="https://www.x402.org/">x402 - Payment Required | Internet-Native Payments Standard</a></li>
-<li><a href="https://solana.com/x402/what-is-x402">What is x402? | Payment Protocol for AI Agents on Solana</a></li>
-<li><a href="https://developer.mozilla.org/en-US/docs/Web/HTTP/Reference/Status/402">402 Payment Required - HTTP | MDN - MDN Web Docs</a></li>
-
-</ul>
-</details>
-
-**社区讨论**: 评论者反应不一：有人认为微交易和代理间支付潜力巨大，另一些人则担心垃圾信息、机器人欺诈以及每请求开票和征税的法律复杂性。
-
-**标签**: `#cloudflare`, `#monetization`, `#http402`, `#webmonetization`, `#microtransactions`
+**标签**: `#price fixing`, `#corporate crime`, `#antitrust`, `#economics`, `#regulation`
 
 ---
 
 <a id="item-6"></a>
-## [MOTHRAG：无图多跳检索性能超越基于图的系统](https://www.reddit.com/r/MachineLearning/comments/1ukotww/p_mothretrieval_graphfree_multihop_retrieval_via/) ⭐️ 8.0/10
+## [定理经济的衰落](https://davidbessis.substack.com/p/the-fall-of-the-theorem-economy) ⭐️ 8.0/10
 
-研究人员开源了 MOTHRAG，一种多跳 RAG 框架，它用无图密集索引和查询时编排取代了离线知识图谱，在 HotpotQA（78.1% 对比 68.6%）和 2WikiMultiHopQA（76.3% 对比 58.6%）上相比 GraphRAG 获得了更高准确率，且每次查询仅需约 0.03 美元，无需 GPU。 该方法消除了基于图的多跳 RAG 系统在数据变化时所需的高昂重新索引成本，使其适用于语料频繁更新的生产环境。它表明精心设计的查询时编排可以在不增加维护开销的情况下匹配或超越基于图的准确率。 MOTHRAG 使用密集向量索引，并通过商业 API 在查询时编排多跳检索，避免了对 GPU 的依赖。它在 MuSiQue 基准测试中落后（50.5% 对比 52.6%），召回瓶颈尚未解决，并以 Apache-2.0 许可证开源。
+文章认为，证明助手和形式化正在使传统的定理证明变得不那么核心，数学正转向直觉和可视化，类似于测试在软件开发中的作用。 这种转变可能改变数学的教学和实践方式，强调探索和经验信心而非确定性证明，并引发关于数学知识信任与验证的新问题。 作者将形式化数学与软件测试直接类比，认为随着证明助手自动化更多细节，数学变得更像一门经验科学。讨论中还引用了格雷格·伊根的科幻小说《Diaspora》，并对 AI 资源受限表示担忧。
 
-reddit · r/MachineLearning · /u/Annual-Commercial563 · 7月1日 15:26
+hackernews · varjag · 7月2日 08:01 · [社区讨论](https://news.ycombinator.com/item?id=48758048)
 
-**背景**: 多跳检索增强生成（RAG）需要跨多个文档推理以回答复杂查询。传统的 GraphRAG 和 HippoRAG 等方法会构建离线知识图谱来捕捉关系，但底层数据变化时重建这些图谱的成本很高——需要重新运行大型语言模型进行索引。而 MOTHRAG 使用密集向量索引，可以通过新增嵌入来增量更新，同时结合查询时编排策略，动态规划检索步骤。
+**背景**: 证明助手（如 Coq 和 Isabelle）是交互式软件工具，通过协作逐步逻辑推理帮助人类构建形式化证明。形式化验证使用这些工具确保数学定理或软件的正确性，但传统上需要大量人力。文章挑战了定理证明在数学中的历史核心地位，认为这可能是历史的偶然。
 
 <details><summary>参考链接</summary>
 <ul>
-<li><a href="https://en.wikipedia.org/wiki/Graph_database">Graph database - Wikipedia</a></li>
-<li><a href="https://kestra.io/resources/ai/rag-pipeline">RAG Pipeline Orchestration: Production Guide | Kestra | Kestra</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Proof_assistant">Proof assistant</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Formal_verification">Formal verification - Wikipedia</a></li>
 
 </ul>
 </details>
 
-**标签**: `#RAG`, `#Multi-hop retrieval`, `#Knowledge graphs`, `#Retrieval-augmented generation`, `#Open-source`
+**社区讨论**: 评论者基本赞同文章论点，有人引用格雷格·伊根的“真相挖掘”概念，另有人将其演变比作软件测试。还有人担忧 AI 资源受限可能限制未来的开放科学。
+
+**标签**: `#mathematics`, `#proof assistants`, `#formalization`, `#software testing`, `#AI`
 
 ---
 
 <a id="item-7"></a>
-## [自主模型工程师在标签稀缺下改进安全分类器](https://www.reddit.com/r/MachineLearning/comments/1ul3ohk/making_optimization_work_when_labels_are_scarce_r/) ⭐️ 8.0/10
+## [ECTC 2026 先进封装技术综述](https://newsletter.semianalysis.com/p/ectc2026) ⭐️ 8.0/10
 
-Gnosys，一种自主模型工程师，在标签稀缺条件下提升了 ToxicChat 基准上的安全分类器性能，在两个独立运行中均优于初始分类器和 GEPA 提示优化器。 该方法解决了在内容审核等高风险任务中部署 AI 时标签稀缺的关键瓶颈，可能实现更稳健、更可信的分类器。 Gnosys 将少量已验证标签与大量未标注池融合，生成校准的质量估计，避免过拟合噪声。在主要运行中，其在 5%假阳性率下捕获了 0.777 的有害内容，而初始分类器为 0.731，GEPA 为 0.702。
+在 ECTC 2026 上，英特尔、台积电、SK 海力士等公司展示了 EMIB-T、定制 HBM、HBM4 封装挑战、微流控冷却和光子互连的最新进展。 这些进展对 AI 硬件扩展至关重要，因为它们解决了高性能计算中的功率传输、热管理和带宽瓶颈问题。 英特尔的 EMIB-T 增加了硅通孔以实现垂直功率传输，支持低于 45 微米的间距，为 HBM4 铺平了道路。微软展示了利用 AI 引导冷却液流动的微流控冷却技术。
 
-reddit · r/MachineLearning · /u/Kody--- · 7月2日 00:59
+rss · Semianalysis · 7月2日 17:25
 
-**背景**: 在许多现实世界的 AI 系统中，获取真实标签既昂贵又缓慢，尤其是对于有害内容等罕见事件。标准优化方法如 GEPA（遗传-帕累托）基于给定的评估信号优化提示，但标签极少时可能过拟合噪声。Gnosys 作为自主模型工程师：评估可用信号的可信度，从稀疏标签中设计更好的目标，然后针对该目标优化提示，实现整个工程循环的自动化。
+**背景**: 先进封装技术如 EMIB（嵌入式多芯片互连桥）通过微小的硅桥连接多个芯片，实现异构集成。微流控冷却通过芯片内的微通道循环冷却液，比传统方法更高效地散热。光子互连使用光代替电信号，实现更高带宽和更低功耗。
 
 <details><summary>参考链接</summary>
 <ul>
-<li><a href="https://arxiv.org/abs/2507.19457">[2507.19457] GEPA: Reflective Prompt Evolution Can Outperform Reinforcement Learning</a></li>
+<li><a href="https://www.intel.com/content/dam/www/central-libraries/us/en/documents/2025-07/emib-product-brief.pdf">Intel Foundry EMIB Technology Brief</a></li>
+<li><a href="https://www.tomshardware.com/pc-components/cpus/intel-details-new-advanced-packaging-breakthroughs-emib-t-paves-the-way-for-hbm4-and-increased-ucie-bandwidth">Intel details new advanced packaging breakthroughs — EMIB-T ...</a></li>
+<li><a href="https://news.microsoft.com/source/features/innovation/microfluidics-liquid-cooling-ai-chips/">AI chips are getting hotter. A microfluidics breakthrough ...</a></li>
 
 </ul>
 </details>
 
-**标签**: `#machine learning`, `#optimization`, `#label scarcity`, `#safety classifier`, `#autonomous model engineering`
+**标签**: `#semiconductor packaging`, `#HBM4`, `#photonic interconnects`, `#advanced cooling`, `#ECTC`
 
 ---
 
 <a id="item-8"></a>
-## [英伟达将 DeepSeek V4 Token 成本降至五分之一](https://blogs.nvidia.com/blog/inference-software-lowest-token-cost/) ⭐️ 8.0/10
+## [国内中性原子量子初创公司纳开量子获数千万元融资](https://36kr.com/p/3877814169530630?f=rss) ⭐️ 8.0/10
 
-英伟达在 Blackwell 平台上的推理优化将 DeepSeek V4 的吞吐量提升了 5 倍，使得单 Token 成本在一个月内降至原先的五分之一。 这种大幅度的成本降低使 DeepSeek V4 的大规模部署更具经济可行性，可能加速其在生产级 AI 应用中的采用，并降低开发者的门槛。 在 GB300 离散式部署下，SGLang 引擎的吞吐量从 2025 年 4 月的约 2,200 Tokens/秒/GPU 提升至 6 月的约 11,200 Tokens/秒/GPU。进一步的分解式服务、多 Token 预测等高级优化有望将系统级吞吐量提升至 20 倍。
+纳开启元（纳开量子）完成了首轮数千万元融资，由高瓴创投领投，英诺、长石、飞图跟投。资金将用于新一代中性原子量子计算机的研发和超冷原子量子模拟计算机的商业化。 这笔融资表明投资者对中性原子量子计算（一种有前景的可扩展量子硬件路线）的信心增强，并凸显了中国在该领域的进展。纳开量子声称是国内唯一能将超冷原子工程化冷却至 10 纳开以下的团队，这是量子性能的关键优势。 纳开量子成立于 2026 年 4 月，核心团队来自北京大学 CAP 组。公司采用双轮驱动商业模式：通过交付专用量子模拟机获取营收，同时推进通用量子计算机的研发。公司已获得千万级订单，预计 2026 年营收达数千万元。
 
-telegram · zaihuapd · 7月1日 10:36
+rss · 36氪 · 7月2日 01:16
 
-**背景**: DeepSeek V4 是一个需要大量计算资源进行推理的大型语言模型。英伟达 Blackwell 平台（包括 GB300 GPU）专为生成式 AI 工作负载设计。SGLang 是一个针对 LLM 服务优化的开源推理引擎。这些优化利用了内核融合、显存压缩和改进的量化等技术。
+**背景**: 中性原子量子计算利用激光操控单个中性原子（如铷、铯）形成量子比特。将原子冷却至纳开尔文温度（比绝对零度高十亿分之一度）可以最小化热运动，增强量子相干性和保真度。超冷原子量子模拟机是专用设备，用于模拟量子系统，在材料科学和药物发现等领域有近期的应用。
 
 <details><summary>参考链接</summary>
 <ul>
-<li><a href="https://en.wikipedia.org/wiki/Blackwell_(microarchitecture)">Blackwell (microarchitecture) - Wikipedia</a></li>
-<li><a href="https://en.wikipedia.org/wiki/SGLang">SGLang - Wikipedia</a></li>
-<li><a href="https://www.nvidia.com/en-us/data-center/gb300-nvl72/">Designed for AI Reasoning Performance & Efficiency | NVIDIA GB300 NVL72</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Neutral_atom_quantum_computer">Neutral atom quantum computer - Wikipedia</a></li>
+<li><a href="https://spectrum.ieee.org/neutral-atom-quantum-computing">Neutral Atom Quantum Computing: 2026's Big Leap - IEEE Spectrum</a></li>
+<li><a href="https://www.nature.com/articles/s41586-025-09848-5">A fault-tolerant neutral-atom architecture for universal ...</a></li>
 
 </ul>
 </details>
 
-**标签**: `#NVIDIA`, `#DeepSeek V4`, `#inference optimization`, `#large language models`, `#GPU`
+**标签**: `#quantum computing`, `#neutral atom`, `#startup`, `#funding`, `#China`
 
 ---
 
 <a id="item-9"></a>
-## [Visa、Mastercard 等超 140 家企业推出 Open Standard 稳定币网络](https://www.reuters.com/business/consortium-including-visa-mastercard-jointly-launch-new-global-stablecoin-2026-06-30/) ⭐️ 8.0/10
+## [从微分几何看哈密顿神经网络](https://www.reddit.com/r/MachineLearning/comments/1ukzdnj/hamiltonian_neural_networks_from_a_differential/) ⭐️ 8.0/10
 
-2026 年 6 月 30 日，包括 Visa、Mastercard 和 Coinbase 在内的 140 多家企业联合宣布推出 Open Standard 稳定币网络，并计划今年晚些时候发行 Open USD（OUSD）。 该举措旨在解决企业大规模采用稳定币的障碍，提供免费、高吞吐量的全球支付基础设施，可能加速稳定币在主流支付中的应用，而不仅仅局限于加密货币交易。 Open USD 允许免费、无限制地铸造和赎回，储备收益在扣除管理费后由合作伙伴共享。该网络由集体治理，定位为中立基础设施。
+一篇博客文章从微分几何角度解释哈密顿神经网络（HNN），并将其与诺特定理和守恒定律联系起来。 这一视角帮助机器学习从业者理解 HNN 为何泛化良好，因为诺特定理将对称性与守恒量联系起来，为构建物理信息模型提供了原则性方法。 文章包含交互式可视化，数学内容较多但易于理解，强调诺特定理在物理信息 ML 中未得到足够重视。它通过几何视角补充了原始 HNN 论文（Greydanus 等人，2019）。
 
-telegram · zaihuapd · 7月1日 11:06
+reddit · r/MachineLearning · /u/FlameOfIgnis · 7月1日 21:55
 
-**背景**: 稳定币是一种与美元等稳定资产挂钩的数字代币，但目前主要用于加密货币交易。美国于 2025 年签署的 GENIUS 法案为稳定币建立了首个联邦监管框架，促进了此类企业级计划。
+**背景**: 哈密顿神经网络是一种通过学习遵守哈密顿力学（能量守恒）来建模物理系统的神经网络。诺特定理指出物理系统的每个对称性对应一个守恒律。微分几何提供了以无坐标方式描述这些对称性和守恒律的数学语言。
 
 <details><summary>参考链接</summary>
 <ul>
-<li><a href="https://www.forbes.com/sites/christiancatalini/2026/06/30/why-an-open-standard-will-win-the-stablecoin-race/">Why An Open Standard Will Win The Stablecoin Race</a></li>
-<li><a href="https://www.theblock.co/post/406736/visa-stripe-coinbase-join-open-usd-stablecoin-shares-reserve-revenue">Visa, Stripe, Coinbase and more join Open USD stablecoin that shares reserve revenue | The Block</a></li>
-<li><a href="https://www.thestreet.com/crypto/markets/aptos-visa-and-blackrock-among-140-firms-launching-new-stablecoin">Aptos, Visa and BlackRock among 140 firms launching new stablecoin - TheStreet Crypto: Bitcoin and cryptocurrency news, advice, analysis and more</a></li>
+<li><a href="https://arxiv.org/abs/1906.01563">[1906.01563] Hamiltonian Neural Networks - arXiv.org</a></li>
+<li><a href="https://papers.nips.cc/paper/2019/hash/26cd8ecadce0d4efd6cc8a8725cbd1f8-Abstract.html">Hamiltonian Neural Networks - NIPS</a></li>
 
 </ul>
 </details>
 
-**标签**: `#stablecoin`, `#blockchain`, `#payments`, `#fintech`, `#regulation`
+**标签**: `#Hamiltonian Neural Networks`, `#Differential Geometry`, `#Physics-Informed Machine Learning`, `#Noether's Theorem`, `#Neural ODEs`
 
 ---
 
 <a id="item-10"></a>
-## [国巨 7 月 1 日起电容价格全面上涨约五成，近年最大范围涨价](https://www.trendforce.com/news/2026/07/01/news-passive-component-prices-rise-as-yageo-reportedly-begins-broadest-capacitor-hike-in-years-on-july-1/) ⭐️ 8.0/10
+## [Apple 协助 FBI 揭露 iCloud 匿名邮箱发件人](https://t.me/zaihuapd/42302) ⭐️ 8.0/10
 
-全球领先的被动元件制造商国巨宣布，自 7 月 1 日起全线电容产品涨价约 50%，涵盖 MLCC、铝电解电容和钽电容，为近年来最大范围的价格上调。 此次涨价反映了地缘政治导致的原材料和能源成本上升，以及 AI 服务器和电动车需求激增，使被动元件在服务器 BOM 成本中的占比提高。此举将显著提振国巨的营收和利润，同时给本就面临供应链紧张的电子制造商带来更大压力。 官方报价涨幅约五成，但现货市场价格涨势更猛，高端电容现货价近一个月内甚至上涨近十倍。这是国巨首度对占比过半的直接客户涨价，涨价范围涵盖全系列电容产品，该业务约占公司营收的一半。
+在一次威胁调查中，Apple 向 FBI 提供了使用“隐藏邮箱地址”功能创建的匿名邮箱所对应的真实 iCloud 账户信息，表明该服务并非完全匿名。 此事件表明，Apple 的隐私保护功能在执法调查中可能被绕过，引发了对 Apple 生态系统中匿名性限制的重大担忧。 嫌疑人据称生成了 134 个匿名邮箱地址，并向 FBI 局长 Kash Patel 的女友发送了威胁信息。宣誓书称该用户已承认罪行。
 
-telegram · zaihuapd · 7月1日 14:34
+telegram · zaihuapd · 7月2日 01:03
 
-**背景**: MLCC（多层陶瓷电容）是几乎所有电子设备中用于调节电压和过滤噪声的必备被动元件。钽电容具有高体积电容比，常用于医疗和航空航天等对可靠性要求苛刻的领域。国巨是全球领先的被动元件制造商，总部位于台湾，与日韩供应商竞争。被动元件行业一直面临能源和原材料价格上涨的成本压力，同时 AI 服务器和电动汽车的需求加速增长。
+**背景**: Apple 的“隐藏邮箱地址”功能会生成唯一的随机邮箱地址，将邮件转发至用户的真实 iCloud 收件箱。虽然该功能旨在通过隐藏用户真实邮箱地址来保护隐私，但 Apple 保留了别名与真实账户之间的映射，并可在法律程序中提供给执法机构。
 
 <details><summary>参考链接</summary>
 <ul>
-<li><a href="https://en.wikipedia.org/wiki/Tantalum_capacitor">Tantalum capacitor</a></li>
-<li><a href="https://grokipedia.com/page/Passive_components_industry_in_Taiwan">Passive components industry in Taiwan</a></li>
+<li><a href="https://support.apple.com/en-us/105078">How to use Hide My Email with Sign in with Apple - Apple Support</a></li>
+<li><a href="https://www.simplymac.com/ios/apples-hide-my-email-feature">Apple 's Hide My Email Feature - SimplyMac</a></li>
 
 </ul>
 </details>
 
-**标签**: `#capacitor`, `#price hike`, `#MLCC`, `#AI servers`, `#supply chain`
+**标签**: `#Apple`, `#privacy`, `#iCloud`, `#law enforcement`, `#security`
 
 ---
 
 <a id="item-11"></a>
-## [PlayStation 宣布 2028 年 1 月起停发实体游戏光盘](https://blog.playstation.com/2026/07/01/physical-disc-production-ending-in-january-2028-for-new-games-releasing-on-playstation-consoles/) ⭐️ 8.0/10
+## [Meta 拟出售富余 AI 算力，进军云计算市场](https://www.bloomberg.com/news/articles/2026-07-02/south-korean-stocks-tumble-6-as-ai-jitters-hurt-chipmakers) ⭐️ 8.0/10
 
-索尼互动娱乐宣布，自 2028 年 1 月起，所有在 PlayStation 主机上发售的新游戏将仅通过数字下载形式发行，停止生产实体光盘。 这标志着游戏行业的重大转变，可能加速全面数字发行的进程，影响消费者所有权、零售业以及二手市场。 仅影响 2028 年 1 月之后发售的新游戏；现有实体游戏及在此日期前发售的游戏不受影响。该公告由内容传播高级总监 Sid Shuman 发布。
+Meta 正筹划向外部客户出售富余的 AI 算力和模型服务，标志着其进入云计算市场。此消息叠加苹果洽谈向中国存储芯片厂采购芯片，导致 2026 年 7 月 2 日韩国芯片股大幅抛售。 这一动态引发市场担忧，包括 Meta 在内的大型科技公司可能放缓 AI 投入，从而导致 AI 基础设施供应过剩。由此引发的韩国市场震荡凸显了全球半导体行业对 AI 支出变化的敏感性。 韩国 Kospi 指数盘中最多跌 7%，三星电子和 SK 海力士一度跌至少 8%，韩国交易所暂停了 Kospi 期货的程序化卖出。Meta 此举涉及提供算力和模型服务，直接与现有云服务商竞争。
 
-telegram · zaihuapd · 7月1日 15:04
+telegram · zaihuapd · 7月2日 02:29
 
-**背景**: 实体游戏光盘一直是主机游戏的传统媒介，允许消费者拥有、转售和交易游戏。行业逐渐向数字下载转移，PlayStation Store 等服务提供了便利和即时访问。索尼的决定反映了消费者对数字媒体的偏好日益增长，并顺应了娱乐领域的更广泛趋势。
+**背景**: Meta 为支持其大语言模型和推荐系统，大力投资 AI 基础设施，积累了大量算力。通过出售富余算力，Meta 旨在将投资变现，同时可能颠覆云计算市场。半导体行业与 AI 需求紧密相关，因为芯片是训练和推理的关键。
 
-**标签**: `#PlayStation`, `#数字发行`, `#游戏行业`, `#实体光盘`
+**标签**: `#Meta`, `#cloud computing`, `#AI`, `#semiconductor`, `#market`
 
 ---
 
 <a id="item-12"></a>
-## [Cloudflare 9 月 15 日起默认拦截混合 AI 爬虫](https://techcrunch.com/2026/07/01/cloudflares-new-policy-pushes-ai-companies-to-pay-for-publishers-content/) ⭐️ 8.0/10
+## [Cloudflare 将从 2026 年 9 月起默认拦截混合用途 AI 爬虫](https://techcrunch.com/2026/07/01/cloudflares-new-policy-pushes-ai-companies-to-pay-for-publishers-content/) ⭐️ 8.0/10
 
-Cloudflare 宣布从 9 月 15 日起，默认阻止同时用于搜索索引和 AI 训练或问答的“混合用途”爬虫。该公司点名批评谷歌，认为其利用搜索爬虫权限来训练 AI 模型，而未获得发布者的明确同意。 这一政策转变直接影响 AI 数据收集实践，迫使谷歌等公司要么将搜索爬虫和 AI 爬虫分离，要么与发布者协商付款。它可能重塑内容创作者与 AI 公司之间的经济关系，转向按使用量付费的模式。 新规适用于展示广告的页面，Cloudflare 将从 9 月 15 日起阻止结合搜索和 AI 功能的爬虫。该公司指出，发布者目前难以做到允许搜索收录同时拒绝内容用于 AI，这凸显了谷歌利用的漏洞。
+Cloudflare 宣布，自 2026 年 9 月 15 日起，将默认阻止在广告支持页面上采集内容的混合用途 AI 爬虫，这类爬虫同时用于搜索索引、AI 训练和智能代理任务，且不提供单独控制选项。该公司还点名批评 Google，指出其利用漏洞——网站阻止 AI 爬虫但允许搜索爬虫——将搜索爬虫收集的数据用于 AI 训练。 这项政策迫使 AI 公司（尤其是 Google）要么与出版商协商内容使用条款，要么面临爬虫被拦截，从而可能重塑用于 AI 训练的网络内容经济格局。它回应了出版商长期以来的不满，即他们的内容被无偿使用。 该政策默认适用于新 Cloudflare 客户和免费套餐用户，现有客户将获得宽限期。Cloudflare 还推出了 AI 内容货币化的'按使用付费'（Pay Per Use）模式，最初合作伙伴包括 Ceramic.ai 和 You.com。
 
 telegram · zaihuapd · 7月2日 05:37
 
-**背景**: 网络爬虫是自动浏览网站的程序，用于搜索引擎索引或收集 AI 训练数据。传统上，网站使用 robots.txt 文件来控制爬虫访问，但一些爬虫（如谷歌的）具有搜索和 AI 双重目的，导致难以通过现有规则仅阻止 AI 训练。作为主要的内容分发网络，Cloudflare 能够在网络层面强制执行此类策略。
+**背景**: 许多网站使用 robots.txt 阻止 OpenAI 等公司的 AI 爬虫，但为了保持搜索可见性，通常允许 Googlebot 等搜索引擎爬虫。根据法院文件披露，Google 被指控即使用户明确禁止 AI 训练，仍利用搜索爬虫数据训练 AI 模型。这意味着，只要网站允许搜索索引，单纯阻止 AI 爬虫并不能防止 Google 将内容用于 AI，从而形成了漏洞。
 
 <details><summary>参考链接</summary>
 <ul>
-<li><a href="https://www.yingzheng.com/article/cloudflare-ai-crawler-separation-policy">Cloudflare新规： AI 训练 爬 虫 须 与 搜 索 爬 虫 分离，否则封禁 | 赢政天下 AI</a></li>
+<li><a href="https://best-ai.org/ai-news/cloudflare-to-block-ai-crawlers-and-introduce-pay-per-use-content-model-by-september-2026-5jl9lv">Cloudflare to Block AI Crawlers and Introduce "Pay Per Use ...</a></li>
+<li><a href="https://www.newsbytesapp.com/news/science/google-reveals-ai-training-loophole-in-court-testimony/story">Google can train AI using web content despite publisher opt-out</a></li>
 
 </ul>
 </details>
 
-**标签**: `#Cloudflare`, `#AI crawlers`, `#web scraping`, `#Google`, `#content policy`
+**标签**: `#Cloudflare`, `#AI crawlers`, `#web scraping`, `#Google`, `#policy`
 
 ---
 
 <a id="item-13"></a>
-## [OpenAI 提议美国政府持股 5%](https://www.bloomberg.com/news/articles/2026-07-02/openai-proposes-giving-the-us-government-a-5-stake-ft-says) ⭐️ 8.0/10
+## [OpenAI 提议美国政府持股 AI 巨头 5%](https://www.bloomberg.com/news/articles/2026-07-02/openai-proposes-giving-the-us-government-a-5-stake-ft-says) ⭐️ 8.0/10
 
-OpenAI 提议让美国政府持有该公司 5%的股份，并有可能将其扩展到 Google 和 Meta 等主要 AI 公司，旨在让公众分享 AI 热潮带来的收益。 该提议可能通过让公共部门直接参与所有权和利润分配，从而重塑 AI 行业的治理结构，但也引发了关于监管冲突和企业控制权的担忧。 该提议由 CEO Sam Altman 及其他高管讨论提出，建议由一个政府载体统一持有包括 Anthropic、Google 和 Meta 在内的多家 AI 公司的股份。该计划仍处于设想阶段，其他公司是否接受尚不明确。
+据彭博社报道，OpenAI 提议美国政府持有其自身以及谷歌、Meta 等其他主要 AI 公司各 5%的股份。 该提议可能通过让公众直接受益于 AI 发展来重塑 AI 治理，但也引发了关于政府控制和利益冲突的担忧。 该提议涉及一个统一的政府载体持有股份，目前尚不清楚谷歌和 Meta 等其他公司是否会接受这一安排。
 
 telegram · zaihuapd · 7月2日 06:02
 
-**背景**: OpenAI 最初是一家非营利组织，后来转为 capped-profit 模式。这一提议反映了关于如何在确保公众从先进 AI 中受益的同时，平衡私人创新与控制的持续辩论。政府所有权可能提供一种分享经济利益的机制，但也引入了潜在的利益冲突。
+**背景**: OpenAI 是开发 ChatGPT 的领先 AI 研究机构。该提议出现在全球关于 AI 监管以及如何确保 AI 收益广泛共享的辩论中。美国政府持有私营科技公司股份在美国极为罕见。
 
-**标签**: `#OpenAI`, `#AI regulation`, `#government stake`, `#technology policy`
+**标签**: `#OpenAI`, `#AI regulation`, `#government investment`, `#tech policy`, `#artificial intelligence`
+
+---
+
+<a id="item-14"></a>
+## [企业因 AI 成本飙升限制使用，花旗禁用 GPT-5.5](https://www.404media.co/companies-are-throttling-employees-ai-use-because-its-too-expensive/) ⭐️ 8.0/10
+
+花旗银行自 2026 年 6 月 24 日起禁用 GPT-5.5 和 Claude Opus 4.6/4.7，Atlassian 的 AI 月支出从 500 万美元激增至 1500 万美元，促使公司实施成本控制。 这一趋势表明企业 AI 采用面临成本危机，可能减缓前沿模型的部署，迫使公司重新评估其 AI 策略。 Atlassian 的内部仪表板显示，AI 成本从 2025 年 8 月的 500 万美元上升到 2026 年 5 月的超过 1500 万美元；Adobe 于 6 月 30 日终止了无限使用 Claude 的合同；亚马逊在移除 AI 排行榜后发现了未知的 token 使用上限。
+
+telegram · zaihuapd · 7月2日 13:59
+
+**背景**: 许多企业 AI 工具采用基于积分的计费模式，不同模型消耗不同数量的积分。像 GPT-5.5 和 Claude Opus 这样的前沿模型每次查询成本更高，当使用量扩大时会导致意外高昂的费用。公司现在正在实施仪表板和上限来管理支出。
+
+<details><summary>参考链接</summary>
+<ul>
+<li><a href="https://en.wikipedia.org/wiki/GPT-5.5">GPT-5.5</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Claude_Opus">Claude Opus</a></li>
+<li><a href="https://www.agensi.io/learn/github-copilot-ai-credits-billing-explained">GitHub Copilot AI Credits Billing: How It Works in 2026</a></li>
+
+</ul>
+</details>
+
+**标签**: `#AI costs`, `#enterprise AI`, `#LLM deployment`, `#cost management`, `#AI adoption challenges`
+
+---
+
+<a id="item-15"></a>
+## [PS3 商店 2027 年关闭引发紧急存档行动](http://no-intro.org/) ⭐️ 8.0/10
+
+索尼宣布将于 2027 年 7 月永久关闭 PS3 和 PS Vita 的 PlayStation 商店，数字档案管理员和 RPCS3 模拟器团队正紧急备份游戏数据，以防其永久丢失。 这一事件凸显了纯数字游戏库的脆弱性，许多从未推出实体版的游戏可能永久丢失，影响玩家、历史学家以及游戏文化的保存。 RPCS3 团队推荐使用 no-intro.org 数据库，该平台记录加密签名、文件大小和序列号等元数据，帮助跟踪哪些游戏已被保存、哪些仍需抢救。
+
+telegram · zaihuapd · 7月2日 15:04
+
+**背景**: PS3 和 PS Vita 商店是玩家购买和下载游戏的数字市场。索尼决定关闭它们后，从未推出实体版的纯数字游戏将无法再获取。RPCS3 等模拟器允许游戏在 PC 上运行，但需要合法的游戏文件。保存工作依赖社区协作和 no-intro.org 等数据库来验证文件的完整性和正确性。
+
+<details><summary>参考链接</summary>
+<ul>
+<li><a href="https://www.tomshardware.com/video-games/playstation/digital-archivists-rush-to-save-ps3-game-data-before-sony-shuts-down-the-store-forever-in-2027-rpcs3-emulator-urges-users-to-preserve-all-content">Digital archivists rush to save PS3 game data before... | Tom's Hardware</a></li>
+<li><a href="https://no-intro.org/">No - Intro . org</a></li>
+
+</ul>
+</details>
+
+**标签**: `#digital preservation`, `#gaming`, `#PS3`, `#emulation`, `#Sony`
 
 ---
