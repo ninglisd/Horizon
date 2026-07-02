@@ -5,305 +5,296 @@ date: 2026-07-02
 lang: zh
 ---
 
-> 从 76 条内容中筛选出 15 条重要资讯。
+> 从 76 条内容中筛选出 13 条重要资讯。
 
 ---
 
-1. [快手可灵 AI 获近 30 亿美元融资，创行业纪录](#item-1) ⭐️ 9.0/10
-2. [美团 7 月起全国骑手职伤险全覆盖：每单必保、每人必保](#item-2) ⭐️ 9.0/10
-3. [F-Droid 抨击 Android 开发者验证是恶意软件](#item-3) ⭐️ 8.0/10
-4. [日本最高法院：AI 不能列为发明人](#item-4) ⭐️ 8.0/10
-5. [鸡蛋价格操纵者获利是罚款的千倍](#item-5) ⭐️ 8.0/10
+1. [Linux 6.9 漏洞导致挂起时未清除 LUKS 加密密钥](#item-1) ⭐️ 8.0/10
+2. [F-Droid：安卓开发者验证实为伪装成保护的威胁](#item-2) ⭐️ 8.0/10
+3. [日本最高法院：AI 不能列为专利发明人](#item-3) ⭐️ 8.0/10
+4. [鸡蛋价格操纵者获利远超罚款](#item-4) ⭐️ 8.0/10
+5. [代码审查的首要目标是可维护性](#item-5) ⭐️ 8.0/10
 6. [定理经济的衰落](#item-6) ⭐️ 8.0/10
-7. [ECTC 2026 先进封装技术综述](#item-7) ⭐️ 8.0/10
-8. [国内中性原子量子初创公司纳开量子获数千万元融资](#item-8) ⭐️ 8.0/10
-9. [从微分几何看哈密顿神经网络](#item-9) ⭐️ 8.0/10
-10. [Apple 协助 FBI 揭露 iCloud 匿名邮箱发件人](#item-10) ⭐️ 8.0/10
-11. [Meta 拟出售富余 AI 算力，进军云计算市场](#item-11) ⭐️ 8.0/10
-12. [Cloudflare 将从 2026 年 9 月起默认拦截混合用途 AI 爬虫](#item-12) ⭐️ 8.0/10
-13. [OpenAI 提议美国政府持股 AI 巨头 5%](#item-13) ⭐️ 8.0/10
-14. [企业因 AI 成本飙升限制使用，花旗禁用 GPT-5.5](#item-14) ⭐️ 8.0/10
-15. [PS3 商店 2027 年关闭引发紧急存档行动](#item-15) ⭐️ 8.0/10
+7. [理解才能参与：避免 AI 编码中的认知债务](#item-7) ⭐️ 8.0/10
+8. [ECTC 2026 综述：EMIB-T、HBM4、冷却、光子学](#item-8) ⭐️ 8.0/10
+9. [北大博士团队创立的中性原子量子公司获数千万融资](#item-9) ⭐️ 8.0/10
+10. [快手可灵 AI 获近 30 亿美元融资，创纪录](#item-10) ⭐️ 8.0/10
+11. [OpenAI 提议美国政府持股 5%，并考虑纳入其他 AI 巨头](#item-11) ⭐️ 8.0/10
+12. [银行和科技公司因成本飙升限制员工 AI 使用](#item-12) ⭐️ 8.0/10
+13. [Anthropic 与三星洽谈定制 AI 芯片](#item-13) ⭐️ 8.0/10
 
 ---
 
 <a id="item-1"></a>
-## [快手可灵 AI 获近 30 亿美元融资，创行业纪录](https://36kr.com/newsflashes/3878648324845831?f=rss) ⭐️ 9.0/10
+## [Linux 6.9 漏洞导致挂起时未清除 LUKS 加密密钥](https://mathstodon.xyz/@iblech/116769502749142438) ⭐️ 8.0/10
 
-2024 年 7 月 2 日，快手旗下视频生成大模型可灵 AI 完成近 30 亿美元融资，投后估值约 180 亿美元。 这笔创纪录的融资标志着市场对视频生成 AI 实力的高度认可，加速了商业化进程，并加剧了与 OpenAI Sora 等对手的竞争。 本轮融资由 CPE 源峰、国方创投、BlueFive、腾讯、中关村科学城基金和中信证券联合领投，阿里云、百度以及华策影视等文娱产业方参与。
+Linux 内核 6.9 版本中的一个回归错误导致 LUKS 挂起操作不再从内存中清除磁盘加密密钥，可能在挂起到 RAM 时暴露加密数据。该漏洞由重构时遗漏了一行 C 语言检查引入。 这是一个严重的安全回归，削弱了挂起期间磁盘加密的保护，尤其影响依赖 Debian 的 cryptsetup-suspend 插件的用户。它凸显了大型 C 代码库的脆弱性以及安全敏感内核代码需要严格测试。 该漏洞在重构期间引入，跨文件遗漏了一行 C 语言检查。Debian 的 cryptsetup-suspend 插件使用 luksSuspend 命令清除密钥，虽然该插件未获内核官方支持，但此回归仍影响受影响发行版的用户。
 
-rss · 36氪 · 7月2日 15:25
+hackernews · IngoBlechschmid · 7月2日 15:25 · [社区讨论](https://news.ycombinator.com/item?id=48763035)
 
-**背景**: 可灵 AI（又称 Kling）是快手推出的商用长视频生成模型，支持文字转视频和图片转视频，是 OpenAI Sora 的竞品，可生成 4K 高分辨视频。
+**背景**: LUKS（Linux 统一密钥设置）是一种磁盘加密规范。当系统挂起到 RAM 时，加密主密钥保留在内存中以便恢复。luksSuspend 命令旨在从内存中清除主密钥，并在唤醒时要求重新输入密码，以防范冷启动攻击。如果不进行清除，密钥仍易受内存提取攻击。
 
 <details><summary>参考链接</summary>
 <ul>
-<li><a href="https://clawbot.ai/wiki/ai-processing/kling-ai-video-generation.html">Kling (Keling AI/Kuaiying) - AI Video Generation - Wiki | clawbot</a></li>
-<li><a href="https://kling.ai/">Kling AI: Next-Generation AI Creative Studio</a></li>
+<li><a href="https://news.ycombinator.com/item?id=48763035">Since Linux 6.9, LUKS suspend stopped wiping disk-encryption ...</a></li>
+<li><a href="https://manpages.debian.org/unstable/cryptsetup-suspend/cryptsetup-suspend.7.en.html">cryptsetup- suspend (7) — cryptsetup- suspend ... — Debian Manpages</a></li>
+<li><a href="https://github.com/Gunpyr/ubuntu-luks-suspend">GitHub - Gunpyr/ubuntu- luks - suspend : Lock encrypted root volume on...</a></li>
 
 </ul>
 </details>
 
-**标签**: `#AI`, `#video generation`, `#funding`, `#Kuaishou`, `#commercialization`
+**社区讨论**: 社区评论观点不一。一些人认为这是一个严重的安全漏洞，凸显了在 C 代码库中保持不变性正确性的困难。另一些人则淡化其影响，因为 cryptsetup-suspend 未获官方支持，还有少数人指出对普通用户风险较低。有评论者指出该漏洞是通过 NixOS 测试发现的，并赞扬了这种测试方法。
+
+**标签**: `#linux`, `#security`, `#encryption`, `#LUKS`, `#kernel-bug`
 
 ---
 
 <a id="item-2"></a>
-## [美团 7 月起全国骑手职伤险全覆盖：每单必保、每人必保](https://news.cnjiwang.com/gn/202607/4060503.html) ⭐️ 9.0/10
+## [F-Droid：安卓开发者验证实为伪装成保护的威胁](https://f-droid.org/2026/07/01/adv-malware.html) ⭐️ 8.0/10
 
-美团将从 2026 年 7 月起为全国骑手全面覆盖职业伤害保险，已累计投入超过 300 亿元。
-
-telegram · zaihuapd · 7月2日 10:44
-
-**标签**: `#gig economy`, `#labor rights`, `#Meituan`, `#platform regulation`, `#China tech`
-
----
-
-<a id="item-3"></a>
-## [F-Droid 抨击 Android 开发者验证是恶意软件](https://f-droid.org/2026/07/01/adv-malware.html) ⭐️ 8.0/10
-
-2026 年 7 月 1 日，流行的开源 Android 应用商店 F-Droid 发表博文，指责 Google 的新 Android 开发者验证系统是特洛伊木马，损害用户自由并威胁开源应用。 这一批评凸显了 Google 的安全措施与开源社区之间日益紧张的关系，因为验证要求可能限制在认证 Android 设备上安装来自 F-Droid 等第三方商店的应用。 自 2026 年 9 月起，在部分区域，应用必须由经过验证的开发者注册才能在认证的 Android 设备上安装；但开发者仍可使用 ADB 侧载未经验证的应用。
+F-Droid 发布文章，指称谷歌新的安卓开发者验证系统是一种欺骗性威胁，会损害用户自由，并可能用于阻止来自 F-Droid 等替代商店的应用侧载。 这一批评凸显了人们对谷歌控制安卓的日益担忧，尤其是对隐私倡导者和开源爱好者而言，并引发了关于移动操作系统开放性和替代应用分发未来的辩论。 谷歌于 2025 年宣布的开发者验证系统要求所有在 Play Console 和 Android Developer Console 上的开发者进行身份验证，并于 2025 年 10 月启动早期访问计划，对具有敏感权限的应用进行更严格的审查。
 
 hackernews · drewfax · 7月2日 03:00 · [社区讨论](https://news.ycombinator.com/item?id=48755965)
 
-**背景**: Android 开发者验证是 Google 引入的一项新安全层，要求开发者在应用安装到认证 Android 设备前验证身份并注册包名。F-Droid 是一个自由开源（FOSS）应用仓库，注重用户自由和隐私，常被避开 Google 服务的用户使用。F-Droid 项目认为，此验证赋予 Google 对可安装应用的过度控制，本质上是将封锁伪装成保护，如同恶意软件厂商所为。
+**背景**: F-Droid 是一个面向安卓的自由开源应用商店，优先考虑用户自由和隐私。谷歌 Play 商店长期以来要求开发者注册账户，但新系统将验证扩展到官方商店之外分发的应用，可能会使侧载更加困难，并增强谷歌对安卓生态系统的控制。
 
 <details><summary>参考链接</summary>
 <ul>
-<li><a href="https://developer.android.com/developer-verification">Android developer verification | Android Developers</a></li>
-<li><a href="https://en.wikipedia.org/wiki/F-Droid">F-Droid - Wikipedia</a></li>
-<li><a href="https://www.howtogeek.com/790674/what-is-f-droid-and-how-is-it-different-from-the-play-store/">What Is F-Droid and How Is It Different From the Play Store? About | F-Droid - Free and Open Source Android App Repository What is F-Droid? Is it safe? - Comparitech What Is F-Droid? - Computer Hope F-Droid. What is it, why use it? : r/androidapps - Reddit</a></li>
+<li><a href="https://en.wikipedia.org/wiki/F-Droid">F-Droid</a></li>
+<li><a href="https://www.androidsage.com/2025/08/26/google-blocks-sideloading-of-android-apps/">It's Over: Google Blocks Sideloading of Android Apps</a></li>
+<li><a href="https://f-droid.org/">F-Droid - Free and Open Source Android App Repository</a></li>
 
 </ul>
 </details>
 
-**社区讨论**: 社区评论普遍批评 Google，一些用户认为该验证是针对 NewPipe 和广告拦截器之类的应用。其他人主张改用 SailfishOS 或 GrapheneOS 等替代移动操作系统，少数人则认为 F-Droid 的激烈言辞可能损害其在主流受众中的可信度。
+**社区讨论**: 评论者表达了不同观点：一些人支持 F-Droid 的立场，并建议使用 SailfishOS 和 Graphene 等替代移动操作系统；另一些人则批评文章的语气幼稚且适得其反，担心这会给谷歌提供忽视 F-Droid 的借口。还有人推测该验证系统针对的是 NewPipe 等广告屏蔽应用。
 
-**标签**: `#Android`, `#F-Droid`, `#Google`, `#developer verification`, `#open-source`
+**标签**: `#Android`, `#F-Droid`, `#privacy`, `#open source`, `#mobile OS`
+
+---
+
+<a id="item-3"></a>
+## [日本最高法院：AI 不能列为专利发明人](https://japannews.yomiuri.co.jp/science-nature/technology/20260306-314930/) ⭐️ 8.0/10
+
+2026 年 3 月 6 日，日本最高法院裁定，人工智能不能列为专利申请的发明人，这与美国的政策保持一致。 这一决定在日本确立了法律先例，强化了只有自然人才可成为发明人的原则，影响 AI 产生发明的专利性及 AI 辅助创新的激励。 该裁决与美国专利商标局的立场一致，即 AI 系统不能被列为发明人，但人类发明人若做出重大贡献，可为 AI 辅助的发明申请专利。
+
+hackernews · mushstory · 7月2日 13:43 · [社区讨论](https://news.ycombinator.com/item?id=48761536)
+
+**背景**: 全球专利法传统上要求发明人是自然人，因为只有人类才能拥有法律权利和责任。近期美国专利商标局和日本专利局的指南均明确，AI 可以协助但不得列为发明人。日本的这一案件是生成式 AI 时代知识产权更广泛讨论的一部分。
+
+<details><summary>参考链接</summary>
+<ul>
+<li><a href="https://www.congress.gov/crs-product/LSB11251">Artificial Intelligence and Patent Law | Congress.gov | Library of Congress</a></li>
+<li><a href="https://www.federalregister.gov/documents/2024/02/13/2024-02623/inventorship-guidance-for-ai-assisted-inventions">Federal Register :: Inventorship Guidance for AI-Assisted Inventions</a></li>
+
+</ul>
+</details>
+
+**社区讨论**: 社区评论普遍支持该裁决，认为 AI 缺乏责任能力，不应拥有权益。有人将 AI 比作计算器，也有人质疑 AI 生成的发明是否仍能以人类发明人名义获得专利。
+
+**标签**: `#AI`, `#patents`, `#intellectual property`, `#Japan`, `#law`
 
 ---
 
 <a id="item-4"></a>
-## [日本最高法院：AI 不能列为发明人](https://japannews.yomiuri.co.jp/science-nature/technology/20260306-314930/) ⭐️ 8.0/10
+## [鸡蛋价格操纵者获利远超罚款](https://www.thebignewsletter.com/p/crime-pays-the-egg-bandits-made-a) ⭐️ 8.0/10
 
-日本最高法院裁定，人工智能系统不能列为专利申请的发明人，确认根据日本专利法，只有自然人才有资格作为发明人。 这一裁决在日本确立了明确的法律先例，与美国和欧盟的类似裁决保持一致，并明确 AI 生成的发明必须有自然人发明人才能获得专利保护，影响了企业如何为 AI 辅助创新申请专利。 该案件涉及一名申请人试图将 AI 系统列为专利申请的唯一发明人。法院维持了日本专利局的驳回决定，强调现行法律要求发明人必须是人类。
+鸡蛋生产商合谋操纵价格，获利超过其最终支付罚款的一千倍。 这突显了反垄断执法中的严重威慑不足，使企业将罚款视为经营成本，破坏了市场竞争。 在鸡蛋价格危机期间，媒体归咎于禽流感和通货膨胀，但价格操纵操作是主要原因；相比非法收益，支付的罚款微不足道。
 
-hackernews · mushstory · 7月2日 13:43 · [社区讨论](https://news.ycombinator.com/item?id=48761536)
+hackernews · toomuchtodo · 7月2日 13:25 · [社区讨论](https://news.ycombinator.com/item?id=48761229)
 
-**背景**: 专利法传统上将发明人定义为构思发明的自然人。随着生成式 AI 的兴起，关于 AI 是否可以被视为发明人的问题出现了。日本的裁决效仿了美国和欧洲类似的判决，驳回了 AI 作为发明人的主张。
+**背景**: 价格操纵是竞争者之间为抬高价格而达成的非法协议，这会减少竞争并损害消费者利益。反垄断法旨在防止此类共谋，但罚款往往过低，无法威慑大型企业。
 
-**社区讨论**: 评论者普遍支持这一裁决，指出 AI 缺乏责任感，并将其与计算器相提并论。一些人引用了质疑专利作为创新激励有效性的经济研究，而其他人则询问是否可以用自然人发明人重新提交申请。
+**社区讨论**: 评论者震惊地发现鸡蛋危机源于价格操纵，而非通胀或禽流感。有人指出市场集中度使这种共谋成为可能，并主张加强惩罚，如追究企业责任，甚至对白领犯罪实施体罚。
 
-**标签**: `#AI`, `#patent law`, `#intellectual property`, `#Japan`, `#legal precedent`
+**标签**: `#price fixing`, `#antitrust`, `#corporate crime`, `#economics`, `#market concentration`
 
 ---
 
 <a id="item-5"></a>
-## [鸡蛋价格操纵者获利是罚款的千倍](https://www.thebignewsletter.com/p/crime-pays-the-egg-bandits-made-a) ⭐️ 8.0/10
+## [代码审查的首要目标是可维护性](https://mathstodon.xyz/@mjd/115096720350507897) ⭐️ 8.0/10
 
-一篇文章揭露鸡蛋价格操纵罚款相比非法利润微不足道，引发 Hacker News 上关于企业犯罪和市场集中的广泛讨论。
+一篇热门帖子认为，代码审查的首要目的是找出难以维护的代码，这引发了多方面的社区讨论。 这场辩论重新定义了团队进行代码审查的方式，强调可维护性而非仅关注缺陷检测，并影响软件工程的最佳实践。 该帖子发布在 Mathstodon 上，获得了 237 个赞和 126 条评论，表明开发者社区对此高度关注。
 
-hackernews · toomuchtodo · 7月2日 13:25 · [社区讨论](https://news.ycombinator.com/item?id=48761229)
+hackernews · ColinWright · 7月2日 11:41 · [社区讨论](https://news.ycombinator.com/item?id=48759870)
 
-**标签**: `#price fixing`, `#corporate crime`, `#antitrust`, `#economics`, `#regulation`
+**背景**: 代码审查是一种软件工程实践，开发者在合并代码前相互检查变更。传统上，它旨在发现缺陷并提高代码质量。该帖子挑战了这种观点，将长期可维护性置于即时正确性之上。
+
+**社区讨论**: 社区评论强烈反对将可维护性视为唯一首要目标。评论者强调其他目的，如知识传递、防止恶意代码的安全检查、团队所有权以及通过代码异味发现缺陷。有评论者指责该帖子是为懒惰审查找借口。
+
+**标签**: `#code review`, `#software engineering`, `#maintainability`, `#best practices`, `#team collaboration`
 
 ---
 
 <a id="item-6"></a>
 ## [定理经济的衰落](https://davidbessis.substack.com/p/the-fall-of-the-theorem-economy) ⭐️ 8.0/10
 
-文章认为，证明助手和形式化正在使传统的定理证明变得不那么核心，数学正转向直觉和可视化，类似于测试在软件开发中的作用。 这种转变可能改变数学的教学和实践方式，强调探索和经验信心而非确定性证明，并引发关于数学知识信任与验证的新问题。 作者将形式化数学与软件测试直接类比，认为随着证明助手自动化更多细节，数学变得更像一门经验科学。讨论中还引用了格雷格·伊根的科幻小说《Diaspora》，并对 AI 资源受限表示担忧。
+David Bessis 的一篇文章指出，数学正从以定理为中心的经济转向计算和 AI 驱动的方法，并与 Greg Egan 的小说《Diaspora》中的概念相呼应。 这一转变可能重新定义数学家的角色和同行评审过程，可能加速发现，但也引发了对数学真理本质和社区验证的质疑。 文章指出，随着证明助手和 AI 系统能力的增强，传统上以证明定理为重点的做法可能会减少，类似于 Egan 的“真理挖掘”概念，即通过直觉和可视化探索形式化知识的庞大数据库。
 
 hackernews · varjag · 7月2日 08:01 · [社区讨论](https://news.ycombinator.com/item?id=48758048)
 
-**背景**: 证明助手（如 Coq 和 Isabelle）是交互式软件工具，通过协作逐步逻辑推理帮助人类构建形式化证明。形式化验证使用这些工具确保数学定理或软件的正确性，但传统上需要大量人力。文章挑战了定理证明在数学中的历史核心地位，认为这可能是历史的偶然。
+**背景**: 几个世纪以来，定理证明一直是数学的核心，但近期自动定理证明和形式化方法（由计算机验证证明）的进展正在改变这一格局。Greg Egan 1997 年的小说《Diaspora》设想了一个后人类未来，其中数学在完全形式化的系统中演变为“真理挖掘”。文章认为我们现在正接近这一现实。
 
 <details><summary>参考链接</summary>
 <ul>
-<li><a href="https://en.wikipedia.org/wiki/Proof_assistant">Proof assistant</a></li>
-<li><a href="https://en.wikipedia.org/wiki/Formal_verification">Formal verification - Wikipedia</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Automated_theorem_proving">Automated theorem proving</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Diaspora_(novel)">Diaspora (novel) - Wikipedia</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Formal_methods">Formal methods - Wikipedia</a></li>
 
 </ul>
 </details>
 
-**社区讨论**: 评论者基本赞同文章论点，有人引用格雷格·伊根的“真相挖掘”概念，另有人将其演变比作软件测试。还有人担忧 AI 资源受限可能限制未来的开放科学。
+**社区讨论**: 评论者普遍认同这一观点，其中一位指出 Egan 的“真理挖掘”精准描述了完全形式化后的数学。另一位评论者认为数学更像软件工程中的测试和积累信心，而非严谨证明。也有人讨论私人 AI 资源可能导致开放科学的减少。
 
-**标签**: `#mathematics`, `#proof assistants`, `#formalization`, `#software testing`, `#AI`
+**标签**: `#mathematics`, `#theorem proving`, `#AI`, `#formal methods`, `#mathematical culture`
 
 ---
 
 <a id="item-7"></a>
-## [ECTC 2026 先进封装技术综述](https://newsletter.semianalysis.com/p/ectc2026) ⭐️ 8.0/10
+## [理解才能参与：避免 AI 编码中的认知债务](https://simonwillison.net/2026/Jul/2/understand-to-participate/#atom-everything) ⭐️ 8.0/10
 
-在 ECTC 2026 上，英特尔、台积电、SK 海力士等公司展示了 EMIB-T、定制 HBM、HBM4 封装挑战、微流控冷却和光子互连的最新进展。 这些进展对 AI 硬件扩展至关重要，因为它们解决了高性能计算中的功率传输、热管理和带宽瓶颈问题。 英特尔的 EMIB-T 增加了硅通孔以实现垂直功率传输，支持低于 45 微米的间距，为 HBM4 铺平了道路。微软展示了利用 AI 引导冷却液流动的微流控冷却技术。
+在 2026 年 AI 工程师世界博览会上，Geoffrey Litt 提出了“理解才能参与”的概念，认为开发者必须保持对代码的深刻理解，才能有效协作 AI 编码智能体，避免累积认知债务。 这一见解至关重要，因为随着 AI 编码智能体变得越来越复杂，开发者可能面临失去对自身代码理解的风险，这会阻碍创造性参与并增加认知债务。它凸显了软件工程界在充分利用 AI 辅助开发时必须应对的实际挑战。 该演讲是 AIE 录制 300 多场会议之一，Geoffrey 还在 Twitter 上发布了一个主题总结他的论点。认知债务是一个日益受到关注的术语，指为了快速推进而不理解代码为何工作的心理成本，类似于技术债务但存在于开发者的大脑中。
 
-rss · Semianalysis · 7月2日 17:25
+rss · Simon Willison · 7月2日 17:07
 
-**背景**: 先进封装技术如 EMIB（嵌入式多芯片互连桥）通过微小的硅桥连接多个芯片，实现异构集成。微流控冷却通过芯片内的微通道循环冷却液，比传统方法更高效地散热。光子互连使用光代替电信号，实现更高带宽和更低功耗。
+**背景**: 认知债务是一个相对较新的概念，描述了开发者在 AI 辅助编码中优先速度而非理解时所承受的心理负担，尤其是当智能体可能生成大量代码变更时。为避免认知债务，开发者必须主动从智能体的输出中学习，并保持对代码库的丰富心智模型，从而创造性参与，而非被动接受或拒绝建议。
 
 <details><summary>参考链接</summary>
 <ul>
-<li><a href="https://www.intel.com/content/dam/www/central-libraries/us/en/documents/2025-07/emib-product-brief.pdf">Intel Foundry EMIB Technology Brief</a></li>
-<li><a href="https://www.tomshardware.com/pc-components/cpus/intel-details-new-advanced-packaging-breakthroughs-emib-t-paves-the-way-for-hbm4-and-increased-ucie-bandwidth">Intel details new advanced packaging breakthroughs — EMIB-T ...</a></li>
-<li><a href="https://news.microsoft.com/source/features/innovation/microfluidics-liquid-cooling-ai-chips/">AI chips are getting hotter. A microfluidics breakthrough ...</a></li>
+<li><a href="https://medium.com/@willsh/what-is-cognitive-debt-5182e4a4fa98">What is Cognitive Debt? - Medium</a></li>
+<li><a href="https://margaretstorey.com/blog/2026/02/09/cognitive-debt/">How Generative and Agentic AI Shift Concern from Technical Debt to ...</a></li>
 
 </ul>
 </details>
 
-**标签**: `#semiconductor packaging`, `#HBM4`, `#photonic interconnects`, `#advanced cooling`, `#ECTC`
+**标签**: `#AI coding agents`, `#cognitive debt`, `#software engineering`, `#LLM collaboration`
 
 ---
 
 <a id="item-8"></a>
-## [国内中性原子量子初创公司纳开量子获数千万元融资](https://36kr.com/p/3877814169530630?f=rss) ⭐️ 8.0/10
+## [ECTC 2026 综述：EMIB-T、HBM4、冷却、光子学](https://newsletter.semianalysis.com/p/ectc2026) ⭐️ 8.0/10
 
-纳开启元（纳开量子）完成了首轮数千万元融资，由高瓴创投领投，英诺、长石、飞图跟投。资金将用于新一代中性原子量子计算机的研发和超冷原子量子模拟计算机的商业化。 这笔融资表明投资者对中性原子量子计算（一种有前景的可扩展量子硬件路线）的信心增强，并凸显了中国在该领域的进展。纳开量子声称是国内唯一能将超冷原子工程化冷却至 10 纳开以下的团队，这是量子性能的关键优势。 纳开量子成立于 2026 年 4 月，核心团队来自北京大学 CAP 组。公司采用双轮驱动商业模式：通过交付专用量子模拟机获取营收，同时推进通用量子计算机的研发。公司已获得千万级订单，预计 2026 年营收达数千万元。
+ECTC 2026 会议重点介绍了 Intel 的 EMIB-T 封装技术进入量产、定制 HBM 和 HBM4（带宽 2.8 TB/s）的路线图、微流体冷却突破以及 Lightmatter 等公司的光子互连技术。 这些进步对于下一代 AI 加速器和高性能计算至关重要，解决了限制扩展的功率传输、热管理和带宽瓶颈。 Intel 的 EMIB-T 在桥接器中增加了硅通孔（TSV）以改善功率传输，并支持 HBM4。HBM4 采用 2048 引脚接口，速度>11 Gbps，每堆栈带宽>2.8 TB/s。微流体冷却采用在硅中蚀刻的通道，散热效果提升高达 3 倍。
 
-rss · 36氪 · 7月2日 01:16
+rss · Semianalysis · 7月2日 17:25
 
-**背景**: 中性原子量子计算利用激光操控单个中性原子（如铷、铯）形成量子比特。将原子冷却至纳开尔文温度（比绝对零度高十亿分之一度）可以最小化热运动，增强量子相干性和保真度。超冷原子量子模拟机是专用设备，用于模拟量子系统，在材料科学和药物发现等领域有近期的应用。
+**背景**: 先进封装技术如 EMIB（嵌入式多芯片互连桥接）和 CoWoS 用于在单个封装中集成多个芯片（例如逻辑和 HBM）。HBM（高带宽内存）是一种通过硅通孔堆叠的 DRAM，用于 AI 加速器。微流体冷却通过芯片上的微小通道循环冷却液来管理热量。光子互连使用光进行更快、更低功耗的数据传输。
 
 <details><summary>参考链接</summary>
 <ul>
-<li><a href="https://en.wikipedia.org/wiki/Neutral_atom_quantum_computer">Neutral atom quantum computer - Wikipedia</a></li>
-<li><a href="https://spectrum.ieee.org/neutral-atom-quantum-computing">Neutral Atom Quantum Computing: 2026's Big Leap - IEEE Spectrum</a></li>
-<li><a href="https://www.nature.com/articles/s41586-025-09848-5">A fault-tolerant neutral-atom architecture for universal ...</a></li>
+<li><a href="https://www.tomshardware.com/pc-components/cpus/intel-details-new-advanced-packaging-breakthroughs-emib-t-paves-the-way-for-hbm4-and-increased-ucie-bandwidth">Intel details new advanced packaging breakthroughs — EMIB-T paves the way for HBM4 and increased UCIe bandwidth | Tom's Hardware</a></li>
+<li><a href="https://www.tomshardware.com/tech-industry/semiconductors/intels-emib-t-heads-for-fab-rollout-this-year">Intel's EMIB-T packaging technology set for fab rollout this year — as TSMC CoWoS capacity remains limited, EMIB-T is preparing for advanced AI accelerator designs | Tom's Hardware</a></li>
+<li><a href="https://news.microsoft.com/source/features/innovation/microfluidics-liquid-cooling-ai-chips/">AI chips are getting hotter. A microfluidics breakthrough goes straight to the silicon to cool up to three times better. - Source</a></li>
 
 </ul>
 </details>
 
-**标签**: `#quantum computing`, `#neutral atom`, `#startup`, `#funding`, `#China`
+**标签**: `#semiconductor packaging`, `#HBM`, `#microfluidic cooling`, `#photonic interconnects`, `#advanced packaging`
 
 ---
 
 <a id="item-9"></a>
-## [从微分几何看哈密顿神经网络](https://www.reddit.com/r/MachineLearning/comments/1ukzdnj/hamiltonian_neural_networks_from_a_differential/) ⭐️ 8.0/10
+## [北大博士团队创立的中性原子量子公司获数千万融资](https://36kr.com/p/3877814169530630?f=rss) ⭐️ 8.0/10
 
-一篇博客文章从微分几何角度解释哈密顿神经网络（HNN），并将其与诺特定理和守恒定律联系起来。 这一视角帮助机器学习从业者理解 HNN 为何泛化良好，因为诺特定理将对称性与守恒量联系起来，为构建物理信息模型提供了原则性方法。 文章包含交互式可视化，数学内容较多但易于理解，强调诺特定理在物理信息 ML 中未得到足够重视。它通过几何视角补充了原始 HNN 论文（Greydanus 等人，2019）。
+中国初创公司纳开启元（纳开量子）由北京大学博士团队创立，宣布完成由高瓴创投领投的数千万人民币种子轮融资，用于推进其纳开温区中性原子量子计算平台。 此轮融资凸显了中性原子量子计算在中国日益重要的地位，该路线以可扩展性和量子比特一致性著称，并表明冷原子技术正从实验室走向商业可行。 纳开量子声称是国内唯一能将铷、钾、铯等九种原子工程化冷却至 10 纳开尔文以下的团队。公司拥有包括量子模拟计算机在内的全栈产品线，预计 2026 年营收达数千万元。
 
-reddit · r/MachineLearning · /u/FlameOfIgnis · 7月1日 21:55
+rss · 36氪 · 7月2日 01:16
 
-**背景**: 哈密顿神经网络是一种通过学习遵守哈密顿力学（能量守恒）来建模物理系统的神经网络。诺特定理指出物理系统的每个对称性对应一个守恒律。微分几何提供了以无坐标方式描述这些对称性和守恒律的数学语言。
+**背景**: 中性原子量子计算机使用激光冷却的原子作为量子比特，具有天然的一致性和可扩展性。纳开尔文温度是比绝对零度高十亿分之一度的温区，热噪声极低。该领域在 2023 年哈佛与 QuEra 展示可编程中性原子处理器后加速发展。
 
 <details><summary>参考链接</summary>
 <ul>
-<li><a href="https://arxiv.org/abs/1906.01563">[1906.01563] Hamiltonian Neural Networks - arXiv.org</a></li>
-<li><a href="https://papers.nips.cc/paper/2019/hash/26cd8ecadce0d4efd6cc8a8725cbd1f8-Abstract.html">Hamiltonian Neural Networks - NIPS</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Neutral_atom_quantum_computer">Neutral atom quantum computer - Wikipedia</a></li>
+<li><a href="https://www.quera.com/neutral-atom-platform">Building Quantum Computers with Neutral Atoms | QuEra</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Nanokelvin">Nanokelvin</a></li>
 
 </ul>
 </details>
 
-**标签**: `#Hamiltonian Neural Networks`, `#Differential Geometry`, `#Physics-Informed Machine Learning`, `#Noether's Theorem`, `#Neural ODEs`
+**标签**: `#quantum computing`, `#neutral atom`, `#startup funding`, `#cold atom`, `#China`
 
 ---
 
 <a id="item-10"></a>
-## [Apple 协助 FBI 揭露 iCloud 匿名邮箱发件人](https://t.me/zaihuapd/42302) ⭐️ 8.0/10
+## [快手可灵 AI 获近 30 亿美元融资，创纪录](https://36kr.com/newsflashes/3878648324845831?f=rss) ⭐️ 8.0/10
 
-在一次威胁调查中，Apple 向 FBI 提供了使用“隐藏邮箱地址”功能创建的匿名邮箱所对应的真实 iCloud 账户信息，表明该服务并非完全匿名。 此事件表明，Apple 的隐私保护功能在执法调查中可能被绕过，引发了对 Apple 生态系统中匿名性限制的重大担忧。 嫌疑人据称生成了 134 个匿名邮箱地址，并向 FBI 局长 Kash Patel 的女友发送了威胁信息。宣誓书称该用户已承认罪行。
+2025 年 7 月 2 日，快手旗下视频生成大模型可灵 AI 完成近 30 亿美元融资，投后估值达 180 亿美元，创下全球视频生成 AI 公司最大融资纪录。 本轮融资显示了 AI 视频生成领域的强劲商业势头和投资者信心，标志着可灵 AI 独立商业化发展的正式开启。顶级科技与传媒投资者的参与凸显了其行业影响力。 本轮融资由 CPE 源峰、国方创投、BlueFive、腾讯、中关村科学城基金（联合国科投资）、中信证券联合领投，阿里云、百度等顶级产业资本，以及华策影视、芒果产业投资人（厚为资本）等头部文娱产业方积极参与。
 
-telegram · zaihuapd · 7月2日 01:03
+rss · 36氪 · 7月2日 15:25
 
-**背景**: Apple 的“隐藏邮箱地址”功能会生成唯一的随机邮箱地址，将邮件转发至用户的真实 iCloud 收件箱。虽然该功能旨在通过隐藏用户真实邮箱地址来保护隐私，但 Apple 保留了别名与真实账户之间的映射，并可在法律程序中提供给执法机构。
+**背景**: 可灵 AI 是快手（中国大型科技公司）开发的视频生成大模型，能够根据文本或图片生成视频。2025 年 4 月，快手发布了可灵 2.0 版本，性能有显著提升。视频生成 AI 是一个快速增长领域，竞争对手包括 OpenAI 的 Sora 和 Runway 等。
 
 <details><summary>参考链接</summary>
 <ul>
-<li><a href="https://support.apple.com/en-us/105078">How to use Hide My Email with Sign in with Apple - Apple Support</a></li>
-<li><a href="https://www.simplymac.com/ios/apples-hide-my-email-feature">Apple 's Hide My Email Feature - SimplyMac</a></li>
+<li><a href="https://zenn.dev/taku_sid/articles/20250416_kelings_ai?locale=en">A Simple Guide to Keling 2.0: China’s Latest AI Video ...</a></li>
+<li><a href="https://llm-stats.com/leaderboards/best-ai-for-video-generation">Best AI for Video Generation in 2026 — Ranked by Blind Human ...</a></li>
 
 </ul>
 </details>
 
-**标签**: `#Apple`, `#privacy`, `#iCloud`, `#law enforcement`, `#security`
+**标签**: `#Video Generation AI`, `#Funding`, `#Kuaishou`, `#Large Models`, `#AI Industry`
 
 ---
 
 <a id="item-11"></a>
-## [Meta 拟出售富余 AI 算力，进军云计算市场](https://www.bloomberg.com/news/articles/2026-07-02/south-korean-stocks-tumble-6-as-ai-jitters-hurt-chipmakers) ⭐️ 8.0/10
+## [OpenAI 提议美国政府持股 5%，并考虑纳入其他 AI 巨头](https://www.bloomberg.com/news/articles/2026-07-02/openai-proposes-giving-the-us-government-a-5-stake-ft-says) ⭐️ 8.0/10
 
-Meta 正筹划向外部客户出售富余的 AI 算力和模型服务，标志着其进入云计算市场。此消息叠加苹果洽谈向中国存储芯片厂采购芯片，导致 2026 年 7 月 2 日韩国芯片股大幅抛售。 这一动态引发市场担忧，包括 Meta 在内的大型科技公司可能放缓 AI 投入，从而导致 AI 基础设施供应过剩。由此引发的韩国市场震荡凸显了全球半导体行业对 AI 支出变化的敏感性。 韩国 Kospi 指数盘中最多跌 7%，三星电子和 SK 海力士一度跌至少 8%，韩国交易所暂停了 Kospi 期货的程序化卖出。Meta 此举涉及提供算力和模型服务，直接与现有云服务商竞争。
+OpenAI 提议美国政府持有该公司 5%的股份，并可能类似地持有谷歌和 Meta 等其他主要 AI 公司的股份，以便公众分享 AI 发展的收益。 该提议可能通过让政府直接参与利润分享来重塑 AI 治理格局，引发关于控制和利益冲突的讨论，并为公众如何从 AI 中获益树立先例。 该计划涉及由一个政府载体统一持有 OpenAI、Anthropic、谷歌和 Meta 各 5%的股份。其他公司尚未表示接受，监管和利益冲突问题仍未解决。
 
-telegram · zaihuapd · 7月2日 02:29
+telegram · zaihuapd · 7月2日 06:02
 
-**背景**: Meta 为支持其大语言模型和推荐系统，大力投资 AI 基础设施，积累了大量算力。通过出售富余算力，Meta 旨在将投资变现，同时可能颠覆云计算市场。半导体行业与 AI 需求紧密相关，因为芯片是训练和推理的关键。
+**背景**: OpenAI 是一家领先的人工智能研究和部署公司，以 GPT-4 等模型闻名。Anthropic 由前 OpenAI 员工创立，专注于 AI 安全并开发 Claude。该提议旨在通过政府持股将 AI 的经济收益分配给公众。
 
-**标签**: `#Meta`, `#cloud computing`, `#AI`, `#semiconductor`, `#market`
+<details><summary>参考链接</summary>
+<ul>
+<li><a href="https://en.wikipedia.org/wiki/Anthropic">Anthropic - Wikipedia</a></li>
+
+</ul>
+</details>
+
+**标签**: `#AI`, `#OpenAI`, `#government stake`, `#policy`, `#tech giants`
 
 ---
 
 <a id="item-12"></a>
-## [Cloudflare 将从 2026 年 9 月起默认拦截混合用途 AI 爬虫](https://techcrunch.com/2026/07/01/cloudflares-new-policy-pushes-ai-companies-to-pay-for-publishers-content/) ⭐️ 8.0/10
+## [银行和科技公司因成本飙升限制员工 AI 使用](https://www.404media.co/companies-are-throttling-employees-ai-use-because-its-too-expensive/) ⭐️ 8.0/10
 
-Cloudflare 宣布，自 2026 年 9 月 15 日起，将默认阻止在广告支持页面上采集内容的混合用途 AI 爬虫，这类爬虫同时用于搜索索引、AI 训练和智能代理任务，且不提供单独控制选项。该公司还点名批评 Google，指出其利用漏洞——网站阻止 AI 爬虫但允许搜索爬虫——将搜索爬虫收集的数据用于 AI 训练。 这项政策迫使 AI 公司（尤其是 Google）要么与出版商协商内容使用条款，要么面临爬虫被拦截，从而可能重塑用于 AI 训练的网络内容经济格局。它回应了出版商长期以来的不满，即他们的内容被无偿使用。 该政策默认适用于新 Cloudflare 客户和免费套餐用户，现有客户将获得宽限期。Cloudflare 还推出了 AI 内容货币化的'按使用付费'（Pay Per Use）模式，最初合作伙伴包括 Ceramic.ai 和 You.com。
-
-telegram · zaihuapd · 7月2日 05:37
-
-**背景**: 许多网站使用 robots.txt 阻止 OpenAI 等公司的 AI 爬虫，但为了保持搜索可见性，通常允许 Googlebot 等搜索引擎爬虫。根据法院文件披露，Google 被指控即使用户明确禁止 AI 训练，仍利用搜索爬虫数据训练 AI 模型。这意味着，只要网站允许搜索索引，单纯阻止 AI 爬虫并不能防止 Google 将内容用于 AI，从而形成了漏洞。
-
-<details><summary>参考链接</summary>
-<ul>
-<li><a href="https://best-ai.org/ai-news/cloudflare-to-block-ai-crawlers-and-introduce-pay-per-use-content-model-by-september-2026-5jl9lv">Cloudflare to Block AI Crawlers and Introduce "Pay Per Use ...</a></li>
-<li><a href="https://www.newsbytesapp.com/news/science/google-reveals-ai-training-loophole-in-court-testimony/story">Google can train AI using web content despite publisher opt-out</a></li>
-
-</ul>
-</details>
-
-**标签**: `#Cloudflare`, `#AI crawlers`, `#web scraping`, `#Google`, `#policy`
-
----
-
-<a id="item-13"></a>
-## [OpenAI 提议美国政府持股 AI 巨头 5%](https://www.bloomberg.com/news/articles/2026-07-02/openai-proposes-giving-the-us-government-a-5-stake-ft-says) ⭐️ 8.0/10
-
-据彭博社报道，OpenAI 提议美国政府持有其自身以及谷歌、Meta 等其他主要 AI 公司各 5%的股份。 该提议可能通过让公众直接受益于 AI 发展来重塑 AI 治理，但也引发了关于政府控制和利益冲突的担忧。 该提议涉及一个统一的政府载体持有股份，目前尚不清楚谷歌和 Meta 等其他公司是否会接受这一安排。
-
-telegram · zaihuapd · 7月2日 06:02
-
-**背景**: OpenAI 是开发 ChatGPT 的领先 AI 研究机构。该提议出现在全球关于 AI 监管以及如何确保 AI 收益广泛共享的辩论中。美国政府持有私营科技公司股份在美国极为罕见。
-
-**标签**: `#OpenAI`, `#AI regulation`, `#government investment`, `#tech policy`, `#artificial intelligence`
-
----
-
-<a id="item-14"></a>
-## [企业因 AI 成本飙升限制使用，花旗禁用 GPT-5.5](https://www.404media.co/companies-are-throttling-employees-ai-use-because-its-too-expensive/) ⭐️ 8.0/10
-
-花旗银行自 2026 年 6 月 24 日起禁用 GPT-5.5 和 Claude Opus 4.6/4.7，Atlassian 的 AI 月支出从 500 万美元激增至 1500 万美元，促使公司实施成本控制。 这一趋势表明企业 AI 采用面临成本危机，可能减缓前沿模型的部署，迫使公司重新评估其 AI 策略。 Atlassian 的内部仪表板显示，AI 成本从 2025 年 8 月的 500 万美元上升到 2026 年 5 月的超过 1500 万美元；Adobe 于 6 月 30 日终止了无限使用 Claude 的合同；亚马逊在移除 AI 排行榜后发现了未知的 token 使用上限。
+花旗银行于 2026 年 6 月 24 日禁用了 GPT-5.5、Claude Opus 4.6 和 4.7，理由是这些模型消耗大量 AI 积分；而 Atlassian 的月度 AI 支出从 2025 年 8 月的 500 万美元飙升至 2026 年 5 月的逾 1500 万美元，促使公司设置使用上限并推出成本追踪面板。 这一趋势表明，先进 AI 模型的按用量计费模式正在给企业带来不可持续的成本，可能减缓 AI 采用步伐，迫使企业在创新与成本控制之间做出取舍。 Atlassian 的内部仪表板显示 AI 支出在约 9 个月内增长了 3 倍；Adobe 决定不再续签无限的 Claude 使用合同；Amazon 此前关闭了鼓励 AI 使用的内部排行榜，并暴露出此前未知的 token 使用上限。
 
 telegram · zaihuapd · 7月2日 13:59
 
-**背景**: 许多企业 AI 工具采用基于积分的计费模式，不同模型消耗不同数量的积分。像 GPT-5.5 和 Claude Opus 这样的前沿模型每次查询成本更高，当使用量扩大时会导致意外高昂的费用。公司现在正在实施仪表板和上限来管理支出。
+**背景**: 许多 AI 工具（包括 GPT-5.5 和 Claude Opus 模型）采用按使用量计费模式，客户按 token 付费或消耗 AI 积分。这些积分相当于预付费的消费单位，越强大的模型每次请求消耗的积分越多。如果没有适当的管理，企业支出会随着员工广泛使用而急剧膨胀。
 
 <details><summary>参考链接</summary>
 <ul>
 <li><a href="https://en.wikipedia.org/wiki/GPT-5.5">GPT-5.5</a></li>
-<li><a href="https://en.wikipedia.org/wiki/Claude_Opus">Claude Opus</a></li>
-<li><a href="https://www.agensi.io/learn/github-copilot-ai-credits-billing-explained">GitHub Copilot AI Credits Billing: How It Works in 2026</a></li>
+<li><a href="https://schematichq.com/blog/ai-credits">AI Credits: How They Work, Pricing Models, and Implementation</a></li>
+<li><a href="https://arstechnica.com/ai/2026/06/ai-costs-how-much-github-copilot-users-react-to-new-usage-based-pricing-system/">AI costs how much? GitHub Copilot users react to new usage-based pricing system. - Ars Technica</a></li>
 
 </ul>
 </details>
 
-**标签**: `#AI costs`, `#enterprise AI`, `#LLM deployment`, `#cost management`, `#AI adoption challenges`
+**标签**: `#AI costs`, `#enterprise AI`, `#AI adoption`, `#cost management`, `#industry trend`
 
 ---
 
-<a id="item-15"></a>
-## [PS3 商店 2027 年关闭引发紧急存档行动](http://no-intro.org/) ⭐️ 8.0/10
+<a id="item-13"></a>
+## [Anthropic 与三星洽谈定制 AI 芯片](https://www.theinformation.com/articles/anthropic-talks-samsung-manufacture-custom-ai-chip) ⭐️ 8.0/10
 
-索尼宣布将于 2027 年 7 月永久关闭 PS3 和 PS Vita 的 PlayStation 商店，数字档案管理员和 RPCS3 模拟器团队正紧急备份游戏数据，以防其永久丢失。 这一事件凸显了纯数字游戏库的脆弱性，许多从未推出实体版的游戏可能永久丢失，影响玩家、历史学家以及游戏文化的保存。 RPCS3 团队推荐使用 no-intro.org 数据库，该平台记录加密签名、文件大小和序列号等元数据，帮助跟踪哪些游戏已被保存、哪些仍需抢救。
+Anthropic 已开始自研 AI 芯片，并与三星电子就潜在代工合作进行早期洽谈，旨在减少对 Claude 模型外部芯片供应商的依赖。 此举表明领先 AI 公司正推进垂直整合，通过定制硬件优化模型并保障供应链。若成功，可能加剧与 OpenAI 定制芯片的竞争，重塑 AI 半导体格局。 Anthropic 的芯片项目仍处于早期开发阶段，相比 OpenAI 等对手入场较晚——OpenAI 已与 Broadcom 合作推出 Jalapeño 推理芯片。三星代工业务提供定制芯片的设计与制造服务。
 
-telegram · zaihuapd · 7月2日 15:04
+telegram · zaihuapd · 7月2日 15:57
 
-**背景**: PS3 和 PS Vita 商店是玩家购买和下载游戏的数字市场。索尼决定关闭它们后，从未推出实体版的纯数字游戏将无法再获取。RPCS3 等模拟器允许游戏在 PC 上运行，但需要合法的游戏文件。保存工作依赖社区协作和 no-intro.org 等数据库来验证文件的完整性和正确性。
+**背景**: OpenAI 和 Anthropic 等主要 AI 公司正越来越多地开发定制芯片，以更好地满足大型语言模型的计算需求，减少对通用 GPU 的依赖。OpenAI 于 2026 年 6 月发布的 Jalapeño 芯片是专为推理设计的芯片，由 Broadcom 制造。三星代工厂是少数能够生产此类先进芯片的制造商之一。
 
 <details><summary>参考链接</summary>
 <ul>
-<li><a href="https://www.tomshardware.com/video-games/playstation/digital-archivists-rush-to-save-ps3-game-data-before-sony-shuts-down-the-store-forever-in-2027-rpcs3-emulator-urges-users-to-preserve-all-content">Digital archivists rush to save PS3 game data before... | Tom's Hardware</a></li>
-<li><a href="https://no-intro.org/">No - Intro . org</a></li>
+<li><a href="https://openai.com/index/openai-broadcom-jalapeno-inference-chip/">OpenAI and Broadcom unveil LLM-optimized inference chip</a></li>
+<li><a href="https://semiconductor.samsung.com/foundry/">Foundry Overview | Samsung Semiconductor Global</a></li>
 
 </ul>
 </details>
 
-**标签**: `#digital preservation`, `#gaming`, `#PS3`, `#emulation`, `#Sony`
+**标签**: `#Anthropic`, `#AI chips`, `#Samsung`, `#semiconductor`, `#custom silicon`
 
 ---
