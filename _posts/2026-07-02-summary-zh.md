@@ -5,359 +5,324 @@ date: 2026-07-02
 lang: zh
 ---
 
-> 从 81 条内容中筛选出 16 条重要资讯。
+> 从 80 条内容中筛选出 15 条重要资讯。
 
 ---
 
-1. [首个合成细胞 SpudCell 实现生长与分裂](#item-1) ⭐️ 9.0/10
-2. [Box3D：Box2D 创作者推出的开源 3D 物理引擎](#item-2) ⭐️ 9.0/10
-3. [arXiv 将于 2026 年独立为非营利组织](#item-3) ⭐️ 9.0/10
-4. [全球综述证实 mRNA 疫苗安全有效且前景广阔](#item-4) ⭐️ 8.0/10
-5. [索尼将于 2028 年 1 月停止生产新游戏光盘](#item-5) ⭐️ 8.0/10
-6. [Cloudflare 货币化网关：通过 x402 协议对网络资源收费](#item-6) ⭐️ 8.0/10
-7. [IPFS 发布提速 10 倍：异步 PUT RPC 优化](#item-7) ⭐️ 8.0/10
-8. [纳开启元获高瓴领投，研发中性原子量子计算机](#item-8) ⭐️ 8.0/10
-9. [全球首款近视老花智能变焦眼镜获数千万元融资](#item-9) ⭐️ 8.0/10
-10. [东昇聚变获数亿元融资，聚焦氘-氦 3 聚变路线](#item-10) ⭐️ 8.0/10
-11. [OpenAI 提议向美政府提供 5%股权以争取政策支持](#item-11) ⭐️ 8.0/10
-12. [MOTHRAG：无图多跳 RAG 击败基于图的系统](#item-12) ⭐️ 8.0/10
-13. [Gnosys 在标签稀疏时提升安全分类器性能](#item-13) ⭐️ 8.0/10
-14. [sing-box 的 uTLS Chrome 指纹缺少后量子密钥交换](#item-14) ⭐️ 8.0/10
-15. [英伟达将 DeepSeek V4 Token 成本降至五分之一，吞吐量提升 5 倍](#item-15) ⭐️ 8.0/10
-16. [Visa、Mastercard 领衔 140 多家公司推出 Open Standard 稳定币网络](#item-16) ⭐️ 8.0/10
+1. [首个能生长分裂的合成细胞诞生](#item-1) ⭐️ 10.0/10
+2. [索尼宣布 2028 年 1 月终止 PlayStation 实体游戏光盘生产](#item-2) ⭐️ 9.0/10
+3. [Erin Catto 发布开源 3D 物理引擎 Box3D](#item-3) ⭐️ 9.0/10
+4. [FFmpeg 9.1 的新 AAC 编码器](#item-4) ⭐️ 8.0/10
+5. [内燃机交互式深度解析](#item-5) ⭐️ 8.0/10
+6. [Cloudflare 推出基于 x402 协议的货币化网关](#item-6) ⭐️ 8.0/10
+7. [清华系初创公司获数亿元融资，专注物理 AI](#item-7) ⭐️ 8.0/10
+8. [东昇聚变获数亿元融资，布局氘-氦 3 路线核聚变](#item-8) ⭐️ 8.0/10
+9. [VAST 完成超 10 亿元 A3 轮融资](#item-9) ⭐️ 8.0/10
+10. [OpenAI 提议向美国政府提供 5%股权以争取政策支持](#item-10) ⭐️ 8.0/10
+11. [博客文章从微分几何与 Noether 定理视角重新解读 HNN](#item-11) ⭐️ 8.0/10
+12. [arXiv 将于 2026 年从康奈尔大学独立](#item-12) ⭐️ 8.0/10
+13. [MOTHRAG：无图多跳 RAG 超越基于图的系统](#item-13) ⭐️ 8.0/10
+14. [英伟达将 DeepSeek V4 令牌成本降至五分之一](#item-14) ⭐️ 8.0/10
+15. [Visa、Mastercard 等超 140 家企业联合发起 Open Standard 稳定币网络](#item-15) ⭐️ 8.0/10
 
 ---
 
 <a id="item-1"></a>
-## [首个合成细胞 SpudCell 实现生长与分裂](https://www.quantamagazine.org/for-the-first-time-a-cell-built-from-scratch-grows-and-divides-20260701/) ⭐️ 9.0/10
+## [首个能生长分裂的合成细胞诞生](https://www.quantamagazine.org/for-the-first-time-a-cell-built-from-scratch-grows-and-divides-20260701/) ⭐️ 10.0/10
 
-由明尼苏达大学 Kate Adamala 博士领导的研究人员利用非生命成分组装出合成细胞 SpudCell，该细胞能够生长、复制 DNA 并分裂，首次实现了完整的细胞周期。 这一突破表明可以从头重建关键生命过程，在生物技术、医学和基础生物学中具有潜在应用，也是构建人工生命道路上的重要里程碑。 这些细胞缺乏细胞骨架，通过简单的挤压机制而非复杂的内部重组进行分裂。该工作尚未在同行评审期刊上发表，曾被《细胞》杂志拒绝，手稿可在 Biotic 网站获取。
+由凯特·阿达马拉领导的科学家团队用非生命化学组分构建了 SpudCell 合成细胞，该细胞能生长、复制 DNA 并分裂，完成完整细胞周期。 这一突破克服了合成生物学中的重大障碍，使我们更接近从零构建细胞，用于医学、材料科学和环境科学等领域。 SpudCell 缺少细胞骨架，而是采用替代分裂机制。该研究最初被《细胞》期刊以“非真正生物学”为由拒稿，导致了非传统的发表策略。
 
 hackernews · defrost · 7月1日 14:20 · [社区讨论](https://news.ycombinator.com/item?id=48747304)
 
-**背景**: 合成生物学旨在创建模拟天然生命的最小细胞。之前的合成细胞能执行 DNA 复制等任务但不能分裂。SpudCell 通过使用更简单的分裂方法克服了这一障碍，使合成生命更接近现实。
+**背景**: 合成生物学旨在从分子组分构建最小生命系统。以往的合成细胞能代谢和复制 DNA，但无法分裂。细胞骨架（蛋白质网络）曾被认为对分裂至关重要，但阿达马拉团队通过新方法绕过了这一需求。
 
 <details><summary>参考链接</summary>
 <ul>
-<li><a href="https://en.wikipedia.org/wiki/SpudCell">SpudCell - Wikipedia</a></li>
-<li><a href="https://www.science.org/content/article/lab-created-spudcell-marks-major-step-toward-building-life-scratch">Lab-created ‘SpudCell’ marks ‘stunning’ step toward building ...</a></li>
-<li><a href="https://www.quantamagazine.org/for-the-first-time-a-cell-built-from-scratch-grows-and-divides-20260701/">For the First Time, a Cell Built From Scratch Grows and Divides</a></li>
+<li><a href="https://www.quantamagazine.org/for-the-first-time-a-cell-built-from-scratch-grows-and-divides-20260701/">For the First Time, a Cell Built From Scratch Grows and Divides | Quanta Magazine</a></li>
+<li><a href="https://www.cnn.com/2026/07/01/science/synthetic-cell-research">Scientists say they have made a cell from scratch for first time | CNN</a></li>
 
 </ul>
 </details>
 
-**社区讨论**: 社区讨论呈现出复杂反应：有人称赞这一成就为期待已久的突破，也有人批评首席研究员绕开同行评审，在科学审查前吸引媒体关注。评论者还提到 Kate Adamala 博士此前曾终止一个有争议的右旋蛋白质实验。
+**社区讨论**: 评论指出，该领域长期停滞在细胞分裂问题上，阿达马拉决定放弃细胞骨架是关键。一些讨论涉及同行评审争议：手稿被《细胞》拒稿后，在预印本之前先与记者分享，引发了一些不满。也有人称赞这一突破，并提到 Biotic 的公益使命。
 
-**标签**: `#synthetic biology`, `#cell division`, `#biotechnology`, `#research breakthrough`, `#SpudCell`
+**标签**: `#synthetic biology`, `#cell division`, `#SpudCell`, `#breakthrough`, `#systems biology`
 
 ---
 
 <a id="item-2"></a>
-## [Box3D：Box2D 创作者推出的开源 3D 物理引擎](https://box2d.org/posts/2026/06/announcing-box3d/) ⭐️ 9.0/10
+## [索尼宣布 2028 年 1 月终止 PlayStation 实体游戏光盘生产](https://blog.playstation.com/2026/07/01/physical-disc-production-ending-in-january-2028-for-new-games-releasing-on-playstation-consoles/) ⭐️ 9.0/10
 
-Box2D 的作者 Erin Catto 宣布了开源 3D 物理引擎 Box3D。这标志着从 2D 到 3D 物理模拟的备受期待的转变，同样采用 MIT 许可证。 Box3D 意义重大，因为 Box2D 是无数游戏、模拟和强化学习环境的基础。它的 3D 继承者可能会重塑游戏开发、机器人仿真以及任何需要确定性物理的领域。 该公告尚未明确说明确定性或求解器细节等技术细节，但 Catto 的声誉表明其设计将高质量且务实。该引擎可能会使用凸分解进行碰撞检测，并使用迭代求解器进行约束求解。
+索尼宣布从 2028 年 1 月起，将停止生产新 PlayStation 游戏的实体光盘，这标志着该平台实体媒体时代的终结。 这一决定代表行业向纯数字发行的重大转变，引发玩家对数字所有权、游戏保存以及转售和离线访问等消费者权利丧失的担忧。 该公告于 2026 年 7 月 1 日发布，仅适用于新游戏发行；现有实体光盘仍可游玩。生产光盘的索尼 DADC 子公司可能面临重组或剥离。
 
-hackernews · makepanic · 7月1日 12:12 · [社区讨论](https://news.ycombinator.com/item?id=48745445)
+hackernews · Tiberium · 7月1日 12:13 · [社区讨论](https://news.ycombinator.com/item?id=48745456)
 
-**背景**: Box2D 是由 Erin Catto 用 C++ 编写的免费开源 2D 刚体物理引擎，采用 MIT 许可证发布。它已广泛应用于《愤怒的小鸟》等游戏以及包括 Unity 在内的许多游戏引擎。Box2D 还为 OpenAI Gym 中的 Lunar Lander 和 Car Racing 等标准强化学习环境提供支持。鉴于该引擎的影响力，其 3D 版本的创建一直备受期待。
+**背景**: 实体游戏光盘具有转售、离线游玩和真正所有权等优势，而数字购买通常是可撤销的许可。实体媒体销量多年来持续下滑，近期索尼从用户库中删除已购买电影的事件加剧了对纯数字模式的批评。
 
 <details><summary>参考链接</summary>
 <ul>
-<li><a href="https://en.wikipedia.org/wiki/Box2D">Box2D</a></li>
-<li><a href="https://box2d.org/">Box2D</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Digital_rights_management">Digital rights management - Wikipedia</a></li>
+<li><a href="https://www.explainx.ai/blog/playstation-physical-discs-ending-january-2028-digital-only-2026">PlayStation Physical Discs End January 2028 — Digital-Only Explained ...</a></li>
 
 </ul>
 </details>
 
-**社区讨论**: 社区表达了兴奋和怀旧之情，许多人回忆起 Box2D 对独立游戏和机器学习研究的影响。评论者提出了对网络游戏确定性的担忧，并指出了 3D 物理模拟的挑战，包括碰撞检测和求解器的稳健性。
+**社区讨论**: 社区评论几乎一致批评，强调拥有光盘与租用数字内容的区别。用户引用索尼近期删除已购买电影的事件，并指出实体媒体允许低价转售和长期访问，而数字商店则以高价锁定游戏。
 
-**标签**: `#physics engine`, `#open source`, `#game development`, `#simulation`, `#Box2D`
+**标签**: `#gaming`, `#digital ownership`, `#PlayStation`, `#physical media`, `#DRM`
 
 ---
 
 <a id="item-3"></a>
-## [arXiv 将于 2026 年独立为非营利组织](https://www.reddit.com/r/MachineLearning/comments/1ukjtlm/on_july_1_2026_arxiv_will_spin_out_from_cornell/) ⭐️ 9.0/10
+## [Erin Catto 发布开源 3D 物理引擎 Box3D](https://box2d.org/posts/2026/06/announcing-box3d/) ⭐️ 9.0/10
 
-arXiv 将于 2026 年 7 月 1 日从康奈尔大学分离，成为独立的非营利组织，并获得西蒙斯基金会和施密特科学公司的主要资助。 这一转变确保了 arXiv 的长期可持续性和独立性，巩固了其作为机器学习和更广泛科学领域关键开放获取基础设施的地位。 分离日期为 2026 年 7 月 1 日，新组织还将更新其网站设计，放弃传统的红色配色。西蒙斯基金会和施密特科学公司是主要资助方。
+广受欢迎的二维物理引擎 Box2D 的创建者 Erin Catto 宣布了 Box3D，一个开源的 3D 物理引擎。该引擎旨在将同样稳健、实用的方法带入 3D 刚体模拟。 鉴于 Box2D 在游戏开发、机器人模拟和强化学习研究领域的巨大影响，Box3D 有潜力成为这些领域的基础工具。其开源性质以及 Catto 的声誉表明，它可能为独立游戏及其他领域的 3D 物理模拟设定新标准。 公告未提供 Box3D 的具体技术细节，但该引擎可能专注于刚体动力学、碰撞检测和求解器稳定性。社区对确定性表达了兴趣，这对于网络多人游戏至关重要。
 
-reddit · r/MachineLearning · /u/Nunki08 · 7月1日 12:07
+hackernews · makepanic · 7月1日 12:12 · [社区讨论](https://news.ycombinator.com/item?id=48745445)
 
-**背景**: arXiv 是一个始于 1991 年的预印本存储库，自 2001 年起由康奈尔大学托管。它为物理学、数学、计算机科学及相关领域的数百万篇研究论文提供免费开放获取。独立运营使其能够拥有更大的组织灵活性和专门的管理。
+**背景**: Box2D 是一个著名的 2D 物理引擎，用于无数游戏（包括《愤怒的小鸟》）以及强化学习环境（如 OpenAI Gym 中的 Lunar Lander 和 Car Racing）。其作者 Erin Catto 是游戏物理领域备受尊敬的工程师。Box3D 将这一遗产扩展到三维，为 3D 物理模拟提供了开源替代方案。
 
-**标签**: `#arXiv`, `#open access`, `#academic publishing`, `#machine learning`, `#nonprofit`
+**社区讨论**: 社区成员表达了兴奋之情，提到了 Box2D 在独立游戏（如《愤怒的小鸟》）中的历史及其在强化学习基准测试中的使用。一些人提出了关于多人游戏确定性物理以及 3D 碰撞检测挑战的担忧。
+
+**标签**: `#physics engine`, `#open source`, `#game development`, `#reinforcement learning`, `#3D simulation`
 
 ---
 
 <a id="item-4"></a>
-## [全球综述证实 mRNA 疫苗安全有效且前景广阔](https://news.ubc.ca/2026/06/mrna-vaccines-are-safe-effective-and-full-of-promise/) ⭐️ 8.0/10
+## [FFmpeg 9.1 的新 AAC 编码器](https://hydrogenaudio.org/index.php/topic,129691.0.html) ⭐️ 8.0/10
 
-一项全面的全球综述再次确认了 mRNA 疫苗的安全性和有效性，并强调其在 COVID-19 以外的未来应用潜力，例如个性化癌症疫苗和通用流感疫苗。 该综述增强了公众对 mRNA 技术的信心，这对于该平台正在被开发用于癌症、流感和新发病毒威胁等多种疾病至关重要。 该综述是对现有证据的整合，而非新临床数据，并专门解决了心肌炎等安全问题，发现其罕见且通常轻微。
+FFmpeg 9.1 引入了一个新的 AAC 编码器，与之前的编码器相比，音频质量显著提高，解决了长期存在的啁啾伪影等问题。 这一更新至关重要，因为 FFmpeg 被广泛用于音频和视频处理，而之前的 AAC 编码器质量较差。新编码器将使无数依赖 FFmpeg 编码 AAC 音频的用户受益，无需再使用 Apple 的 Core Audio 等外部编码器。 新编码器目前仅支持恒定比特率 (CBR)，并针对 48 kHz 采样率进行了优化，这可能限制其在 44.1 kHz CD 音频中的使用。此外，它还绕过了 FFmpeg 的 AAC 解码器中的一个立体声 PNS（感知噪声替换）错误。
 
-hackernews · coloneltcb · 7月2日 00:40 · [社区讨论](https://news.ycombinator.com/item?id=48754963)
+hackernews · ledoge · 7月1日 14:10 · [社区讨论](https://news.ycombinator.com/item?id=48747116)
 
-**背景**: mRNA 疫苗通过指令细胞产生病毒刺突蛋白的无害片段，从而触发免疫反应。该技术在 COVID-19 大流行期间迅速部署，全球接种了数十亿剂。该平台在设计速度和可扩展性方面具有优势，使其成为未来大流行病及其他疾病的有前景工具。
+**背景**: FFmpeg 是一个领先的开源多媒体框架，用于编码、解码和转码音频和视频。AAC（高级音频编码）是一种广泛使用的有损音频压缩标准。FFmpeg 之前的原生 AAC 编码器常因质量差而受到批评，导致用户偏爱 libfdk_aac 或 Apple 的 Core Audio 编码器等替代方案。
 
-<details><summary>参考链接</summary>
-<ul>
-<li><a href="https://en.wikipedia.org/wiki/MRNA_vaccine">mRNA vaccine - Wikipedia</a></li>
+**社区讨论**: 社区评论强调了 Opus 作为现代替代方案的出色质量，有用户指出它在 64 kbps 下‘远远超过所有 AAC 编码器’。其他人对改进表示赞赏，但也指出了重要限制：仅支持 CBR 且针对 48 kHz 优化，使其不太适合 44.1 kHz 的 CD 音频。还有关于解码器中立体声 PNS 错误的讨论，编码器已对此进行了规避。
 
-</ul>
-</details>
-
-**社区讨论**: 评论者表达了不同观点：一些人强调了制造工艺的进步和未来应用的潜力，而另一些人则指出由于政府强制令导致的持续不信任。怀疑者提出了对血栓等特定副作用的担忧，尽管这些尚未得到验证。讨论反映了对技术未来持乐观态度与对过去推广持谨慎态度之间的分歧。
-
-**标签**: `#mRNA vaccines`, `#public health`, `#vaccine safety`, `#medical research`
+**标签**: `#ffmpeg`, `#aac`, `#audio-encoding`, `#codecs`
 
 ---
 
 <a id="item-5"></a>
-## [索尼将于 2028 年 1 月停止生产新游戏光盘](https://blog.playstation.com/2026/07/01/physical-disc-production-ending-in-january-2028-for-new-games-releasing-on-playstation-consoles/) ⭐️ 8.0/10
+## [内燃机交互式深度解析](https://ciechanow.ski/internal-combustion-engine/) ⭐️ 8.0/10
 
-索尼宣布，到 2028 年 1 月，PlayStation 主机的新游戏光盘将停止生产，这标志着向全数字游戏分发的重大转变。 此举引发了关于数字所有权、游戏保存和消费者权益的重大担忧，因为目前实体光盘是唯一无需依赖服务器和 DRM 就能真正拥有游戏的方式。 该决定仅适用于新游戏发行；现有实体光盘仍可继续使用，旧游戏的制作可能不受影响。索尼尚未详细说明数字购买的以旧换新或向后兼容计划。
+一篇 2021 年发布的交互式文章，通过丰富的动画和图表，对内燃机的机械原理和历史进行了全面深入的探索。 这篇文章让复杂的机械工程概念变得易于理解，重新激发了人们对现代交通和发电基础技术的兴趣。 文章涵盖了四冲程循环、气门正时、润滑和冷却系统，但值得注意的是，它省略了催化转化器和废气再循环系统等现代排放控制硬件。
 
-hackernews · Tiberium · 7月1日 12:13 · [社区讨论](https://news.ycombinator.com/item?id=48745456)
+hackernews · StefanBatory · 7月1日 13:04 · [社区讨论](https://news.ycombinator.com/item?id=48746076)
 
-**背景**: 过去十多年来，电子游戏行业逐渐从实体媒体转向数字下载，这是由便利性和成本节省驱动的。然而，数字游戏通常是授权而非拥有，如果服务器关闭，可能被撤销或无法游玩。实体光盘提供了有形的备份，可以转售或借出，因此对游戏保存至关重要。
+**背景**: 内燃机是一种热机，燃料在燃烧室内与氧化剂（通常是空气）发生燃烧。四冲程循环（进气、压缩、做功、排气）是最常见的设计，通过活塞和曲轴将化学能转化为机械功。
 
-**社区讨论**: 评论者对索尼表示不信任，指出该公司最近未经退款就从用户库中移除了数百部已购买的电影。其他人感叹所有权的丧失，并强调了价格差异，指出《黑暗之魂 3》等游戏的实体版在 eBay 上仅售 11 美元，而数字版仍为 60 美元。有人担心蓝光的未来，并表示如果任天堂和微软也效仿，他们可能会对游戏失去兴趣。
+**社区讨论**: 评论者指出，发动机控制系统已显著演变，而机械设计基本停滞，电子燃油喷射取代了化油器。文章对流体动力润滑的解释受到赞赏，有人注意到缺少现代排放设备。
 
-**标签**: `#gaming`, `#digital rights`, `#physical media`, `#PlayStation`, `#industry news`
+**标签**: `#engineering`, `#interactive-article`, `#mechanical-engineering`, `#internal-combustion-engine`
 
 ---
 
 <a id="item-6"></a>
-## [Cloudflare 货币化网关：通过 x402 协议对网络资源收费](https://blog.cloudflare.com/monetization-gateway/) ⭐️ 8.0/10
+## [Cloudflare 推出基于 x402 协议的货币化网关](https://blog.cloudflare.com/monetization-gateway/) ⭐️ 8.0/10
 
-Cloudflare 宣布推出一个货币化网关，利用开放的 x402 协议，通过返回带有支付细节的 HTTP 402 状态码，让网站运营者对其 Cloudflare 背后的任何资源进行收费。 这通过为单个资源访问启用微支付，解决了 AI 机器人流量推高托管成本的日益严重的问题，可能重塑无需传统订阅的网络货币化方式。 x402 协议基于很少使用的 HTTP 402 状态码，并通过稳定币集成加密货币支付；Cloudflare 的实现是无服务器的，运营商无需处理支付处理。
+Cloudflare 宣布推出新的"货币化网关"，允许网站运营者使用基于 HTTP 402 状态码构建的互联网原生支付标准 x402 协议，对任何资源（如页面、API、媒体）进行收费。 这可能彻底改变网络货币化，实现无缝微交易并打击 AI 机器人流量，为内容创作者提供新收入来源，同时保留人类的免费访问。它还为网络上的代理间支付铺平了道路。 x402 协议使用 HTTP 402"要求付款"状态码在提供内容前请求付款，并基于 Solana 区块链实现快速低成本交易。Cloudflare 的网关将此协议集成到边缘处理支付。
 
 hackernews · soheilpro · 7月1日 13:59 · [社区讨论](https://news.ycombinator.com/item?id=48746914)
 
-**背景**: HTTP 402 状态码在原始 HTTP 规范中定义，但从未被广泛采用。x402 协议是一个开放标准，用于请求对资源进行支付，使用区块链支付进行机器对机器交易。Cloudflare 的网关简化了部署，允许运营者无需构建自定义支付基础设施即可对 API、内容或 AI 爬虫访问进行货币化。
+**背景**: HTTP 402 状态码自 HTTP/1.1 就已存在，但从未被广泛采用。x402 是由 Coinbase 和 Solana 开发的现代实现，支持 AI 代理或用户的程序化支付。Cloudflare 的网关旨在通过在网络边缘管理支付流程和验证，使其大规模实用化。
 
 <details><summary>参考链接</summary>
 <ul>
-<li><a href="https://shatale.com/blog/what-is-x402-protocol">What Is the x 402 Protocol ? HTTP 402 and Machine-Native... — Shatale</a></li>
-<li><a href="https://hermesplant.com/faq/what-is-x402">What is the x 402 protocol ? - Hermes Plant</a></li>
+<li><a href="https://www.x402.org/">x402 - Payment Required | Internet-Native Payments Standard</a></li>
+<li><a href="https://solana.com/x402/what-is-x402">What is x402? | Payment Protocol for AI Agents on Solana</a></li>
 
 </ul>
 </details>
 
-**社区讨论**: 评论者表达了谨慎乐观的态度：一些人认为这为 AI 代理的微支付提供了可能，而另一些人则担心低质量内容农场可能通过向 AI 爬虫收费来利用它进行垃圾邮件。自动跨境支付的法律和税务复杂性也被强调为潜在障碍。
+**社区讨论**: 评论观点不一：有人怀疑这并不能解决免费人类体验的机器人问题，而另一些人则对微交易和代理支付感到兴奋。担忧包括潜在的垃圾信息（按请求付费的低质量内容）以及发票和税务方面的法律/财务复杂性。
 
-**标签**: `#cloudflare`, `#monetization`, `#bot-traffic`, `#microtransactions`, `#api`
+**标签**: `#web monetization`, `#cloudflare`, `#microtransactions`, `#AI bots`
 
 ---
 
 <a id="item-7"></a>
-## [IPFS 发布提速 10 倍：异步 PUT RPC 优化](https://probelab.io/blog/optimistic-provide/) ⭐️ 8.0/10
+## [清华系初创公司获数亿元融资，专注物理 AI](https://36kr.com/p/3877109751803904?f=rss) ⭐️ 8.0/10
 
-ProbeLab 在 IPFS 中实现了一种乐观提供策略，异步处理大部分 PUT RPC，在多数成功后立即返回控制权，剩余操作在后台继续，从而使内容发布速度提升 10 倍。 这一优化显著提升了 IPFS 内容发布者的用户体验，使去中心化存储更适用于实时应用，并将发布耗时从分钟级缩短至秒级。 该改进聚焦于向 DHT 通告内容的提供操作；无需等待所有 PUT RPC 完成即可降低延迟，同时不牺牲一致性，因为剩余操作会在后台重试。
+清华关联初创公司厘清智能完成数亿元种子轮融资，投资方包括顺为资本、红杉中国等，旨在构建全栈式物理 AI 基础设施，而非狭义的世界模型。 这标志着从世界模型热转向集成数据管线、物理引擎和跨本体部署的系统级方法，可能加速机器人在各行业的真实世界泛化。 该公司的物理 AI 基础设施包括将数据量级提升至百万小时的数据管线和实现 Real-to-Sim-Real 闭环的可微物理引擎，支持多种机器人本体的精细操作技能。
 
-hackernews · dennis-tra · 7月1日 15:30 · [社区讨论](https://news.ycombinator.com/item?id=48748518)
+rss · 36氪 · 7月1日 13:21
 
-**背景**: IPFS（星际文件系统）使用分布式哈希表（DHT）将内容标识符（CID）映射到拥有该内容的节点网络地址。“提供”操作是节点向 DHT 通告其拥有特定内容的过程，涉及多次 PUT RPC 以在对等节点间存储键值对。这一通告是其他节点发现和获取内容的关键。
+**背景**: 物理 AI 指在物理世界中感知、推理和行动的 AI 系统，常通过仿真训练。Real-to-Sim-Real（RSR）循环利用真实数据构建仿真，再将策略部署回现实。视觉-语言-行动（VLA）模型集成视觉、语言和行动用于机器人控制。
 
 <details><summary>参考链接</summary>
 <ul>
-<li><a href="https://docs.ipfs.tech/concepts/dht/">Distributed Hash Tables (DHT) | IPFS Docs Distributed Hash Table (DHT) | ipfs/ipfs | DeepWiki Distributed Hash Table (DHT) - ipfs.ninja Amino (the Public IPFS DHT) is getting a facelift IPFS: The Distributed File System That's Replacing HTTP Distributed hash table - Wikipedia js-ipfs/docs/core-api/DHT.md at master - GitHub</a></li>
-<li><a href="https://docs.ipfs.tech/reference/kubo/rpc/">Kubo RPC API | IPFS Docs</a></li>
+<li><a href="https://www.nvidia.com/en-us/glossary/generative-physical-ai/">What is Physical AI ? | NVIDIA Glossary</a></li>
+<li><a href="https://arxiv.org/abs/2503.10118">[2503.10118] An Real-Sim-Real (RSR) Loop Framework for ...</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Vision-language-action_model">Vision-language-action model</a></li>
 
 </ul>
 </details>
 
-**社区讨论**: 评论中讨论了提速是否真实，因为同步完成的工作减少了。有人质疑 IPFS 的生产使用情况，并提出 DHT 拓扑未编码网络邻近性的架构问题。其他人则认可这一改进，并建议对查找操作进行进一步优化。
-
-**标签**: `#IPFS`, `#distributed systems`, `#performance optimization`, `#DHT`, `#content publishing`
+**标签**: `#Physical AI`, `#world model`, `#robotics`, `#data pipeline`, `#simulation`
 
 ---
 
 <a id="item-8"></a>
-## [纳开启元获高瓴领投，研发中性原子量子计算机](https://36kr.com/p/3877814169530630?f=rss) ⭐️ 8.0/10
+## [东昇聚变获数亿元融资，布局氘-氦 3 路线核聚变](https://36kr.com/p/3877051217047816?f=rss) ⭐️ 8.0/10
 
-纳开启元（Naka-kai Quantum），一家北京大学孵化的公司，完成了由高瓴创投领投、英诺、长石和飞图跟投的数千万元融资。该公司声称是国内唯一能将多种原子工程化冷却至 10nK 以下的团队。 中性原子量子计算是实现可扩展量子计算的主要候选技术之一，此次投资表明投资者对该技术及团队解决关键工程难题的能力充满信心，有望加速中国实用化量子计算机的进程。 该公司使用铷、钾、镱等中性原子，冷却至超低温，并采用先进的光晶格技术进行精准操控。目前已获得千万级订单，预计 2026 年营收达数千万元，采用双轮驱动模式：目前交付量子模拟机，同时研发通用量子计算机。
+成立于 2025 年 7 月的上海核聚变初创公司东昇聚变近日完成新一轮数亿元融资，由 CMC 资本等领投。该公司正在开发使用氘-氦 3（D-He3）燃料、高温超导磁体和 AI 等离子体控制的紧凑型聚变反应堆。 此次融资表明私营部门对替代聚变燃料的信心增强，这种燃料可规避主流氘-氚（D-T）反应堆的中子辐射难题。如果成功，D-He3 聚变堆可部署在城市或数据中心附近，为商业化聚变能提供更清洁、更灵活的路径。 东昇聚变是国内唯一明确布局 D-He3 路线的企业，该路线中子产量远低于 D-T，降低了屏蔽和监管障碍。公司正在迭代建设首台实验装置“晨光”，采用高温超导磁体技术和 AI 算法来优化等离子体稳定性。
 
-rss · 36氪 · 7月2日 01:16
+rss · 36氪 · 7月1日 12:21
 
-**背景**: 中性原子量子计算机将量子比特编码在由激光俘获的中性原子的内部状态中。由于原子天然全同，不像人造量子比特存在缺陷，因此具有高可扩展性。将原子冷却至纳开尔文温度可以抑制热运动，提高量子相干性和门保真度。这一方法被认为是实现大规模量子计算的有前途的路径。
+**背景**: 目前多数聚变项目以氘-氚（D-T）为燃料，但 D-T 反应产生高能中子，会损坏反应堆材料，需要厚重屏蔽层。氘-氦 3（D-He3）聚变是低中子或无中子的，因此辐射损伤小，设计更简单。氦-3 在地球上稀缺，但可通过氘-氘副反应生成。2024 年 MIT 和 CFS 验证的高温超导磁体可在紧凑装置中产生强磁场，使 D-He3 反应堆更可行。
 
 <details><summary>参考链接</summary>
 <ul>
-<li><a href="https://en.wikipedia.org/wiki/Neutral_atom_quantum_computer">Neutral atom quantum computer</a></li>
-<li><a href="https://spectrum.ieee.org/neutral-atom-quantum-computing">Neutral Atom Quantum Computing: 2026's Big Leap - IEEE Spectrum</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Deuterium_fusion">Deuterium fusion - Wikipedia</a></li>
+<li><a href="https://www.helionenergy.com/blog/explaining-helions-fusion-fuel-choice-d-he-3">Explaining Helion’s fusion fuel: D-He-3</a></li>
+<li><a href="https://news.mit.edu/2024/tests-show-high-temperature-superconducting-magnets-fusion-ready-0304">Tests show high-temperature superconducting magnets are ready ...</a></li>
 
 </ul>
 </details>
 
-**标签**: `#quantum computing`, `#neutral atom`, `#startup`, `#funding`, `#Peking University`
+**标签**: `#nuclear fusion`, `#clean energy`, `#AI`, `#superconductors`, `#funding`
 
 ---
 
 <a id="item-9"></a>
-## [全球首款近视老花智能变焦眼镜获数千万元融资](https://36kr.com/p/3877054691930118?f=rss) ⭐️ 8.0/10
+## [VAST 完成超 10 亿元 A3 轮融资](https://36kr.com/newsflashes/3878007026249990?f=rss) ⭐️ 8.0/10
 
-该创新解决了对一副能无缝切换远近视力的眼镜的日益增长的需求，可能取代渐进多焦点镜片和双副眼镜，标志着智能眼镜整合的重要一步。 该眼镜使用包括测距传感器在内的多个传感器，根据用户注视的物体自动调整度数，公司声称其自研变焦组件在速度、功耗和光学性能上达到全球最佳。
+专注于 AI 3D 大模型与通用世界模型研发的 VAST（三启万物）宣布完成超 10 亿人民币 A3 战略轮融资，巨人网络参与本轮投资。 这一大额融资轮次反映了投资者对 AI 驱动 3D 内容生成和世界模型的信心，可能加速虚拟世界创建和自主系统等领域的进步。 此轮 A3 融资为战略投资，且是继 A+、A++轮后一个月内的又一笔融资，显示出快速的筹资势头。巨人网络的参与表明其对游戏领域 AI 应用的兴趣。
 
-rss · 36氪 · 7月1日 12:24
+rss · 36氪 · 7月2日 04:32
 
-**背景**: 老花眼是眼睛聚焦近处物体能力的丧失，通常从 40 岁左右开始，许多近视者日后也会出现老花。传统解决方案包括单独的阅读和远用眼镜，或渐进多焦点镜片，后者虽能渐变光度，但可用视野窄且易引起眩晕。电控变焦透镜通过电信号改变透镜曲率，实现无需移动部件的动态焦度调节。
+**背景**: 世界模型是学习环境内部表征的 AI 系统，能预测未来状态并推理物理和因果等动力学。VAST 专注于开发大规模世界模型和 AI 3D 模型，可生成和理解 3D 内容，在游戏、仿真和机器人等领域至关重要。
 
 <details><summary>参考链接</summary>
 <ul>
-<li><a href="https://baike.baidu.com/item/渐进多焦点镜片/4355923">渐进多焦点镜片_百度百科</a></li>
-<li><a href="https://www.zhihu.com/question/451173645">如何看待小米预热 MIX 新机搭载液态镜头，什么是液态镜头，原理如何实现？ - 知乎</a></li>
+<li><a href="https://en.wikipedia.org/wiki/World_model_(artificial_intelligence)">World model (artificial intelligence)</a></li>
+<li><a href="https://www.nvidia.com/en-us/glossary/world-models/">What Is a World Model? | NVIDIA Glossary</a></li>
 
 </ul>
 </details>
 
-**标签**: `#smart glasses`, `#varifocal lenses`, `#wearable tech`, `#vision correction`, `#startup funding`
+**标签**: `#AI`, `#3D modeling`, `#funding`, `#world model`, `#VAST`
 
 ---
 
 <a id="item-10"></a>
-## [东昇聚变获数亿元融资，聚焦氘-氦 3 聚变路线](https://36kr.com/p/3877051217047816?f=rss) ⭐️ 8.0/10
+## [OpenAI 提议向美国政府提供 5%股权以争取政策支持](https://36kr.com/newsflashes/3877987962187784?f=rss) ⭐️ 8.0/10
 
-东昇聚变（成立于 2025 年 7 月）完成新一轮数亿元融资，由 CMC 资本旗下基金等领投。该公司专注于采用氘-氦 3（D-He3）燃料、结合高温超导磁体和 AI 等离子体控制的紧凑型聚变电站技术。 此次融资凸显了中国对核聚变的政策支持力度加大，特别是新《原子能法》鼓励受控热核聚变。东昇的 D-He3 路线有望实现更安全、紧凑的聚变反应堆，可部署在城市或数据中心附近，可能加速聚变能源商业化。 D-He3 聚变路线是无中子的，几乎不产生中子，因此减少辐射屏蔽需求，使反应堆更小型化。公司第一代实验装置“晨光”正在建设中，CEO 预计约五年内可实现并网发电。
-
-rss · 36氪 · 7月1日 12:21
-
-**背景**: 大多数聚变项目（如 ITER）使用氘-氚（D-T）燃料，会产生高能中子并需增殖氚。D-He3 聚变需要更高温度，但更安全环保。高温超导（HTS）磁体可产生更强磁场，使紧凑型反应堆成为可能。AI 正越来越多地用于等离子体控制以维持稳定性。
-
-<details><summary>参考链接</summary>
-<ul>
-<li><a href="https://en.wikipedia.org/wiki/Helium-3">Helium-3 - Wikipedia</a></li>
-<li><a href="https://www.helionenergy.com/blog/explaining-helions-fusion-fuel-choice-d-he-3">Explaining Helion’s fusion fuel: D-He-3</a></li>
-<li><a href="https://news.mit.edu/2024/tests-show-high-temperature-superconducting-magnets-fusion-ready-0304">Tests show high-temperature superconducting magnets are ready for fusion | MIT News | Massachusetts Institute of Technology</a></li>
-
-</ul>
-</details>
-
-**标签**: `#nuclear fusion`, `#startup funding`, `#D-He3`, `#AI plasma control`, `#China`
-
----
-
-<a id="item-11"></a>
-## [OpenAI 提议向美政府提供 5%股权以争取政策支持](https://36kr.com/newsflashes/3877987962187784?f=rss) ⭐️ 8.0/10
-
-据报道，2024 年 7 月 2 日，OpenAI 与特朗普政府（原文如此）展开初步讨论，提议向美国政府提供约 5%的股权，以争取对人工智能产业发展的支持并缓解监管压力。 该提议可能重塑人工智能治理模式，使公众分享 AI 发展的经济收益，同时可能影响全球 AI 监管政策，促使政府寻求类似的公共投资模式。 OpenAI CEO Sam Altman 建议所有主要美国人工智能公司各自拿出 5%的股权，注入一个类似于阿拉斯加永久基金的公共投资载体，由政府持有并惠及公众。
+OpenAI 提议向美国政府提供约 5%的股权，以争取政策支持并缓解监管压力。CEO 山姆·奥特曼还建议建立一个类似阿拉斯加永久基金的公共投资载体。 这一提议标志着 AI 产业与政府关系的重大转变，可能开创通过股权共享应对监管问题的先例。它可能影响 AI 公司与政府的互动方式以及如何向公众分配经济收益。 该提议仍处于与美国政府的初步讨论阶段。奥特曼设想美国主要 AI 公司各拿出约 5%的股权，注入类似阿拉斯加永久基金的公共投资载体。
 
 rss · 36氪 · 7月2日 04:28
 
-**背景**: 阿拉斯加永久基金是 1976 年设立的永久基金，由石油和矿产收入资助，每年向居民发放分红。OpenAI 的提议借鉴了该模式，旨在通过让公众分享 AI 发展的经济收益来获得政策支持和合法性。
+**背景**: 阿拉斯加永久基金成立于 1976 年，是由石油和矿业收入资助的主权财富基金，每年向居民支付股息。它常被引为基础收入模式的典范。OpenAI 的提议借鉴了这一概念，旨在与公众分享 AI 的经济收益。
 
 <details><summary>参考链接</summary>
 <ul>
 <li><a href="https://en.wikipedia.org/wiki/Alaska_Permanent_Fund">Alaska Permanent Fund</a></li>
+<li><a href="https://grokipedia.com/page/Alaska_Permanent_Fund">Alaska Permanent Fund</a></li>
+<li><a href="https://www.adn.com/opinions/2026/01/20/opinion-the-permanent-fund-at-50-long-term-thinking-that-pays-off/">Opinion: The Permanent Fund at 50: Long-term thinking that pays off</a></li>
 
 </ul>
 </details>
 
-**标签**: `#OpenAI`, `#AI policy`, `#regulation`, `#public investment`
+**标签**: `#OpenAI`, `#AI regulation`, `#corporate-government relations`, `#equity`, `#policy`
+
+---
+
+<a id="item-11"></a>
+## [博客文章从微分几何与 Noether 定理视角重新解读 HNN](https://www.reddit.com/r/MachineLearning/comments/1ukzdnj/hamiltonian_neural_networks_from_a_differential/) ⭐️ 8.0/10
+
+一篇博客文章从微分几何的角度重新解读了哈密顿神经网络（HNN），强调通过 Noether 定理将对称性与守恒定律以及泛化能力联系起来。 这一视角提供了对 HNN 更深层的理论理解，有望改进研究人员设计物理信息机器学习模型的方式。它还强调了 Noether 定理在解释神经网络泛化能力方面被低估的作用。 这篇博客文章数学内容较多，但包含了交互式可视化来帮助理解；它是一篇公司博客而非同行评审论文。作者多年来一直从事 HNN 及相关主题的研究，旨在利用微分几何让读者理解 HNN 背后的“为什么”。
+
+reddit · r/MachineLearning · /u/FlameOfIgnis · 7月1日 21:55
+
+**背景**: 哈密顿神经网络（HNN）是一类物理信息神经网络，能够从数据中学习哈密顿力学，从而无需显式监督即可遵守能量守恒等物理定律。微分几何研究光滑流形及几何结构，为描述对称性和不变量提供了数学语言。Noether 定理指出，物理系统的每一个连续对称性都对应一个守恒定律，直接将对称性与能量等守恒量联系起来。
+
+<details><summary>参考链接</summary>
+<ul>
+<li><a href="https://arxiv.org/abs/1906.01563">[1906.01563] Hamiltonian Neural Networks</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Differential_geometry">Differential geometry</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Noether's_theorem">Noether's theorem</a></li>
+<li><a href="https://greydanus.github.io/2019/05/15/hamiltonian-nns/">Hamiltonian Neural Networks</a></li>
+
+</ul>
+</details>
+
+**标签**: `#Hamiltonian Neural Networks`, `#differential geometry`, `#Noether's theorem`, `#physics-informed machine learning`, `#deep learning`
 
 ---
 
 <a id="item-12"></a>
-## [MOTHRAG：无图多跳 RAG 击败基于图的系统](https://www.reddit.com/r/MachineLearning/comments/1ukotww/p_mothretrieval_graphfree_multihop_retrieval_via/) ⭐️ 8.0/10
+## [arXiv 将于 2026 年从康奈尔大学独立](https://www.reddit.com/r/MachineLearning/comments/1ukjtlm/on_july_1_2026_arxiv_will_spin_out_from_cornell/) ⭐️ 8.0/10
 
-MOTHRAG 是一个新开源的多跳 RAG 框架，完全避免使用知识图谱，采用无图密集索引和查询时编排。它在 HotpotQA 等基准测试上优于 GraphRAG 和 HippoRAG 等基于图的系统，并且更新成本显著降低。 这表明高质量的多跳检索无需静态知识图谱即可实现，对频繁变化的数据尤为有价值。它降低了重新索引的计算开销，使多跳 RAG 对动态语料库更实用。 MOTHRAG 在 HotpotQA 上达到 78.1%的准确率，在 2WikiMultiHopQA 上达到 76.3%，在 MuSiQue 上达到 50.5%。每次查询成本约 0.03 美元，使用通用 API 且无需 GPU，更新只是简单的嵌入和追加操作，无需重建。
+2026 年 7 月 1 日，arXiv 将从康奈尔大学剥离，成为一个独立的非营利组织，主要资金来自 Simons Foundation 和 Schmidt Sciences。 这一变化确保了 arXiv 的长期可持续性和治理独立性，对依赖其进行开放获取预印本传播的全球研究社区至关重要。 剥离的同时还将进行网站重新设计，移除传统的红色配色方案。过渡计划于 2026 年 7 月 1 日完成。
 
-reddit · r/MachineLearning · /u/Annual-Commercial563 · 7月1日 15:26
+reddit · r/MachineLearning · /u/Nunki08 · 7月1日 12:07
 
-**背景**: 多跳 RAG 需要从多个文档中组合信息以回答复杂查询。像 GraphRAG 这样的传统方法会离线构建知识图谱，当底层数据频繁变化时，更新成本很高。MOTHRAG 通过使用密集索引并在查询时编排多步检索来避免这一问题，无需图或 GPU。
+**背景**: arXiv 是一个广泛使用的预印本存储库，涵盖物理学、数学、计算机科学及相关领域。它在康奈尔大学已托管 25 年。此次剥离旨在提供更可持续和独立的运营模式。
 
-<details><summary>参考链接</summary>
-<ul>
-<li><a href="https://dev.to/chen_zhang_bac430bc7f6b95/vector-graph-rag-multi-hop-rag-without-a-graph-database-3hgb">Vector Graph RAG: Multi-Hop RAG Without a Graph Database - DEV Community</a></li>
-<li><a href="https://getunblocked.com/blog/context-engine-vs-search-vs-orchestration/">Context Engine vs Search vs Orchestration: The Real Split</a></li>
-
-</ul>
-</details>
-
-**标签**: `#RAG`, `#multi-hop retrieval`, `#knowledge graphs`, `#open-source`, `#LLM`
+**标签**: `#arXiv`, `#open access`, `#scholarly publishing`, `#research infrastructure`
 
 ---
 
 <a id="item-13"></a>
-## [Gnosys 在标签稀疏时提升安全分类器性能](https://www.reddit.com/r/MachineLearning/comments/1ul3ohk/making_optimization_work_when_labels_are_scarce_r/) ⭐️ 8.0/10
+## [MOTHRAG：无图多跳 RAG 超越基于图的系统](https://www.reddit.com/r/MachineLearning/comments/1ukotww/p_mothretrieval_graphfree_multihop_retrieval_via/) ⭐️ 8.0/10
 
-Gnosys，一个自主模型工程师，在现实标签稀缺条件下改进了 ToxicChat 基准上的安全分类器，超越了团队初始分类器和 GEPA 提示优化器。 这很重要，因为传统优化器在真实标签极度稀疏时常常失效，导致过拟合和不一致的结果；Gnosys 方法通过从稀疏标签中构建校准的目标函数，为内容审核、欺诈检测和风险评估等高安全性 AI 分类器提供了实用解决方案。 在包含 3000 条未标记消息和约 200 条已验证标签（仅 8 条有害）的主要实验中，Gnosys 的有害内容捕获率达到 0.777，而初始分类器为 0.731，GEPA 为 0.702，且将误报率控制在 5%。该方法将小型验证集与大型未标记池融合为校准的质量估计。
+MOTHRAG 提出了一种无图的多跳检索增强生成（RAG）框架，通过查询时编排操作密集索引，在 HotpotQA 等基准测试上优于 GraphRAG 和 HippoRAG 等基于图的系统，同时避免了昂贵的重新索引。 这很重要，因为它挑战了普遍观点，即知识图谱对于高精度多跳 RAG 是必需的，尤其是在数据频繁变化且图重建成本高昂的动态环境中。 MOTHRAG 在 HotpotQA 上达到 78.1% 的准确率，优于 GraphRAG (68.6%)、HippoRAG (75.5%) 和 RAPTOR (69.5%)，每次查询成本约 0.03 美元，使用商业 API，无需 GPU。
 
-reddit · r/MachineLearning · /u/Kody--- · 7月2日 00:59
+reddit · r/MachineLearning · /u/Annual-Commercial563 · 7月1日 15:26
 
-**背景**: 在许多实际应用中，为 AI 分类器获取高质量标签成本高且速度慢，导致真实标签稀疏。直接针对稀疏标签优化模型会过拟合噪声。GEPA（Genetic-Pareto）是一种使用反思性进化的提示优化器，ToxicChat 则是用于检测用户-AI 对话中有毒内容的基准。Gnosys 通过首先评估信号的可靠性，然后构建更好的目标函数来解决稀疏性问题。
+**背景**: 多跳 RAG 需要通过检索并推理多条信息（通常来自不同文档）来回答复杂问题。传统方法通过 LLM 提取实体和关系来离线构建知识图谱，这会导致高昂的索引成本，并使更新变得困难。
 
 <details><summary>参考链接</summary>
 <ul>
-<li><a href="https://arxiv.org/abs/2507.19457">[2507.19457] GEPA: Reflective Prompt Evolution Can Outperform Reinforcement Learning</a></li>
-<li><a href="https://www.lmsys.org/blog/2023-10-30-toxicchat/">ToxicChat: A Benchmark for Content Moderation in Real-world User-AI Interactions</a></li>
+<li><a href="https://pypi.org/project/mothrag/">mothrag · PyPI</a></li>
 
 </ul>
 </details>
 
-**标签**: `#machine learning`, `#optimization`, `#label scarcity`, `#safety classifier`, `#prompt optimization`
+**标签**: `#RAG`, `#multi-hop retrieval`, `#knowledge graphs`, `#information retrieval`, `#efficient indexing`
 
 ---
 
 <a id="item-14"></a>
-## [sing-box 的 uTLS Chrome 指纹缺少后量子密钥交换](https://sing-box.sagernet.org/configuration/shared/tls/) ⭐️ 8.0/10
+## [英伟达将 DeepSeek V4 令牌成本降至五分之一](https://blogs.nvidia.com/blog/inference-software-lowest-token-cost/) ⭐️ 8.0/10
 
-sing-box 的 uTLS 'chrome' 指纹不包含 X25519MLKEM768 混合后量子密钥交换曲线，而 Chrome 131+ 已将其作为默认密钥交换组，导致在支持的群组和 ClientHello 结构上产生可区分的差异。该项目曾提供 chrome_pq 指纹，但因与 Reality 协议不兼容而在 1.10.0 版本中移除。 这种指纹不匹配削弱了 sing-box 的反审查有效性，因为高级检测系统可以将其 TLS 流量与真实 Chrome 流量区分开来，可能导致其被封锁或限速。这凸显了在浏览器快速采用后量子密码学的情况下，规避工具在 TLS 指纹模仿方面面临的持续挑战。 uTLS 指纹模块独立于标准的 curve_preferences 配置运行，因此即使默认列表包含 X25519MLKEM768，也不会影响 uTLS 构建的 ClientHello。sing-box 官方文档现已明确不推荐使用 uTLS，指出其反复出现指纹漏洞且无法完美模仿 BoringSSL 等浏览器栈，建议改用 NaiveProxy 以获得更强的抗指纹能力。
+英伟达在 Blackwell 平台上的推理软件栈使 DeepSeek V4 的吞吐量提升了 5 倍，单个令牌成本在一个月内降至原先的五分之一。GB300 上的 SGLang 引擎于 6 月达到约 11,200 tokens/秒/GPU，较 4 月的 2,200 tokens/秒/GPU 大幅提升。 这一成本大幅降低使 DeepSeek V4 的大规模部署在经济上更加可行，可能加速 AI 推理在生产环境中的应用。这些优化还展示了进一步增益的潜力，通过分解式服务和多令牌预测等高级技术，系统级吞吐量有望提升 20 倍。 性能飞跃得益于内核与运行时优化，包括融合技术、显存压缩、量化精度路径、改进的内存预算、可中断计算图支持以及推理稳定性修复。这些增益是在 GB300 离散部署下使用 SGLang 引擎测得的，而 Blackwell Ultra 聚合部署配置也获得了近 3 倍的提升。
 
-telegram · zaihuapd · 7月1日 07:04
+telegram · zaihuapd · 7月1日 10:36
 
-**背景**: TLS 指纹识别通过分析 TLS 握手期间发送的 ClientHello 消息来识别客户端软件（如浏览器或库）。uTLS 是 Go 语言 crypto/tls 的一个分支，允许修改 ClientHello 以模仿其他客户端（如 Chrome）。后量子密钥交换（例如 X25519MLKEM768）将传统的椭圆曲线 Diffie-Hellman 与 ML-KEM 结合，以抵御未来的量子攻击；Chrome 131+ 默认启用了该功能。
+**背景**: SGLang 是一个用于大语言模型高吞吐服务的高性能开源框架，支持连续批处理和量化等特性。分解式服务将预填充和解码阶段分离到专用 GPU 上，实现针对性的资源优化。多令牌预测通过在每次前向传播中联合预测多个未来令牌，实现并行解码，从而进一步提高吞吐量。
 
 <details><summary>参考链接</summary>
 <ul>
-<li><a href="https://github.com/refraction-networking/utls">GitHub - refraction-networking/utls: Fork of the Go standard TLS library, providing low-level access to the ClientHello for mimicry purposes. · GitHub</a></li>
-<li><a href="https://inside.java/2026/02/17/tls-post-quantum-hybrid-key-exchange/">Post-Quantum Hybrid Key Exchange for TLS 1.3 - Inside.java</a></li>
+<li><a href="https://en.wikipedia.org/wiki/SGLang">SGLang</a></li>
+<li><a href="https://docs.nvidia.com/dynamo/user-guides/disaggregated-serving">Disaggregated Serving | NVIDIA Dynamo Documentation</a></li>
+<li><a href="https://github.com/sgl-project/sglang">GitHub - sgl-project/sglang: SGLang is a high-performance ...</a></li>
 
 </ul>
 </details>
 
-**标签**: `#TLS fingerprinting`, `#post-quantum cryptography`, `#sing-box`, `#uTLS`, `#censorship circumvention`
+**标签**: `#NVIDIA`, `#DeepSeek V4`, `#inference optimization`, `#Blackwell`, `#AI infrastructure`
 
 ---
 
 <a id="item-15"></a>
-## [英伟达将 DeepSeek V4 Token 成本降至五分之一，吞吐量提升 5 倍](https://blogs.nvidia.com/blog/inference-software-lowest-token-cost/) ⭐️ 8.0/10
+## [Visa、Mastercard 等超 140 家企业联合发起 Open Standard 稳定币网络](https://www.reuters.com/business/consortium-including-visa-mastercard-jointly-launch-new-global-stablecoin-2026-06-30/) ⭐️ 8.0/10
 
-英伟达推理软件栈在 Blackwell 平台上优化 DeepSeek V4，两个月内将每 GPU 吞吐量从约 2,200 Tokens/秒提升至约 11,200 Tokens/秒，实现 5 倍提升，单 Token 成本降至五分之一。 这一突破大幅降低了大型语言模型的服务成本，使先进 AI 更易获取，并推动 DeepSeek V4 等模型在生产中的广泛部署。 优化包括融合技术、显存压缩、量化精度路径改进、改进的内存预算、可中断计算图支持以及推理稳定性修复。未来通过分解式服务、多 Token 预测等高级优化，吞吐量有望再提升至 20 倍。
-
-telegram · zaihuapd · 7月1日 10:36
-
-**背景**: SGLang 是一个用于高性能 LLM 服务的开源框架，已被业界广泛采用。GB300 NVL72 是一个包含 72 个 GPU 的复杂机架级 GPU 系统，支持大规模并行处理。可中断计算图允许在推理过程中动态分配资源，提高效率。
-
-<details><summary>参考链接</summary>
-<ul>
-<li><a href="https://en.wikipedia.org/wiki/SGLang">SGLang - Wikipedia</a></li>
-<li><a href="https://github.com/sgl-project/sglang">GitHub - sgl-project/sglang: SGLang is a high-performance ...</a></li>
-<li><a href="https://docs.nvidia.com/pdf/dgx-spod-gb300-ra.pdf">DGX SuperPOD GB300 - NVIDIA Documentation Hub</a></li>
-
-</ul>
-</details>
-
-**标签**: `#NVIDIA`, `#DeepSeek`, `#inference optimization`, `#token cost`, `#AI infrastructure`
-
----
-
-<a id="item-16"></a>
-## [Visa、Mastercard 领衔 140 多家公司推出 Open Standard 稳定币网络](https://www.reuters.com/business/consortium-including-visa-mastercard-jointly-launch-new-global-stablecoin-2026-06-30/) ⭐️ 8.0/10
-
-2026 年 6 月 30 日，Visa、Mastercard、Coinbase 等超过 140 家企业联合宣布启动 Open Standard 稳定币网络，计划今年晚些时候推出锚定美元的 Open USD 稳定币。 这一举措汇集了传统金融巨头和加密原生企业，表明机构对受监管稳定币的强烈需求。如果成功，Open USD 可能成为广泛使用的支付通道，挑战现有的 USDC 和 USDT 等稳定币。 Open Standard 成员可免费无限制地铸造和赎回 Open USD 代币，储备收益在扣除管理费后由合作伙伴共享。该网络旨在为企业级稳定币应用提供开放、低成本、高吞吐量的基础设施。
+2026 年 6 月 30 日，Visa、Mastercard、Coinbase 等超过 140 家企业联合发起了名为 Open Standard 的稳定币网络，计划于今年晚些时候推出锚定美元的新稳定币 Open USD。 这一举措标志着传统支付巨头大举进入稳定币领域，可能加速企业采用数字货币进行全球支付，并对现有玩家如 Circle 构成挑战。 企业可以免费、无限制地铸造和赎回 Open USD，其储备收益在扣除管理费后由合作伙伴共享。该网络旨在通过提供开放、低成本、高吞吐量的基础设施，克服企业大规模采用稳定币的障碍。
 
 telegram · zaihuapd · 7月1日 11:06
 
-**背景**: 稳定币是一种旨在保持价值稳定的加密货币，通常与美元等法定货币挂钩。目前稳定币主要用于加密货币交易，尚未成为日常支付主流。美国最近通过了 GENIUS Act，为稳定币建立了首部联邦监管框架，这鼓励了合法项目的发展。Open Standard 旨在通过提供无需许可、可扩展的网络来克服企业采用稳定币的障碍。
+**背景**: 稳定币是一种旨在相对于参考资产（通常是美元）保持稳定价值的加密货币。它们主要用于加密货币交易，尚未成为日常支付的主流。2025 年，美国签署了 GENIUS Act，为稳定币设立了首部联邦监管框架，为像 Open Standard 这样的倡议铺平了道路。
 
 <details><summary>参考链接</summary>
 <ul>
 <li><a href="https://neworleanscitybusiness.com/blog/2026/06/30/visa-mastercard-global-stablecoin-open-usd/">Visa, Mastercard launch global stablecoin ... | New Orleans CityBusiness</a></li>
-<li><a href="https://en.wikipedia.org/wiki/GENIUS_Act">GENIUS Act</a></li>
-<li><a href="https://www.congress.gov/bill/119th-congress/senate-bill/1582/text">Text - S.1582 - 119th Congress (2025-2026): GENIUS Act | Congress.gov | Library of Congress</a></li>
+<li><a href="https://bitcoinmagazine.com/news/visa-mastercard-and-over-140-open-usd">Circle (CRCL) Drops 15% After Open USD Stablecoin Launch</a></li>
 
 </ul>
 </details>
 
-**标签**: `#stablecoin`, `#payments`, `#blockchain`, `#Visa`, `#Mastercard`
+**标签**: `#stablecoins`, `#payments`, `#fintech`, `#blockchain`, `#regulation`
 
 ---
