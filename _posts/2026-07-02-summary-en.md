@@ -5,296 +5,303 @@ date: 2026-07-02
 lang: en
 ---
 
-> From 76 items, 13 important content pieces were selected
+> From 77 items, 13 important content pieces were selected
 
 ---
 
-1. [Linux 6.9 Bug Fails to Wipe LUKS Encryption Keys on Suspend](#item-1) ⭐️ 8.0/10
-2. [F-Droid: Android Developer Verification Is a Threat Masquerading as Protection](#item-2) ⭐️ 8.0/10
-3. [Japan top court: AI cannot be patent inventor](#item-3) ⭐️ 8.0/10
-4. [Egg Price Fixers Profited 1000x Their Fine](#item-4) ⭐️ 8.0/10
-5. [Code review's primary goal is maintainability](#item-5) ⭐️ 8.0/10
-6. [The Fall of the Theorem Economy](#item-6) ⭐️ 8.0/10
-7. [Understand to Participate: Avoiding Cognitive Debt in AI Coding](#item-7) ⭐️ 8.0/10
-8. [ECTC 2026 Roundup: EMIB-T, HBM4, Cooling, Photonics](#item-8) ⭐️ 8.0/10
-9. [Chinese quantum startup Nakairangkai raises millions for neutral atom computers](#item-9) ⭐️ 8.0/10
-10. [Kuaishou's Keling AI Raises $3B, Record for Video AI](#item-10) ⭐️ 8.0/10
-11. [OpenAI Proposes US Government 5% Stake, Eyes Other AI Giants](#item-11) ⭐️ 8.0/10
-12. [Banks and tech firms restrict employee AI use due to surging costs](#item-12) ⭐️ 8.0/10
-13. [Anthropic in early talks with Samsung for custom AI chips](#item-13) ⭐️ 8.0/10
+1. [Linux 6.9 Regression: LUKS Suspend Fails to Wipe Encryption Keys](#item-1) ⭐️ 8.0/10
+2. [F-Droid: Android Developer Verification Is a Trojan Horse](#item-2) ⭐️ 8.0/10
+3. [PeerTube: A Decentralized Video Platform Alternative](#item-3) ⭐️ 8.0/10
+4. [The Fall of the Theorem Economy](#item-4) ⭐️ 8.0/10
+5. [ECTC 2026: EMIB-T, Custom HBM, Cooling, and Photonics](#item-5) ⭐️ 8.0/10
+6. [Peking University PhD Team Raises Millions for Nanokelvin Neutral Atom Quantum Computer](#item-6) ⭐️ 8.0/10
+7. [Meitu CEO on AI Product Strategy and Global Growth Driving Revenue Surge](#item-7) ⭐️ 8.0/10
+8. [Kuaishou's Keling AI Raises $3B, Sets Funding Record](#item-8) ⭐️ 8.0/10
+9. [Apple reveals identity behind iCloud anonymous email in FBI threat case](#item-9) ⭐️ 8.0/10
+10. [Cloudflare to Block Mixed-Use AI Crawlers from September](#item-10) ⭐️ 8.0/10
+11. [OpenAI Proposes U.S. Government 5% Stake, Potentially Including Google & Meta](#item-11) ⭐️ 8.0/10
+12. [Citibank bans GPT-5.5, firms limit AI use as costs surge](#item-12) ⭐️ 8.0/10
+13. [PS3 Store Closure 2027: Archivists Rush to Save Games](#item-13) ⭐️ 8.0/10
 
 ---
 
 <a id="item-1"></a>
-## [Linux 6.9 Bug Fails to Wipe LUKS Encryption Keys on Suspend](https://mathstodon.xyz/@iblech/116769502749142438) ⭐️ 8.0/10
+## [Linux 6.9 Regression: LUKS Suspend Fails to Wipe Encryption Keys](https://mathstodon.xyz/@iblech/116769502749142438) ⭐️ 8.0/10
 
-A regression in Linux kernel 6.9 causes the LUKS suspend operation to no longer wipe disk-encryption keys from memory, potentially exposing encrypted data during suspend-to-RAM. The bug was introduced by a refactoring that omitted a single line C check. This is a critical security regression that undermines the protection of disk encryption during suspend, especially for users relying on Debian's cryptsetup-suspend addon. It highlights the fragility of large C codebases and the need for rigorous testing in security-sensitive kernel code. The bug was introduced during refactoring that missed a single line C check across files. The Debian cryptsetup-suspend addon, which uses the luksSuspend command to wipe keys, is not officially supported by the kernel but this regression still impacts users on affected distributions.
+A regression introduced in Linux kernel version 6.9 caused the `cryptsetup luksSuspend` command to stop wiping disk-encryption keys from kernel memory, leaving them potentially accessible during system suspend. This regression undermines the security of LUKS-encrypted systems by leaving encryption keys in memory when suspended, exposing them to cold boot attacks or other memory extraction techniques. It affects users relying on `luksSuspend` to protect data during sleep or hibernation. The bug was discovered on NixOS and is believed to have existed since Linux 6.9, though it may have gone unnoticed because the system still appears to function normally. The `luksSuspend` command is not an official part of Linux but a Debian extension that has been widely adopted.
 
 hackernews · IngoBlechschmid · Jul 2, 15:25 · [Discussion](https://news.ycombinator.com/item?id=48763035)
 
-**Background**: LUKS (Linux Unified Key Setup) is a disk encryption specification. When a system suspends to RAM, the encryption master key remains in memory for resume. The luksSuspend command is designed to wipe the master key from memory and require re-entry of the passphrase on wake, protecting against cold boot attacks. Without this wipe, the key remains vulnerable to memory extraction.
+**Background**: LUKS (Linux Unified Key Setup) is a disk encryption specification. When using dm-crypt with LUKS, the encryption key is kept in kernel memory while the system is running. The `cryptsetup luksSuspend` command is used to suspend a LUKS device by wiping the key from memory and blocking I/O, requiring the passphrase to be re-entered upon resume. This prevents the key from being present in memory during sleep or hibernation.
 
 <details><summary>References</summary>
 <ul>
-<li><a href="https://news.ycombinator.com/item?id=48763035">Since Linux 6.9, LUKS suspend stopped wiping disk-encryption ...</a></li>
-<li><a href="https://manpages.debian.org/unstable/cryptsetup-suspend/cryptsetup-suspend.7.en.html">cryptsetup- suspend (7) — cryptsetup- suspend ... — Debian Manpages</a></li>
-<li><a href="https://github.com/Gunpyr/ubuntu-luks-suspend">GitHub - Gunpyr/ubuntu- luks - suspend : Lock encrypted root volume on...</a></li>
+<li><a href="https://github.com/vianney/arch-luks-suspend">GitHub - vianney/arch-luks-suspend: Lock encrypted root volume on suspend in Arch Linux · GitHub</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Linux_Unified_Key_Setup">Linux Unified Key Setup - Wikipedia</a></li>
+<li><a href="https://www.reddit.com/r/archlinux/comments/hpd4hh/suspend_with_luks/">r/archlinux on Reddit: Suspend with LUKS</a></li>
 
 </ul>
 </details>
 
-**Discussion**: Community comments reflect mixed views. Some consider this a serious security bug that underscores the difficulty of maintaining invariant correctness in C codebases. Others downplay it because cryptsetup-suspend is not officially supported, while a few note that for typical users the risk is low. One commenter pointed out that the bug was caught via NixOS tests, praising the testing approach.
+**Discussion**: Commenters noted that this regression might be easy to miss because everything still 'works' from a functional standpoint. Some argued that the feature is not officially supported, being a Debian extension, so blaming the kernel may be unfair. Others pointed out that for suspend-to-RAM, the encryption key is expected to remain in memory, so this bug only matters for specific use cases where key wiping is desired.
 
-**Tags**: `#linux`, `#security`, `#encryption`, `#LUKS`, `#kernel-bug`
+**Tags**: `#linux`, `#security`, `#disk-encryption`, `#kernel`, `#luks`
 
 ---
 
 <a id="item-2"></a>
-## [F-Droid: Android Developer Verification Is a Threat Masquerading as Protection](https://f-droid.org/2026/07/01/adv-malware.html) ⭐️ 8.0/10
+## [F-Droid: Android Developer Verification Is a Trojan Horse](https://f-droid.org/2026/07/01/adv-malware.html) ⭐️ 8.0/10
 
-F-Droid published an article arguing that Google's new Android developer verification system is a deceptive threat that undermines user freedom and could be used to block sideloading of apps from alternative stores like F-Droid. This critique highlights growing concerns about Google's control over Android, especially for privacy advocates and open-source enthusiasts, and fuels debate about mobile OS openness and the future of alternative app distribution. Google's developer verification system, announced in 2025, requires identity verification for all developers on Play Console and Android Developer Console, with an early access program starting October 2025 and enhanced reviews for apps with sensitive permissions.
+F-Droid published an article on July 1, 2026, condemning Google's new Android Developer Verification policy as a threat to sideloading and openness, especially for F-Droid users. The policy could effectively control which apps can be installed outside Google Play, undermining Android's core promise of openness and potentially harming the entire FOSS ecosystem. Google's developer verification starts rolling out in September 2026, requiring developers to complete identity verification to distribute apps on Android, including via sideloading.
 
 hackernews · drewfax · Jul 2, 03:00 · [Discussion](https://news.ycombinator.com/item?id=48755965)
 
-**Background**: F-Droid is a free and open-source app store for Android that prioritizes user freedom and privacy. Google's Play Store has long required developer accounts, but the new system extends verification to apps distributed outside the official store, potentially making sideloading more difficult and increasing Google's control over the Android ecosystem.
+**Background**: Android Developer Verification is a new security measure by Google to deter bad actors by verifying developer identities. F-Droid is a popular FOSS app repository that relies on sideloading to distribute apps. Critics argue the verification could be used to block or restrict apps not approved by Google.
 
 <details><summary>References</summary>
 <ul>
 <li><a href="https://en.wikipedia.org/wiki/F-Droid">F-Droid</a></li>
-<li><a href="https://www.androidsage.com/2025/08/26/google-blocks-sideloading-of-android-apps/">It's Over: Google Blocks Sideloading of Android Apps</a></li>
-<li><a href="https://f-droid.org/">F-Droid - Free and Open Source Android App Repository</a></li>
+<li><a href="https://docs.getupdraft.com/android/android-developer-verification">Android Developer Verification | App Distribution for iOS, Android ...</a></li>
 
 </ul>
 </details>
 
-**Discussion**: Commenters expressed mixed views: some supported F-Droid's stance and suggested alternative mobile OSes like SailfishOS and Graphene, while others criticized the article's tone as childish and counterproductive, fearing it would give Google ammunition to dismiss F-Droid. Some speculated that the verification system targets ad-blocking apps like NewPipe.
+**Discussion**: Comments show strong opposition, with suggestions to switch to alternative mobile Linux OSes like SailfishOS, Ubuntu Touch, or Graphene. Some criticize F-Droid's article as overly dramatic, while others see it as a valid warning about Google's increasing control.
 
-**Tags**: `#Android`, `#F-Droid`, `#privacy`, `#open source`, `#mobile OS`
+**Tags**: `#Android`, `#F-Droid`, `#privacy`, `#security`, `#open-source`
 
 ---
 
 <a id="item-3"></a>
-## [Japan top court: AI cannot be patent inventor](https://japannews.yomiuri.co.jp/science-nature/technology/20260306-314930/) ⭐️ 8.0/10
+## [PeerTube: A Decentralized Video Platform Alternative](https://github.com/Chocobozzz/PeerTube) ⭐️ 8.0/10
 
-Japan's Supreme Court ruled on March 6, 2026 that artificial intelligence cannot be listed as an inventor on patent applications, aligning with the policy in the United States. This decision sets a legal precedent in Japan, reinforcing that only natural persons can hold inventor status, which affects the patentability of AI-generated inventions and the incentives for AI-assisted innovation. The ruling mirrors the U.S. Patent and Trademark Office's stance that AI systems cannot be named inventors, though human inventors can receive patents for AI-assisted inventions if they contribute significantly.
+PeerTube is a free, decentralized, and federated video platform that allows users to host videos without relying on centralized commercial services like YouTube. It uses ActivityPub for federation and WebTorrent for peer-to-peer streaming. PeerTube offers a privacy-respecting alternative to centralized platforms, giving content creators and viewers more control over data and reducing dependency on corporate servers. It supports the broader fediverse ecosystem, fostering a decentralized web. Each PeerTube instance is independently operated and can federate with others via ActivityPub, enabling cross-instance video discovery. The platform also uses peer-to-peer technology to reduce server load during popular videos.
 
-hackernews · mushstory · Jul 2, 13:43 · [Discussion](https://news.ycombinator.com/item?id=48761536)
+hackernews · doener · Jul 2, 11:17 · [Discussion](https://news.ycombinator.com/item?id=48759634)
 
-**Background**: Patent laws worldwide traditionally require inventors to be natural persons, as only humans can hold legal rights and responsibilities. Recent guidelines from the USPTO and the Japan Patent Office have clarified that AI can assist but not be named as an inventor. The case in Japan was part of a broader debate on intellectual property in the age of generative AI.
+**Background**: Traditional video platforms like YouTube centralize data and control, raising concerns about privacy, censorship, and monetization. Federation, as used by PeerTube, allows different servers to communicate while remaining independent, similar to how email works. ActivityPub is a W3C standard protocol that enables this interoperability, and WebTorrent allows browsers to participate in peer-to-peer file sharing.
 
 <details><summary>References</summary>
 <ul>
-<li><a href="https://www.congress.gov/crs-product/LSB11251">Artificial Intelligence and Patent Law | Congress.gov | Library of Congress</a></li>
-<li><a href="https://www.federalregister.gov/documents/2024/02/13/2024-02623/inventorship-guidance-for-ai-assisted-inventions">Federal Register :: Inventorship Guidance for AI-Assisted Inventions</a></li>
+<li><a href="https://en.wikipedia.org/wiki/PeerTube">PeerTube - Wikipedia</a></li>
+<li><a href="https://github.com/Chocobozzz/PeerTube">GitHub - Chocobozzz/PeerTube: ActivityPub-federated video streaming platform using P2P directly in your web browser · GitHub</a></li>
+<li><a href="https://joinpeertube.org/">What is PeerTube? | JoinPeerTube</a></li>
 
 </ul>
 </details>
 
-**Discussion**: Community comments largely support the ruling, arguing that AI lacks accountability and cannot own benefits. Some compare AI to a calculator, while others question whether AI-generated inventions can still be patented under a human inventor's name.
+**Discussion**: Community comments highlight concerns about monetization for professional creators, with one YouTuber noting the high cost of video production. Others praise the privacy and open-source aspects but note a lack of content and audience, making adoption challenging. Some users successfully use PeerTube for open-source tutorials, embedding videos from an existing instance.
 
-**Tags**: `#AI`, `#patents`, `#intellectual property`, `#Japan`, `#law`
+**Tags**: `#decentralization`, `#video platform`, `#federation`, `#open source`
 
 ---
 
 <a id="item-4"></a>
-## [Egg Price Fixers Profited 1000x Their Fine](https://www.thebignewsletter.com/p/crime-pays-the-egg-bandits-made-a) ⭐️ 8.0/10
+## [The Fall of the Theorem Economy](https://davidbessis.substack.com/p/the-fall-of-the-theorem-economy) ⭐️ 8.0/10
 
-Egg producers colluded to fix prices, making profits over a thousand times larger than the fines they ultimately paid. This highlights severe underdeterrence in antitrust enforcement, allowing corporations to treat fines as a cost of doing business and undermining market competition. During the egg price crisis, media blamed avian flu and inflation, but the price-fixing operation was a major cause; the fine paid was miniscule compared to illicit gains.
+The article argues that the era of theorem-proving as the core of mathematics is ending, with formalization and automation shifting focus to intuition and visualization, akin to software testing. This shift could transform how mathematics is practiced, making it more collaborative and accessible, while challenging traditional notions of mathematical proof and rigor. The article draws parallels between formalized mathematics and software testing, referencing Greg Egan's novel 'Diaspora' which envisions mathematics as 'truth mining' with proof assistants.
 
-hackernews · toomuchtodo · Jul 2, 13:25 · [Discussion](https://news.ycombinator.com/item?id=48761229)
+hackernews · varjag · Jul 2, 08:01 · [Discussion](https://news.ycombinator.com/item?id=48758048)
 
-**Background**: Price fixing is an illegal agreement between competitors to raise prices, reducing competition and harming consumers. Antitrust laws aim to prevent such collusion, but fines are often too low to deter large corporations.
+**Background**: Proof assistants are interactive software tools that help humans construct and verify formal proofs. Mathematical formalization involves translating mathematical statements into a precise symbolic language that can be checked by a computer. These tools have matured to the point where they can handle complex mathematics, leading some to argue that they will change the nature of mathematical work.
 
-**Discussion**: Commenters expressed shock that the egg crisis was due to price fixing, not inflation or avian flu. Some noted that market concentration enables such collusion, and argued for stronger penalties like corporate accountability and even corporal punishment for white-collar crime.
+<details><summary>References</summary>
+<ul>
+<li><a href="https://en.wikipedia.org/wiki/Proof_assistant">Proof assistant</a></li>
+<li><a href="https://plus.maths.org/proof-assistants-part-1">Proof assistants | plus.maths.org</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Mathematical_formalization">Mathematical formalization</a></li>
 
-**Tags**: `#price fixing`, `#antitrust`, `#corporate crime`, `#economics`, `#market concentration`
+</ul>
+</details>
+
+**Discussion**: Commenters noted Greg Egan's prescient description of 'truth mining' in his novel 'Diaspora', seeing it as a vision of mathematics after formalization. Others drew parallels to software testing, arguing that mathematics has always been more about insight than rigorous proofs. A tangential concern was raised about private control of AI resources limiting open science.
+
+**Tags**: `#mathematics`, `#formalization`, `#proof assistants`, `#software testing`, `#epistemology`
 
 ---
 
 <a id="item-5"></a>
-## [Code review's primary goal is maintainability](https://mathstodon.xyz/@mjd/115096720350507897) ⭐️ 8.0/10
+## [ECTC 2026: EMIB-T, Custom HBM, Cooling, and Photonics](https://newsletter.semianalysis.com/p/ectc2026) ⭐️ 8.0/10
 
-A viral post argues that the primary purpose of code review is to identify code that will be hard to maintain, sparking a multi-faceted community discussion. This debate reframes how teams approach code review, emphasizing maintainability over bug detection alone, and influences best practices in software engineering. The post was shared on Mathstodon and received 237 points and 126 comments, indicating high engagement within the developer community.
+At ECTC 2026, Intel unveiled EMIB-T packaging featuring thick vertical copper connections and finer pitches, while Microsoft introduced microfluidic cooling directly integrated on chips. The conference also covered custom HBM, HBM4 packaging challenges, and photonic interconnects from Lightmatter. These advances address critical scaling bottlenecks in chip packaging, cooling, and interconnects, which are essential for the performance and efficiency of AI/ML hardware and high-performance computing. Intel's EMIB-T supports pitches below 45μm, targeting 35μm, while Microsoft's microfluidic cooling achieved the highest power density on an active CMOS device without evaporative water use.
 
-hackernews · ColinWright · Jul 2, 11:41 · [Discussion](https://news.ycombinator.com/item?id=48759870)
+rss · Semianalysis · Jul 2, 17:25
 
-**Background**: Code review is a software engineering practice where developers examine each other's code changes before merging. Traditionally, it aims to catch bugs and improve code quality. This post challenges that view by prioritizing long-term maintainability over immediate correctness.
+**Background**: Advanced packaging technologies like Intel's EMIB (Embedded Multi-die Interconnect Bridge) enable high-density connections between chiplets. Microfluidic cooling circulates coolant through microchannels directly on chips to remove heat efficiently. Photonic interconnects use light instead of electrical signals for faster, lower-power data transfer. HBM (High Bandwidth Memory) stacks DRAM dies with a logic base die to provide wide memory bandwidth.
 
-**Discussion**: Community comments strongly disagree that maintainability is the sole primary goal. Commenters highlight other purposes such as knowledge transfer, safety against malicious code, team ownership, and catching bugs through code smells. One commenter accuses the post of justifying lazy reviewing.
+<details><summary>References</summary>
+<ul>
+<li><a href="https://spectrum.ieee.org/intel-advanced-packaging-for-ai">Intel Advanced Packaging for Bigger AI Chips - IEEE Spectrum</a></li>
+<li><a href="https://datacenters.microsoft.com/wp-content/uploads/2025/09/Microfluidic-Cooling-Infographic.pdf">Microfluidics cooling: Cooling at the micro level for Microsoft’s datacenters</a></li>
+<li><a href="https://www.linkedin.com/pulse/future-computing-photonic-interconnects-semiconductor-elxie">The Future of Computing : Photonic Interconnects and...</a></li>
 
-**Tags**: `#code review`, `#software engineering`, `#maintainability`, `#best practices`, `#team collaboration`
+</ul>
+</details>
+
+**Tags**: `#packaging`, `#interconnects`, `#cooling`, `#HBM`, `#ECTC`
 
 ---
 
 <a id="item-6"></a>
-## [The Fall of the Theorem Economy](https://davidbessis.substack.com/p/the-fall-of-the-theorem-economy) ⭐️ 8.0/10
+## [Peking University PhD Team Raises Millions for Nanokelvin Neutral Atom Quantum Computer](https://36kr.com/p/3877814169530630?f=rss) ⭐️ 8.0/10
 
-An article by David Bessis argues that mathematics is moving away from a theorem-centric economy toward computational and AI-driven approaches, drawing parallels to Greg Egan's novel 'Diaspora'. This shift could redefine the role of mathematicians and the peer-review process, potentially accelerating discovery but also raising questions about the nature of mathematical truth and community validation. The article suggests that as proof assistants and AI systems become more capable, the traditional focus on proving theorems may diminish, much like Egan's concept of 'truth mining' where a vast database of formalized knowledge is explored through intuition and visualization.
+Chinese startup NakaQuantum, founded by Peking University PhDs and led by CEO Fan Yaoyuan, closed a multi-million yuan funding round led by GL Ventures (Hillhouse) to develop a neutral atom quantum computer operating at nanokelvin temperatures. The company claims to be the only team in China capable of engineering cooling multiple atomic species below 10 nK. This funding signals growing interest in neutral atom quantum computing, a promising alternative to superconducting and trapped-ion approaches, especially for scalability. NakaQuantum's progress could accelerate China's position in the quantum race and bring practical quantum computing closer to industrial applications. NakaQuantum was founded in April 2026 and has already secured orders worth millions of yuan, with expected full-year revenue in 2026 reaching tens of millions. The company's technology includes cooling atoms of nine elements (e.g., Rb, K, Cs) below 10 nK, and it uses advanced optical lattice techniques for high-precision manipulation.
 
-hackernews · varjag · Jul 2, 08:01 · [Discussion](https://news.ycombinator.com/item?id=48758048)
+rss · 36氪 · Jul 2, 01:16
 
-**Background**: Theorem proving has been central to mathematics for centuries, but recent advances in automated theorem proving and formal methods—where proofs are checked by computers—are changing the landscape. Greg Egan's 1997 novel 'Diaspora' envisions a posthuman future where mathematics evolves into 'truth mining' within a fully formalized system. The article argues that we are now approaching that reality.
+**Background**: Neutral atom quantum computers encode qubits in the electronic states of neutral atoms trapped by lasers, offering natural identical qubits and high scalability. Unlike superconducting qubits, they require less cryogenic cooling, but achieving high fidelity and long coherence times remains challenging. Nanokelvin temperatures are extremely low (near absolute zero), suppressing thermal motion to enhance quantum effects.
 
 <details><summary>References</summary>
 <ul>
-<li><a href="https://en.wikipedia.org/wiki/Automated_theorem_proving">Automated theorem proving</a></li>
-<li><a href="https://en.wikipedia.org/wiki/Diaspora_(novel)">Diaspora (novel) - Wikipedia</a></li>
-<li><a href="https://en.wikipedia.org/wiki/Formal_methods">Formal methods - Wikipedia</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Neutral_atom_quantum_computer">Neutral atom quantum computer</a></li>
+<li><a href="https://www.quera.com/neutral-atom-platform">Building Quantum Computers with Neutral Atoms | QuEra</a></li>
 
 </ul>
 </details>
 
-**Discussion**: Commenters largely agree with the premise, with one noting that Egan's 'truth mining' presciently describes mathematics after full formalization. Another commenter suggests that mathematics is more about testing and gaining confidence, similar to software engineering, rather than rigorous proofs. Some discuss the potential for reduced open science due to private AI resources.
-
-**Tags**: `#mathematics`, `#theorem proving`, `#AI`, `#formal methods`, `#mathematical culture`
+**Tags**: `#quantum computing`, `#neutral atom`, `#startup`, `#funding`, `#China`
 
 ---
 
 <a id="item-7"></a>
-## [Understand to Participate: Avoiding Cognitive Debt in AI Coding](https://simonwillison.net/2026/Jul/2/understand-to-participate/#atom-everything) ⭐️ 8.0/10
+## [Meitu CEO on AI Product Strategy and Global Growth Driving Revenue Surge](https://36kr.com/p/3877112973733895?f=rss) ⭐️ 8.0/10
 
-At the AI Engineer World's Fair 2026, Geoffrey Litt introduced the concept of 'understand to participate,' arguing that developers must maintain a deep understanding of their code to effectively collaborate with AI coding agents and avoid accumulating cognitive debt. This insight is crucial as AI coding agents become more sophisticated, posing a risk that developers lose understanding of their own code, which hampers creative participation and increases cognitive debt. It highlights a practical challenge that the software engineering community must address to fully benefit from AI-assisted development. The talk was one of over 300 recorded sessions at AIE, and Geoffrey also shared a Twitter thread summarizing his arguments. Cognitive debt, a term gaining traction, refers to the mental cost of moving fast without understanding why code works, analogous to technical debt but residing in the developer's mind.
+Meitu CEO Wu Xinhong revealed in an interview that AI-driven products now account for 76.6% of revenue, up from 35% a year ago, and overseas MAU has returned to 100 million. The company has also launched rapid incubation studios and strict product-market-fit criteria, such as reaching $100K ARR within six months of launch. This showcases a successful transformation for Meitu from a struggling photo app to an AI-powered imaging leader, with a replicable playbook for global scaling and rapid product iteration. The insights are particularly valuable for tech companies navigating AI monetization and international expansion. New products like Picchi and MeituHub were 'naturally grown' from user behavior insights, while MVLAND and Artflo are passion projects from the CEO. Meitu enforces a strict product development timeline: from ideation to market validation within one month, and a PMF threshold of $100K ARR in six months.
 
-rss · Simon Willison · Jul 2, 17:07
+rss · 36氪 · Jul 2, 00:30
 
-**Background**: Cognitive debt is a relatively new concept describing the mental overhead incurred when developers prioritize speed over understanding, especially in AI-assisted coding where agents can generate large code changes. To avoid cognitive debt, developers must actively learn from the agent's outputs and maintain a rich mental model of the codebase. This allows them to participate creatively rather than passively accepting or rejecting suggestions.
+**Background**: Meitu, known for its photo-editing app 'Meitu Xiuxiu', struggled with profitability for years due to reliance on advertising. The AI boom and shift to subscription models allowed it to rebuild its product suite with AI-powered tools like Wink (video editing) and RoboNeo (AI creative agent), targeting global markets. The company now uses small innovation studios with up to 10 million yuan funding to incubate AI products rapidly.
 
 <details><summary>References</summary>
 <ul>
-<li><a href="https://medium.com/@willsh/what-is-cognitive-debt-5182e4a4fa98">What is Cognitive Debt? - Medium</a></li>
-<li><a href="https://margaretstorey.com/blog/2026/02/09/cognitive-debt/">How Generative and Agentic AI Shift Concern from Technical Debt to ...</a></li>
+<li><a href="https://www.roboneo.com/">AI Social Media Creation Agent for Scalable Video Production & Trend-Driven Content</a></li>
+<li><a href="https://wink.ai/">Wink AI - Video and Image Enhancer & Editor for All Scenes</a></li>
 
 </ul>
 </details>
 
-**Tags**: `#AI coding agents`, `#cognitive debt`, `#software engineering`, `#LLM collaboration`
+**Tags**: `#AI`, `#technology strategy`, `#business transformation`, `#Meitu`, `#product development`
 
 ---
 
 <a id="item-8"></a>
-## [ECTC 2026 Roundup: EMIB-T, HBM4, Cooling, Photonics](https://newsletter.semianalysis.com/p/ectc2026) ⭐️ 8.0/10
+## [Kuaishou's Keling AI Raises $3B, Sets Funding Record](https://36kr.com/newsflashes/3878648324845831?f=rss) ⭐️ 8.0/10
 
-The ECTC 2026 conference highlighted Intel's EMIB-T packaging technology entering production, roadmaps for custom HBM and HBM4 with 2.8 TB/s bandwidth, microfluidic cooling breakthroughs, and photonic interconnects from companies like Lightmatter. These advancements are critical for next-generation AI accelerators and high-performance computing, addressing power delivery, thermal management, and bandwidth bottlenecks that limit scaling. Intel's EMIB-T adds through-silicon vias (TSVs) to the bridge for better power delivery and supports HBM4. HBM4 features a 2048-pin interface at >11 Gbps, delivering >2.8 TB/s per stack. Microfluidic cooling uses channels etched in silicon for up to 3x better heat removal.
+On July 2, 2025, Kuaishou's video generation model Keling AI secured nearly $3 billion in funding, setting a new global record for the largest financing round in the video AI model industry. This record-breaking funding validates the commercial potential of AI video generation and marks Keling AI's transition to independent commercialization, signaling strong investor confidence in generative AI for video. The funding round was co-led by CPE Yuanfeng, Guofang Venture Capital, BlueFive, Tencent, Zhongguancun Science City Fund, and CITIC Securities, with participation from dozens of leading institutions including Alibaba Cloud and Baidu, as well as cultural entertainment investors like Huace Film & TV and Mango Industrial Investors.
 
-rss · Semianalysis · Jul 2, 17:25
+rss · 36氪 · Jul 2, 15:25
 
-**Background**: Advanced packaging technologies like EMIB (Embedded Multi-die Interconnect Bridge) and CoWoS are used to integrate multiple chips (e.g., logic and HBM) in a single package. HBM (High Bandwidth Memory) is a type of DRAM stacked with through-silicon vias for high bandwidth, used in AI accelerators. Microfluidic cooling circulates coolant through microscopic channels directly on chips to manage heat. Photonic interconnects use light for faster, lower-power data transfer.
+**Background**: Keling AI is a state-of-the-art video generation model developed by Kuaishou, capable of creating professional videos and images from text prompts. The AI video generation market has seen explosive growth, with companies like OpenAI's Sora and others competing in the space. This funding round reflects the massive capital required to train and deploy large-scale video models.
 
 <details><summary>References</summary>
 <ul>
-<li><a href="https://www.tomshardware.com/pc-components/cpus/intel-details-new-advanced-packaging-breakthroughs-emib-t-paves-the-way-for-hbm4-and-increased-ucie-bandwidth">Intel details new advanced packaging breakthroughs — EMIB-T paves the way for HBM4 and increased UCIe bandwidth | Tom's Hardware</a></li>
-<li><a href="https://www.tomshardware.com/tech-industry/semiconductors/intels-emib-t-heads-for-fab-rollout-this-year">Intel's EMIB-T packaging technology set for fab rollout this year — as TSMC CoWoS capacity remains limited, EMIB-T is preparing for advanced AI accelerator designs | Tom's Hardware</a></li>
-<li><a href="https://news.microsoft.com/source/features/innovation/microfluidics-liquid-cooling-ai-chips/">AI chips are getting hotter. A microfluidics breakthrough goes straight to the silicon to cool up to three times better. - Source</a></li>
+<li><a href="https://app.klingai.com/cn/ai-video/cute-kitten-cuddle-request/287913723146798">可 灵 AI - 新一代 AI 创意生产力平台</a></li>
+<li><a href="https://itopmarketing.com/info20490">AI 版“爱死机”刷屏！ 我用它背后的 可 灵 AI ...</a></li>
 
 </ul>
 </details>
 
-**Tags**: `#semiconductor packaging`, `#HBM`, `#microfluidic cooling`, `#photonic interconnects`, `#advanced packaging`
+**Tags**: `#AI video generation`, `#funding`, `#Kuaishou`, `#generative AI`, `#venture capital`
 
 ---
 
 <a id="item-9"></a>
-## [Chinese quantum startup Nakairangkai raises millions for neutral atom computers](https://36kr.com/p/3877814169530630?f=rss) ⭐️ 8.0/10
+## [Apple reveals identity behind iCloud anonymous email in FBI threat case](https://t.me/zaihuapd/42302) ⭐️ 8.0/10
 
-Chinese startup Nakairangkai Quantum, founded by Peking University PhDs, announced a seed funding round of tens of millions RMB, led by Hillhouse Capital (GL Ventures), to advance its neutral atom quantum computing platform operating at nanokelvin temperatures. This funding underscores the growing prominence of neutral atom quantum computing in China, a route known for scalability and qubit uniformity, and suggests that cold-atom technology is moving from lab to commercial viability. Nakairangkai claims to be the only Chinese team that can engineer cooling of nine atomic species (e.g., rubidium, potassium, cesium) below 10 nK. The company has a full-stack product line including quantum simulation computers and expects 2026 revenue in the tens of millions RMB.
+Apple provided the FBI with the real iCloud account details linked to a 'Hide My Email' alias used to send threats, leading to the identification of Alden Ruml, who admitted to threatening FBI Director Kash Patel's girlfriend. This case demonstrates that Apple's 'Hide My Email' feature does not guarantee anonymity in criminal investigations, raising significant privacy concerns among users who rely on such features for confidentiality. The user Alden Ruml had generated 134 anonymous email addresses via the iCloud+ feature, and his real identity was disclosed via a sworn affidavit in which he confessed to sending the threatening emails.
 
-rss · 36氪 · Jul 2, 01:16
+telegram · zaihuapd · Jul 2, 01:03
 
-**Background**: Neutral atom quantum computers use laser-cooled atoms as qubits, offering natural uniformity and scalability. Nanokelvin temperatures are billionths of a degree above absolute zero, where thermal noise is minimized. The field accelerated after Harvard and QuEra demonstrated a programmable neutral atom processor in 2023.
+**Background**: Apple's Hide My Email is a privacy feature in iCloud+ that lets users create unique, random email addresses to forward mail to their real inbox without revealing it. While designed to protect privacy, Apple retains the ability to link these anonymous addresses to the user's actual account, typically only disclosed under lawful requests like this FBI investigation.
 
 <details><summary>References</summary>
 <ul>
-<li><a href="https://en.wikipedia.org/wiki/Neutral_atom_quantum_computer">Neutral atom quantum computer - Wikipedia</a></li>
-<li><a href="https://www.quera.com/neutral-atom-platform">Building Quantum Computers with Neutral Atoms | QuEra</a></li>
-<li><a href="https://en.wikipedia.org/wiki/Nanokelvin">Nanokelvin</a></li>
+<li><a href="https://support.apple.com/en-us/105078">How to use Hide My Email with Sign in with Apple - Apple Support</a></li>
+<li><a href="https://clean.email/have-you-been-pwned/hide-my-email">Use Apple Hide My Email To Protect Your Inbox</a></li>
 
 </ul>
 </details>
 
-**Tags**: `#quantum computing`, `#neutral atom`, `#startup funding`, `#cold atom`, `#China`
+**Tags**: `#privacy`, `#Apple`, `#FBI`, `#anonymous email`, `#security`
 
 ---
 
 <a id="item-10"></a>
-## [Kuaishou's Keling AI Raises $3B, Record for Video AI](https://36kr.com/newsflashes/3878648324845831?f=rss) ⭐️ 8.0/10
+## [Cloudflare to Block Mixed-Use AI Crawlers from September](https://techcrunch.com/2026/07/01/cloudflares-new-policy-pushes-ai-companies-to-pay-for-publishers-content/) ⭐️ 8.0/10
 
-On July 2, 2025, Kuaishou's video generation model Keling AI closed a nearly $3 billion funding round, with a post-money valuation of $18 billion, setting a global record for the largest funding round among video generation AI companies. This funding demonstrates strong commercial momentum and investor confidence in AI video generation, and marks the beginning of Keling AI's independent commercialization. The involvement of major tech and media investors underscores its industry impact. The round was co-led by CPE Yuanfeng, Guofang Venture Capital, BlueFive, Tencent, Zhongguancun Science City Fund (with UNISCI), and CITIC Securities, with participation from dozens of leading institutions including Alibaba Cloud and Baidu, as well as entertainment investors like Huace Media and Mango Industrial Investors.
+Starting September 15, 2026, Cloudflare will default to blocking mixed-use crawlers that collect data for both search indexing and AI training from ad-supported customer pages. This policy forces AI companies like Google to separate their search crawlers from AI training crawlers, potentially requiring them to pay for content used in AI models and protecting publishers' content rights. Cloudflare specifically points out that Google's dual-purpose crawler exploits a loophole where websites block AI crawlers but allow Googlebot for search, which Google then uses for AI training.
 
-rss · 36氪 · Jul 2, 15:25
+telegram · zaihuapd · Jul 2, 05:37
 
-**Background**: Keling AI is a video generation model developed by Kuaishou, a major Chinese tech company. It can generate videos from text or images. In April 2025, Kuaishou announced version 2.0 of Keling, which showed significant improvements. Video generation AI is a rapidly growing field with competitors like OpenAI's Sora and Runway.
+**Background**: Many websites rely on ads for revenue and want to prevent AI companies from using their content for free. Cloudflare, a major CDN and security provider, can set default rules for millions of websites. Mixed-use crawlers refer to bots that simultaneously gather data for search results and for training AI models.
 
 <details><summary>References</summary>
 <ul>
-<li><a href="https://zenn.dev/taku_sid/articles/20250416_kelings_ai?locale=en">A Simple Guide to Keling 2.0: China’s Latest AI Video ...</a></li>
-<li><a href="https://llm-stats.com/leaderboards/best-ai-for-video-generation">Best AI for Video Generation in 2026 — Ranked by Blind Human ...</a></li>
+<li><a href="https://techcrunch.com/2026/07/01/cloudflares-new-policy-pushes-ai-companies-to-pay-for-publishers-content/">Cloudflare's new policy pushes AI companies to pay for publishers' content | TechCrunch</a></li>
+<li><a href="https://www.theregister.com/ai-and-ml/2026/07/01/cloudflare-to-block-cynical-search-and-scrape-bots-from-ad-supported-web-pages/5264727">Cloudflare to block cynical search-and-scrape bots from ad-supported web pages</a></li>
+<li><a href="https://blog.cloudflare.com/control-content-use-for-ai-training/">Control content use for AI training with Cloudflare’s managed robots.txt and blocking for monetized content</a></li>
 
 </ul>
 </details>
 
-**Tags**: `#Video Generation AI`, `#Funding`, `#Kuaishou`, `#Large Models`, `#AI Industry`
+**Discussion**: The source includes a comment noting that many websites block AI crawlers but not Google search, allowing Google to exploit this loophole for AI training.
+
+**Tags**: `#Cloudflare`, `#AI crawlers`, `#web scraping`, `#content policy`, `#Google`
 
 ---
 
 <a id="item-11"></a>
-## [OpenAI Proposes US Government 5% Stake, Eyes Other AI Giants](https://www.bloomberg.com/news/articles/2026-07-02/openai-proposes-giving-the-us-government-a-5-stake-ft-says) ⭐️ 8.0/10
+## [OpenAI Proposes U.S. Government 5% Stake, Potentially Including Google & Meta](https://www.bloomberg.com/news/articles/2026-07-02/openai-proposes-giving-the-us-government-a-5-stake-ft-says) ⭐️ 8.0/10
 
-OpenAI has proposed that the US government take a 5% equity stake in the company, and potentially similar stakes in other major AI firms like Google and Meta, to allow the public to benefit from AI growth. This proposal could reshape AI governance by directly involving the government in profit-sharing, raising questions about control and conflicts of interest. It sets a precedent for how public benefits from AI are distributed. The plan involves a government vehicle holding 5% stakes in OpenAI, Anthropic, Google, and Meta. Other companies have not yet indicated acceptance, and regulatory and conflict-of-interest concerns remain unresolved.
+OpenAI has proposed that the U.S. government take a 5% stake in the company, and suggested a similar structure could apply to other major AI firms like Google and Meta, allowing the public to benefit from AI growth. This proposal could reshape AI governance and public benefit sharing, potentially setting a precedent for government involvement in private AI firms and addressing concerns about monopoly and public interest. The plan involves a government vehicle holding 5% stakes in multiple AI companies simultaneously, which could raise regulatory and conflict-of-interest issues; it remains unclear whether other companies will accept.
 
 telegram · zaihuapd · Jul 2, 06:02
 
-**Background**: OpenAI is a leading AI research and deployment company, known for models like GPT-4. Anthropic, founded by former OpenAI employees, focuses on AI safety and develops Claude. The proposal aims to channel AI economic benefits to the public through government ownership.
+**Background**: OpenAI is a leading AI research and deployment company, known for ChatGPT. The U.S. government has been exploring ways to regulate AI and ensure public benefits. This proposal suggests direct equity ownership as a novel mechanism for public participation in AI profits and governance.
 
-<details><summary>References</summary>
-<ul>
-<li><a href="https://en.wikipedia.org/wiki/Anthropic">Anthropic - Wikipedia</a></li>
-
-</ul>
-</details>
-
-**Tags**: `#AI`, `#OpenAI`, `#government stake`, `#policy`, `#tech giants`
+**Tags**: `#AI governance`, `#OpenAI`, `#U.S. government`, `#tech policy`, `#artificial intelligence`
 
 ---
 
 <a id="item-12"></a>
-## [Banks and tech firms restrict employee AI use due to surging costs](https://www.404media.co/companies-are-throttling-employees-ai-use-because-its-too-expensive/) ⭐️ 8.0/10
+## [Citibank bans GPT-5.5, firms limit AI use as costs surge](https://www.404media.co/companies-are-throttling-employees-ai-use-because-its-too-expensive/) ⭐️ 8.0/10
 
-Citibank banned the use of GPT-5.5, Claude Opus 4.6 and 4.7 on June 24, 2026, citing excessive AI credit consumption, while Atlassian's monthly AI spending soared from $5 million to over $15 million in early 2025–2026, prompting usage caps and cost dashboards. This trend reveals that usage-based pricing for advanced AI models is creating unsustainable costs for enterprises, potentially slowing AI adoption and forcing companies to prioritize cost control over innovation. Atlassian's internal dashboard showed AI expenses growing 3x in about 9 months; Adobe decided not to renew its unlimited Claude contract; and Amazon previously shut down internal leaderboards that encouraged AI usage, revealing hidden token caps.
+Citibank completely banned the use of advanced AI models including GPT-5.5, Claude Opus 4.6, and 4.7 as of June 24, citing excessive credit consumption. Meanwhile, Atlassian's AI monthly costs jumped from $5 million in August 2025 to over $15 million by May 2026, prompting the company to halt unlimited AI usage and deploy cost-tracking dashboards. This trend reveals a critical financial bottleneck in enterprise AI adoption: even major companies struggle to contain costs from usage-based pricing of powerful models. It signals a potential slowdown in AI deployment as businesses reassess the ROI of cutting-edge tools. Adobe chose not to renew its unlimited Claude usage contract, which expired on June 30. Amazon had previously shut down an internal leaderboard encouraging AI use, and employees later discovered previously unknown token usage caps. Consulting firm Accenture is positioning AI cost management as a new business opportunity while pushing clients to adopt AI rapidly.
 
 telegram · zaihuapd · Jul 2, 13:59
 
-**Background**: Many AI tools, including GPT-5.5 and Claude Opus models, are priced on a usage-based model where customers pay per token or consume AI credits. These credits function as a prepaid unit of consumption, and more powerful models cost more credits per request. Without proper governance, enterprise spending can spiral as employees adopt these tools broadly.
+**Background**: Many enterprise AI tools use a credit-based pricing model where each action, such as generating text or processing documents, consumes a certain number of credits from a pool. Advanced models like GPT-5.5 and Claude Opus require more credits per task, causing costs to escalate rapidly when employees use them extensively. Companies typically combine subscription fees with usage-based credits, but heavy adoption without governance can lead to budget overruns.
 
 <details><summary>References</summary>
 <ul>
-<li><a href="https://en.wikipedia.org/wiki/GPT-5.5">GPT-5.5</a></li>
 <li><a href="https://schematichq.com/blog/ai-credits">AI Credits: How They Work, Pricing Models, and Implementation</a></li>
-<li><a href="https://arstechnica.com/ai/2026/06/ai-costs-how-much-github-copilot-users-react-to-new-usage-based-pricing-system/">AI costs how much? GitHub Copilot users react to new usage-based pricing system. - Ars Technica</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Claude_(language_model)">Claude (AI) - Wikipedia</a></li>
+<li><a href="https://metronome.com/blog/the-rise-of-ai-credits-why-cost-plus-credit-models-work-until-they-dont">The Rise of AI Credits: Why Cost-Plus Credit Models Work (Until They Don’t) | Metronome blog</a></li>
 
 </ul>
 </details>
 
-**Tags**: `#AI costs`, `#enterprise AI`, `#AI adoption`, `#cost management`, `#industry trend`
+**Tags**: `#AI costs`, `#enterprise AI`, `#cost management`, `#technology trends`
 
 ---
 
 <a id="item-13"></a>
-## [Anthropic in early talks with Samsung for custom AI chips](https://www.theinformation.com/articles/anthropic-talks-samsung-manufacture-custom-ai-chip) ⭐️ 8.0/10
+## [PS3 Store Closure 2027: Archivists Rush to Save Games](http://no-intro.org/) ⭐️ 8.0/10
 
-Anthropic has begun developing its own custom AI chips and is in early-stage talks with Samsung Electronics for potential manufacturing, aiming to reduce reliance on external suppliers for its Claude models. This move signals a trend of vertical integration among leading AI companies, as they seek to optimize hardware for their models and secure supply chains. If successful, it could intensify competition with OpenAI's custom chip efforts and reshape the AI semiconductor landscape. Anthropic's chip project is still in early development, and the company is a later entrant compared to rivals like OpenAI, which has already partnered with Broadcom to launch the Jalapeño inference chip. Samsung's foundry business offers both design and manufacturing services for custom chips.
+Sony announced it will permanently close the PS3 and PS Vita PlayStation Store in July 2027, prompting digital archivists to urgently back up game data. The RPCS3 emulator team is calling for community participation using the no-intro.org database to coordinate preservation efforts. This event highlights the fragility of digital-only game ownership and the risk of losing culturally significant software when online stores shut down. Community-driven preservation is becoming essential as the industry moves toward all-digital distribution. The no-intro.org database records cryptographic signatures, file sizes, and serial numbers for game dumps, helping the community verify which titles have been backed up. RPCS3 warns that games never released physically may be permanently lost after the store closure.
 
-telegram · zaihuapd · Jul 2, 15:57
+telegram · zaihuapd · Jul 2, 15:04
 
-**Background**: Major AI companies like OpenAI and Anthropic are increasingly developing custom silicon to better handle the computational demands of large language models, reducing reliance on general-purpose GPUs. OpenAI's Jalapeño chip, announced in June 2026, is a dedicated inference chip built with Broadcom. Samsung's foundry is one of the few manufacturers capable of producing advanced chips for such applications.
+**Background**: Sony's PlayStation Store for PS3 and PS Vita has been online since the mid-2000s, offering digital purchases and downloads. As console generations end, companies often sunset online services, making previously purchased content inaccessible unless backed up. Preservation groups like No-Intro maintain curated sets of game metadata to ensure accurate archiving, and emulators like RPCS3 require legal game dumps to run.
 
 <details><summary>References</summary>
 <ul>
-<li><a href="https://openai.com/index/openai-broadcom-jalapeno-inference-chip/">OpenAI and Broadcom unveil LLM-optimized inference chip</a></li>
-<li><a href="https://semiconductor.samsung.com/foundry/">Foundry Overview | Samsung Semiconductor Global</a></li>
+<li><a href="https://x.com/nointro_org">No-Intro (@nointro_org) / Posts / X</a></li>
+<li><a href="https://myrient.erista.me/files/No-Intro/">Index of /files/No-Intro - Content Listing | Myrient - Erista</a></li>
 
 </ul>
 </details>
 
-**Tags**: `#Anthropic`, `#AI chips`, `#Samsung`, `#semiconductor`, `#custom silicon`
+**Tags**: `#数字保存`, `#PS3`, `#游戏模拟器`, `#索尼`, `#社区协作`
 
 ---
